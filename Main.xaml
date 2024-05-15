@@ -1,0 +1,141 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="850.4,864" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="41">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="496,799.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Data Center Capital Cost Calculator" sap:VirtualizedContainerService.HintSize="433.6,687.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,470.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NSelectItem DisplayName="Select Item 'Power'" sap:VirtualizedContainerService.HintSize="337.6,157.6" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="N" ScopeIdentifier="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V3">
+              <uix:NSelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="2">
+                  <x:String>N</x:String>
+                  <x:String>2N</x:String>
+                </scg:List>
+              </uix:NSelectItem.Items>
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.se.com/ww/en/work/solutions/system/s1/data-center-and-network-systems/trade-off-tools/data-center-capital-cost-calculator/" DesignTimeRectangle="189, 716, 101, 23" DesignTimeScaleFactor="1.25" ElementType="DropDown" FriendlyName="'N'" FullSelectorArgument="&lt;webctrl idx='8' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='SELECT' class='xc-htmlComboBox-selectEl' aaname='' /&gt;" Guid="1de92065-add3-4a4a-8f95-617bab5036de" InformativeScreenshot="5f490be7c0ddc64e298816bf346e2ed7.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Data Center Capital Cost Calculator' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="93, 719, 90, 19" ElementType="Text" FriendlyName="'Power'" FullSelectorArgument="&lt;webctrl parentid='xc-label-div-xgen_7685' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='xc-label-div-xgen_7685' tag='DIV' type='' class='' aaname='Power' check:innerText='Power' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAF4AAAAXCAYAAACChfjKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAGXSURBVGhD7ZWxSgNBFEX9VrERsZGQQsXCQiwELSwU/AkFK8Uv0PyB+gemi+XoWXLXy2RWNhAc1rwDw+6893Zmc2Z9bqSgCiG+EiG+EiG+EiG+Eq342ewznZyepc2t7eJ4fpnMK4NVsCD+6vpmHvkB6SF/tfQSD8S7csHyLCWePHXwMZ2m0figbUXcE/Pc7d19M4dSjL8gf+717T3t7O61a+bvQj3vcH5x2eT9fYZGL/F5ToK8lnuXyNzzalce4xAkT2vqYLSnyy2tMVR6iUcGP1g9nhoXAvkXzTU/iMOj4/Y57af60po6DO3LlTnxobMgHsH58B+rutIBuTzqR+P95sqc9vDw+NTGPF9qQ6C9FEe8H+aQ6d3jRS7DcfFeh1zEI4wYAhmqlfjSoTNC/De/1RHzuOYIU1wxDej64nPWWjxQo69VlORJFLXcA3lajPfurr21purWXjytA3Fey30uReL8f4SezWsV94PLD3jtxYOkqg+7IKE1PafnSvtIftea/1J88LeE+EqE+EqE+EqE+EqE+Cqk9AUMS5K/OLEgIgAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+            <uix:NSelectItem DisplayName="Select Item 'UPS'" sap:VirtualizedContainerService.HintSize="337.6,157.6" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="N" ScopeIdentifier="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V3">
+              <uix:NSelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="2">
+                  <x:String>N</x:String>
+                  <x:String>N+1</x:String>
+                </scg:List>
+              </uix:NSelectItem.Items>
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.se.com/ww/en/work/solutions/system/s1/data-center-and-network-systems/trade-off-tools/data-center-capital-cost-calculator/" DesignTimeRectangle="314, 714, 101, 23" DesignTimeScaleFactor="1.25" ElementType="DropDown" FriendlyName="'N'" FullSelectorArgument="&lt;webctrl idx='9' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='SELECT' class='xc-htmlComboBox-selectEl' aaname='' /&gt;" Guid="708f955b-4016-4b36-a21e-052a35d073aa" InformativeScreenshot="60825439b33e413322859445631553c6.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Data Center Capital Cost Calculator' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="304, 691, 111, 17" ElementType="Text" FriendlyName="'UPS'" FullSelectorArgument="&lt;webctrl parentid='xc-label-div-xgen_7692' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='xc-label-div-xgen_7692' tag='DIV' type='' class='' aaname='UPS' check:innerText='UPS' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHMAAAAVCAYAAAB17tGhAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAEeSURBVGhD7ZZBCsIwEEU9q7gRcSOlC92LCw+g4CUUvIV6A/UGdleXI790NITUFoqYmcyDLJL8pNDXTDMgQw0mUxEmUxEmUxEmUxFiZD6KgrJ8QafzpR75UJZPWq7WtD8cqz4yw9E42DbbXZVheK2bQR/j0lArE1msceE9OOf3GQgPrY+dpGQCZPjktUkPPStmkpc5mc7oervXs7JJSiakQR7neF3T/1QayV2AOOMSyodysZNcmW3DPa2hZ8WMGJn8kr/J5Lk+MgHvJ63sipEJ8HJD5Q//wiyfvy8yXWS2CcO4yfwhkOSXv5CUrieT9/M/EP/jkIIomYBvpHxRQfNPUFeZABlk3f36lOh/Ik6m0YzJVITJVITJVITJVAPRCz7B6Mz6gddIAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAUaSURBVFhHtVdrbFRFFB6w2ooaRRGwasRHbLH03rm72BTFtFRQE/WHNkZCotHEdyJKUiOJJtLID7TGLbv3sdtSKdRoUrUh9YlRUVAkgApBaSEilaJGC1seIm2lO35n7txlH3e7BcuXfLm7d2fON+fMOWdm2ZgjfF0hW62dJ7muukC9PYMIBS9jjlHLbB7C8zNm6V3M4j2SNt+OZwfeL2QhPk3NGCNY+hwItIF/sqaAYM1gkyFYFHQU6bP3m2McYA5fyhoQmf+FsHYLDH8MYwllWMDL/KRxKzDeQpReC05S1k4BZukl8NaEoSHplZ/IaEiLMPX3WSx4trI8Clj6bHi8Q062fYymUR+BagxFztYfVtbzwDIeZFF+hMVyhRqGwzcItrwUnpWLs+ygLwucoBhnKxtky9S/yx+FiL4I4sM59zlcJsbjWbPmURHa9qZYt3+L+KGv25df/bZVTGqphrDmRfFfZgc0peQDiz8lszhXyJdPF9rbtWLtvo1iNNh+YLcosCl31FZQHpnGfKWWAVO/B+LDMlR+CwhPh9ePiL/+iSvz+dG8s8PdJs8G5YGp1yvFFESMYgzYhLBTM/kFgw6mLSIyQ1zTdqf441ifMp2NweEhsau/R3TF90p29+8V89c+L6OWtCMjgOaVhfayc5AcFzKr7Hw8J2Bwe1rZIeFauzuVlD/sH9tFEUJdGK2QLIpVnExAj24lPKFUc2AZLQSdzktCZPnUlbeK+MBhJeWPuz9cCG9LKMQkgrkpJUikiFJ+mXyeUgKsG6dicD0GLJU0jZfxfCutArD3t3U+qWT8ER84Iopb58nFupHT22BrVhZtrVJGOAmLN7LVMwVrCZ5kZsdrLBEvbY4qKX98iXIbR6VG42NGgkUCNUphBMTQm02+Dd1uPya6NHkvnscyEzBf2dVvicqFynkm/xsRuJ9FtBrmKNJn25jLwsalSh2gjmSXT8SReVGSDdpkGPhJ7hWJw6uJK6pGzP4EOAdNSXZGb9G0hal0O+pR1qxdrdRzwA4EMeFE0hCMzu54SCQSJOMPWtzFLVVysb7iRHkickupAK+UXIAXdUjAF5G1Li3+AhLlk6T3RIS17puQkvLHBz3rsU1lSlzOewbhrkqjw6tltJMI6xUy2WhlVJseHXgRQSZ7bLxedOz5XEn547mNIXf/yVPL2MeWoKfkhc3vy8z28ejZV6y6XVy56g6XKKuaNY+JvuP9SiobAycGRRnOBhkBedrxr2HrJnh8M4uATfA+4rfvjv649NhbAE64yncfkM3m0ODRJIcTw0rKH69+35qefBZuTFQJXtNxjEPQMpRqCqyMBSCEi78NK7OjQ2tXpyikk85LvlTSdtDBZvMFSjEDVuDetC1ArX/au0mZHhm/I+sXbWjAnQCt1k+cvHe74WKl5gNHm4GBQ3IwjFAZ7YzvkfudSTp+fz7cKz7q2SCeXr9MFK+cq25CGb2eSFXg3nx8jtxU0Oln4f7uNghcnWaKKThwprxRk8XJ4IRYpYySdwVLE/VIex4zBpGIzyqVPKCBboNwSeEk4/Lp0fvu420qKZ+ixq8Yd5eyPgrQ2W/xzWnJeKqkCMps5++Ap/EvKFJeiozdnRaJfJRJBlFKNMfYCtYqa6cJ07gKXrwnS8cNpSuSSnpHgvS7zQfBL8AFbMm0ImVlDED/+xzeBMM7wIP4flzS5nFwF9psJ67rdThSdTXjDIGO6Rj+/caC10o6+uXs9Vnnql/HAIz9ByOLClnOoTmZAAAAAElFTkSuQmCC" InformativeScreenshot="a0f21fa6beda3282af863f052e370399.jpg" Selector="&lt;html app='chrome.exe' title='Data Center Capital Cost Calculator' /&gt;" Title="Data Center Capital Cost Calculator" Url="https://www.se.com/ww/en/work/solutions/system/s1/data-center-and-network-systems/trade-off-tools/data-center-capital-cost-calculator/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

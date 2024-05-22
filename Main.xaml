@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="850.4,886.4" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/ocr" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:sd2="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1234,3191" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/ocr" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:sd2="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="53">
       <x:String>System.Activities</x:String>
@@ -125,7 +125,7 @@
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="400,3048.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="400,3126" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Default="N" Name="ITdistribution" />
       <Variable x:TypeArguments="x:String" Default="N" Name="UPS" />
@@ -145,8 +145,155 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:BuildDataTable DataTable="[dt_table]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="337.6,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Redundancy&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Screenshot for name" sap:VirtualizedContainerService.HintSize="337.6,52.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
+    <ui:BuildDataTable DataTable="[dt_table]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="338,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Redundancy&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Reset" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_45" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,1454" sap2010:WorkflowViewState.IdRef="Sequence_46">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NSelectItem DisplayName="Reset ITDistribution" sap:VirtualizedContainerService.HintSize="338,157" sap2010:WorkflowViewState.IdRef="NSelectItem_27" Item="N" ScopeIdentifier="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V3">
+              <uix:NSelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="2">
+                  <x:String>N</x:String>
+                  <x:String>2N</x:String>
+                </scg:List>
+              </uix:NSelectItem.Items>
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.se.com/ww/en/work/solutions/system/s1/data-center-and-network-systems/trade-off-tools/data-center-capital-cost-calculator/" DesignTimeRectangle="152, 574, 81, 18" DesignTimeScaleFactor="1" ElementType="DropDown" FriendlyName="'N'" FullSelectorArgument="&lt;webctrl idx='8' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='SELECT' class='xc-htmlComboBox-selectEl' aaname='' /&gt;" Guid="a9728cee-3ed8-492b-b6ea-8621095b44cb" InformativeScreenshot="f74b9a766380d8b41b4af338adb16896.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Data Center Capital Cost Calculator' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="142, 556, 100, 14" ElementType="Text" FriendlyName="'IT distribution'" FullSelectorArgument="&lt;webctrl parentid='xc-label-div-xgen_7691' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='xc-label-div-xgen_7691' tag='DIV' type='' class='' aaname='IT distribution' check:innerText='IT distribution' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGgAAAASCAYAAAC3pZsGAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHfSURBVFhH7ZbNSgNBEIR9VvEi4kVCDv6CgnjwARQ8KHhR8KDgKwSE4BuoJ/VmbvE48i1W6LT7F7IywzIFy+5091TPVGV2sxIykkY2KHFkgxJHNihxLG3Q12QS9g6OwsvrW3FtbG6F1bX1P9f9w+PvjHKMx89hMNwp+M7OLxrr62qUm06/w/HJacG9CJgLB2BP7I91xUCnBlmwScRBpDawBrVBGxO7MCg2ohpkTxyClJ0gxNUpVJ6cPZnU7+4fzo25y6Cb27tZH/H6k0Efakejpxk3PL6OmPLiUh+b47kLRDOIeQiuTbIhb5DnJmbr7bPtpZyEEy88g+F2cffCyyDmMBcOYOuIWy5MZ576aD4xctQsi2gGeYHsuMogC2+QBAXKSTjVAeV8/zYGaa7AmMv3qVv3oohmEILo1wiqhCCu15PlszVlwjGWcPQSlLP9QJNB7x+fcyYA1fk+vTDIC2THXnDBCmdrfL3GEk45O/b9iWm9PKtP3boYc/XSIC8eG/XfoDIRbX3ZM9BYPbQO+Ow3qOobwlw4gF0D8bpvUK8MAtokr6/Lq+uiHj4rOHf9M7J8inNvMsj+i5OIQBzkqBE/NcThsQYBYuTUGyRtUMb/IhuUOLJBiSMblDiyQUkjhB8bwqaUSqgvHgAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+            <uix:NSelectItem DisplayName="Reset UPS" sap:VirtualizedContainerService.HintSize="338,157" sap2010:WorkflowViewState.IdRef="NSelectItem_28" Item="N" ScopeIdentifier="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V3">
+              <uix:NSelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="2">
+                  <x:String>N</x:String>
+                  <x:String>N+1</x:String>
+                </scg:List>
+              </uix:NSelectItem.Items>
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.se.com/ww/en/work/solutions/system/s1/data-center-and-network-systems/trade-off-tools/data-center-capital-cost-calculator/" DesignTimeRectangle="252, 574, 81, 18" DesignTimeScaleFactor="1" ElementType="DropDown" FriendlyName="'N'" FullSelectorArgument="&lt;webctrl idx='9' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='SELECT' class='xc-htmlComboBox-selectEl' aaname='' /&gt;" Guid="74109866-c8c4-430a-8916-00c9ce5d7eaf" InformativeScreenshot="e14283ac4e9b2c22315927bfac12746f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Data Center Capital Cost Calculator' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="244, 556, 89, 14" ElementType="Text" FriendlyName="'UPS'" FullSelectorArgument="&lt;webctrl parentid='xc-label-div-xgen_7692' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='xc-label-div-xgen_7692' tag='DIV' type='' class='' aaname='UPS' check:innerText='UPS' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAF0AAAASCAYAAAA5f9J6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEBSURBVFhH7ZaxCsIwEIZ9VnERcZHSQREHQRwEHRwUfAkF36L4Buob2K2OkT9wco3BOvUueB+ENMldh6/HNR1ntI5JF8CkC2DSBVAj/Xq7uywf+5mz2x/c8XT2z5i7vX5tDIajWk4YQ7maSE76YrlyVfX0a1AUl/cezrN84h5l6c8wY61NfPLSET+dzb1gxGJwYjnSJC+d76Hq0VK0SQ5JvqfzdgIgG9LpXOMHSL7Sm4i1HGnUSEe1ojdz6VS1v0jH3nqz/fho/EerBTXSSTCvSgjjV8KmSg/PY+/UgBrpgCRRP47dwb9JB4ihfAxtwoEq6f+CSRfApAtg0gUw6a3j3Avg/Im5fiE9BwAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+            <uix:NSelectItem DisplayName="Reset Generator" sap:VirtualizedContainerService.HintSize="338,157" sap2010:WorkflowViewState.IdRef="NSelectItem_29" Item="N" ScopeIdentifier="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V3">
+              <uix:NSelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="1">
+                  <x:String>N</x:String>
+                </scg:List>
+              </uix:NSelectItem.Items>
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.se.com/ww/en/work/solutions/system/s1/data-center-and-network-systems/trade-off-tools/data-center-capital-cost-calculator/" DesignTimeRectangle="353, 574, 81, 18" DesignTimeScaleFactor="1" ElementType="DropDown" FriendlyName="'N'" FullSelectorArgument="&lt;webctrl idx='10' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='SELECT' class='xc-htmlComboBox-selectEl' aaname='' /&gt;" Guid="25cff0a6-0d94-432c-b650-e7f6ed434d59" InformativeScreenshot="d62969bac1f3d90b317a2ade24685bc9.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Data Center Capital Cost Calculator' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="252, 574, 85, 18" ElementType="Text" FriendlyName="'N'" FullSelectorArgument="&lt;webctrl aaname='  N' idx='2' parentid='xc_root_canvas_container_xgen_5282' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='  N' type='' parentid='xc_root_canvas_container_xgen_5282' tag='DIV' class='xc-htmlComboBox-labelEl xc-htmlCombox-labelUnFocus' check:innerText='N' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFkAAAAWCAYAAACrBTAWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALESURBVFhH7ZjvS1pRGMf3H+abfr+JIv0HlMaKRUvZqDSGq8UQs2VJEagsa6EhqTPdUkeIREVEEFEE9aZeBd/xPXAv/jgXWk7vXpwHPhzP8RzRz3187j3nFVS0PJTkNkSD5MPDQ/j9fkxOTmJ8fFzxTOiL3uivPmok7+zswOPxoFAo4OnpSfEX3N7eCm/0R4/VoUvmFXC73Xh8fMTDw4PiBdDd1dWV8Fid0bpkpno2m8Xd3Z2iCe7v71GpVIRPLXTJrCknJye4vr5WNMHNzQ3Ozs6ETy10ySzeFxcXppHJZGCxWEQGVI/ZbDaUy+Waue3g/PxcJN3R0VEDHOf7snXk8vJS+NSiRvLp6alpJJNJdHR0oL+/H8ViUR+zWq16v10cHx+L0hkMBjE3Nwev16szPz+PtbU15PN5MU+2nhfAUDJriVnE43H09fVhdnZW/y4cGx4eFj+ofn6rKZVK+JT0YexgGqMHUzpjhWm8Lbnx5XcQ5UpZupbyDSXzg80iFouht7cX4XAYdrtd9MnQ0BBSqZR0TSvhv2fvxx7epTx4XfxQg7PwEZlSVrqOsLwZSmbGmEUkEkFPT49oycTEhGgHBwexu7srXdNq9vf3EU18w5v0ezh+uQSjP6ewmfsuna9B0YaSmTFmsb6+ju7ubtGyPzIyAqfTiYGBAWxvbzfMbxe8L/g3v8KRdcKecyGQDknnVZPL5YwlJxIJ01hZWUFXV5do2Y9Go+js7BTwdf38dsJ7A+uzO/UZccn79aTTaWPJW1tbphEIBIRQttoYM5ljGxsbNXP/d1jepJL58BwKhcSNR9EcPLuQbka4CWA95DOgojmWlpbk22oeaLhcLqyurmJ5eVnxQhYXF4VH6QERQ0vzmZkZURt9Pp/imXAnuLCwAIfDYXzUqQWvAFOdslm8Fc+DvuitOoO1aJCs4t+HktzyAP4AT2kKllVFRtIAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                      <uix:Target DesignTimeRectangle="334, 554, 108, 23" FriendlyName="'Generator'" FullSelectorArgument="&lt;webctrl id='xc-label-div-xgen_7693' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='xc-label-div-xgen_7693' tag='DIV' type='' class='xc-scrollable-content' aaname='' check:innerText='Generator' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHAAAAAbCAYAAACk0wvSAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJUSURBVGhD7Za9SwNBEMXvbxUbERsJFn4FPBALk1pB8j8oWATFMpWxSJEmGCsNCSGXJmcTGHlLngzrxXxJLovzYLjczO7s+n67iZGYgpYBDFwGMHAZwMBlAAOXAQxcuQNM0085v7iUre2d77i9u59U89XV9c3G7GWacgU4SBIpHBw5oyjmnp9fJpn8ZABnCObg9uEWaiGvoeKzfzt5c3VNz3ltv8nu3r7L40DgYEA4GIWDQ1fj2ujJHshjrs5xTcxljnO5j+PTM5df98HLDSD/cJozTajTLEKBSZzPGnI037/FAJs1DsK7BoyxPAh4cn9Za6OuP+eh3AHSZAgm6BM+GAzdU0OmqZzPGgCcFGNntA8FOdTw7td8oR9hcC0I87Ae1uU7+rx/dH7scZ3ayBtIswiQUBkw1j8APkB/Dm+dD4J99NgsgHjqeTwUBMh9rFsb+RvoA8wyZxbArL6QX/P3gPdlbiD3sW7lChCmwwQaBjFHs7TBrCGHd22cBshxrGE83pH3QWT1zwKIvr/9Bv5LgBSM0F9hNI3SdZr7G0CIhmOO/0+LBkhoGIfnw+PTdx370PvBXO6DYwygaSUZwMBlAAOXAQxcBjBwGcDAZQADVxTHsVQqFWk0GpPU3wk90RtrFItFizljESZRv9+Xer0u5XJZqtXqJL260As90Xs8HlssEIswiUajkaRpKp1OR0ql0p/cRPRAL/RFf4vFY14mUZIkghgOh9JsNt3VXVXoUavVXF+L5WMeJlG32xVEr9eTdrvtvn9XFXq0Wi3X12L5mM1E5AtC5yWzEKBReAAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+            <uix:NSelectItem DisplayName="Reset CRAH" sap:VirtualizedContainerService.HintSize="338,157" sap2010:WorkflowViewState.IdRef="NSelectItem_30" Item="N" ScopeIdentifier="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V3">
+              <uix:NSelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="3">
+                  <x:String>N</x:String>
+                  <x:String>N+1</x:String>
+                  <x:String>2N</x:String>
+                </scg:List>
+              </uix:NSelectItem.Items>
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.se.com/ww/en/work/solutions/system/s1/data-center-and-network-systems/trade-off-tools/data-center-capital-cost-calculator/" DesignTimeRectangle="152, 618, 80, 18" DesignTimeScaleFactor="1" ElementType="DropDown" FriendlyName="'N'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;select' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='SELECT' class='xc-htmlComboBox-selectEl' aaname='' /&gt;" Guid="29c335a0-ae11-46ef-a8c3-6552263dee46" InformativeScreenshot="f0ddbfd5c596a07cbf4ac621fbde7cec.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Data Center Capital Cost Calculator' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="145, 601, 93, 14" ElementType="Text" FriendlyName="'CRAH'" FullSelectorArgument="&lt;webctrl parentid='xc-label-div-xgen_7694' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='xc-label-div-xgen_7694' tag='DIV' type='' class='' aaname='CRAH' check:innerText='CRAH' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGEAAAASCAYAAABLsLDMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFGSURBVFhH7ZaxSgNBEIZ9VrERsZGQIiIWgqQQtLAw4Eso+ADBNlipXfQNTBfL0e+4iZNxc8bqtvg/WO5uZ/aK/8veZsdE70hCBUhCBUhCBVQhYTZ7st29/dW4u39oK2bzt3c7ODxaqzNuJrdtxw+8h17WROjN/fScnJ7Zx2LRzvRH7xJycMvlp52PL1YimB8MR2vBEtxgeNysdVh3eXXdjCgRJKGDHLgTAypJAELNOwYBzy+vv8KVhA42BRwp9ZR2AkJcCoHHmiR0sE0Q9JTOhLgL/FPkohAQQ+c+r2cgUhK+Q/vvTiDgHB61LCr2aCd0sOlMIBjmuWYJQKDUWe/POWSe4+cp1yUhwC+79O/IQytJIDg/E+J9BAEuShK2gADjpyQGVpIAhEz40+ljc81h0o9c3i0J4k8koQIkoQIkoQIkoXfMvgBO1XfVkNdIOAAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+            <uix:NSelectItem DisplayName="Reset Pumps" sap:VirtualizedContainerService.HintSize="338,157" sap2010:WorkflowViewState.IdRef="NSelectItem_31" Item="N" ScopeIdentifier="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V3">
+              <uix:NSelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="2">
+                  <x:String>N</x:String>
+                  <x:String>N+1</x:String>
+                </scg:List>
+              </uix:NSelectItem.Items>
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.se.com/ww/en/work/solutions/system/s1/data-center-and-network-systems/trade-off-tools/data-center-capital-cost-calculator/" DesignTimeRectangle="252, 618, 80, 18" DesignTimeScaleFactor="1" ElementType="DropDown" FriendlyName="'N'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;select' idx='2' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='xc-htmlComboBox-selectEl' tag='SELECT' aaname='' /&gt;" Guid="06997f08-7cdc-470a-90be-a9fac9e3adca" InformativeScreenshot="178cf94d474ff45a1cb70596ea1de7a2.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Data Center Capital Cost Calculator' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="242, 601, 92, 14" ElementType="Text" FriendlyName="'Pumps'" FullSelectorArgument="&lt;webctrl parentid='xc-label-div-xgen_7695' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='xc-label-div-xgen_7695' tag='DIV' type='' class='' aaname='Pumps' check:innerText='Pumps' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGAAAAASCAYAAACkctvyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE6SURBVFhH7ZWxagJBFEX9VrEJYiNiYQgWAUkhmCJFAvmBCBYK+QvJH5j8QexM+cJZvPIyQRYD+kYzB5adnbnzind2dhtWCKUICKYICKYICCZMwHzxas3W1Y+r3ena6v1jm/gfhAoY3Y1ts/nazpgtl2+/5i6drATw9t8Mb+1zvbbHp+cqA2TIIkjjl+msOjGcHHLkGff619X+fTlfTydP8xFkJcDP1QlQjjk1UWt+LCHI7fUH1Z116gNr5LhHkNU/QM2COgFa86cGtC/Ngda4JCCarE6Ap04AY6gToBz4mowl3mdOzVkIoLmcjr8IUI30WbCP/dSJIGsBWqfZelMPFaAa5PQPSOWS0f5Tk60AGsJbT+Mn9w+7ph8qgOf0U+Nr+/kIwgQcm1RUrhQBwVysgHOhCAimCAjF7BumZx5XdO6/PAAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+            <uix:NSelectItem DisplayName="Reset Chiller" sap:VirtualizedContainerService.HintSize="338,157" sap2010:WorkflowViewState.IdRef="NSelectItem_32" Item="N" ScopeIdentifier="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V3">
+              <uix:NSelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="2">
+                  <x:String>N</x:String>
+                  <x:String>N+1</x:String>
+                </scg:List>
+              </uix:NSelectItem.Items>
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.se.com/ww/en/work/solutions/system/s1/data-center-and-network-systems/trade-off-tools/data-center-capital-cost-calculator/" DesignTimeRectangle="353, 618, 80, 18" DesignTimeScaleFactor="1" ElementType="DropDown" FriendlyName="'N'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;select' idx='3' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='xc-htmlComboBox-selectEl' tag='SELECT' aaname='' /&gt;" Guid="7fa629a1-ccf9-4374-92e6-982b9b6495ab" InformativeScreenshot="42ff4eba1addf75eaf9e2917ec6a16b2.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Data Center Capital Cost Calculator' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="343, 601, 92, 14" ElementType="Text" FriendlyName="'Chiller'" FullSelectorArgument="&lt;webctrl parentid='xc-label-div-xgen_7696' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='xc-label-div-xgen_7696' tag='DIV' type='' class='' aaname='Chiller' check:innerText='Chiller' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGAAAAASCAYAAACkctvyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEpSURBVFhH7ZY9CsJAEIU9q9iI2EhIoYiFIBaCFhYKFgpeQMFbiDdQb2C6WI681YnjYshP4USYD4Jk9yXC+7LZ1MhQxQQoYwKUMQHKVELAbn+geqOZHMfj6TVDtFiu3LzP+XKl/mBItyhy+dF4QnF8T81XFXUBKCsIe65IgF+cs4Q8hZqAkvhlM36h683W5bA6cA7yrABkWu2Ou05KRj4Iu26Or9NCVcCziHcx30ChnOFCcV2WAIxLuRjnDMZwH9xDG3UBWU8gisMBkEM+jwCMSbl+Pkv8r/iLFcCvlKIC5MaOg596mdemknsASprO5h+FgqIC0ko2AQKUJVcBS+HSywrw5cr/MQEeKEe+KrhwUFYAQIa/guSmawKMBBOgjAlQxgQoYwJUIXoAq8sp47AHtckAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+            <uix:NSelectItem DisplayName="Reset HeatRejection" sap:VirtualizedContainerService.HintSize="338,157" sap2010:WorkflowViewState.IdRef="NSelectItem_33" Item="N" ScopeIdentifier="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V3">
+              <uix:NSelectItem.Items>
+                <scg:List x:TypeArguments="x:String" Capacity="2">
+                  <x:String>N</x:String>
+                  <x:String>N+1</x:String>
+                </scg:List>
+              </uix:NSelectItem.Items>
+              <uix:NSelectItem.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.se.com/ww/en/work/solutions/system/s1/data-center-and-network-systems/trade-off-tools/data-center-capital-cost-calculator/" DesignTimeRectangle="567, 771, 100, 23" DesignTimeScaleFactor="1.25" ElementType="DropDown" FriendlyName="'N'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;select' idx='4' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='xc-htmlComboBox-selectEl' tag='SELECT' aaname='' /&gt;" Guid="5da1cfa2-a66e-4d7b-b4fd-fd01eb28c21a" InformativeScreenshot="52d196525515b081d0098ceced0d3886.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Data Center Capital Cost Calculator' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                      <uix:Target DesignTimeRectangle="440, 771, 105, 23" ElementType="Text" FriendlyName="'N'" FullSelectorArgument="&lt;webctrl aaname='  N' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='3' parentid='xc_root_canvas_container_xgen_5282' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='  N' type='' class='xc-htmlComboBox-labelEl xc-htmlCombox-labelUnFocus' parentid='xc_root_canvas_container_xgen_5282' tag='DIV' check:innerText='N' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAG0AAAAbCAYAAAB2gwGKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAP2SURBVGhD7ZrZSyNJHMf3f/Ndn0XFAy8URV13l4kwIksmO0lc4yA4mrAqq4l4Esc1GhWPuGqMromDBx54K/ogij4oIt+dby0Jaa2et7VL6B98oLuOplOfOrqr8wPMeHNhSnuDIZW2urqK9vZ2WK1W1NbWmrwybHe2Pz3IQiPt8fERXq8X9fX1mJ+fx9nZGZ6enkxeGbb73Nwc7Ha78EEvyaGRxgIDAwO4vb3F/f29iYE8PDzg7u4Ovb29wktyJKRxKDY0NOD6+lpIMzEeSru5uYHL5dJMlQlpnEOXlpZwdXVlohAcRIuLi8JPPBLSuPhtb2/j4uJCSXhvWVlZsNlsL/I6OjpQXV2No6OjF3lvncvLS/Hb6SceCWl8ajk5OVGW9fV1ZGZmIiUlBaOjo5q8trY2VFVVYW9vT5NuFMfHxwJ2ooODAymHh4cin7Cs7Drk9PQU5+fnwk88NNL29/eVJRaLoaioCBaLBRkZGeI8nufxeFBZWYmtrS1NHaNg5+G9cB3iksPp7TnhcBjRaFSUY3nZdQgFU6yutJ2dHWVZWVlBYWGhGGUVFRWoq6tL5LW2too0jsbkOkbAqYwiKKtrwIvGjiY4PQ1wuH/XwPTOYR+C4Ul83fwq6smut7u7K+TpStvY2FAW9syCggKMj48L0tLS0N/fL/Kam5tRXl4ueu7zekbAzsNR1hccxPuwEzUxhy6uqAex9Zj0OmRzc1MI1ZXGKUdV+LKZn5+PkZERcd7U1IT09HSRzuOysjJEIpEX9YyC0rhB8TnwB94t/4Z3qx9fYP3nE/6OLkjrx1lbWxPydKUtLy8ry/T0NPLy8jA0NCTO2SClpaWoqalBY2OjOGba83pGwQ7EKXJychL2vz7h58gH/LJiS2CJfMSXcECUk9WPw2WB8nSlLSwsKAunxNzcXLFjE0/jcWpqKnJyclBSUoKZmRlNHaNhJwqFQvB/62i1Y3b8FLH+x5IV7vk/Rb6sXjJ8aKE4XWmzs7PKEggEhJyenh5NusPhEK8BxcXFolcn56kAOxLvy+vvhiVkw4+Lv6I+9BnT39Jl5Z9D6RSnK40XVxVOi9nZ2WIfLjmdT5N8FSA8Ts5ThYmJCQSDQfjGe2ENuTAyEZCWkzE1NSXWbV1pY2NjJv8T7FBElvc9uCxwPdeVNjw8bKIYfFrmSJVK496Wz+fD4OCgiUL4/X7xwCXde+QucldXl1joTdShr69PrOPSXX6+DDqdTnR2dgp5JmrQ3d0tvmBLv6cxaJS7C7Rqogb0ofvlmhH/jwjffWiZG7Fut9vklWlpaRHtTw/08d3/iMSDQ5GWufjxqcXkdWG7s/2Tp8TkkEozQ+0wpb25AP4FKTgO8R7ICPEAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                      <uix:Target DesignTimeRectangle="555, 750, 114, 17" ElementType="Text" FriendlyName="'Heat rejection'" FullSelectorArgument="&lt;webctrl parentid='xc-label-div-xgen_7697' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='xc-label-div-xgen_7697' tag='DIV' type='' class='' aaname='Heat rejection' check:innerText='Heat rejection' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHYAAAAVCAYAAACTxxrlAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAJPSURBVGhD7ZbPShxBEMbzrJJLEC9BPETEgxBy8AEM+AIGclDIEyTkpL6BmzfQmx5bf8t+5KOs+bOzjq6984NmZ7qqq7rq62n9UCaqZBK2UiZhK2UStlImYStlkLDnF7/K12/H5f7+YTHzn8ur67K7t19u7+4WM6tDrNns3+LtZWirYQjsTzXfPD3v7n2Z/74Vay8scYhH3HVljMO8KpOwL8DGCnvy/bRsffw0H9s7n59dUW53H4mqefwi+BwcHpWzHz/nPp67LW+sgV/e5R9riHbFo17NMXhnPl7FffaiGhirHpRRhVUzXBDsXlhTgzVHHOKxLkP2LEbfvIrBnOA51uE53O41gwvbtDbuBTGVX2uyg9yXwcLqZGVDRbJxviYVLNhw26aJr0awlnhdwqop0Cev5yC2Nx7UXPxcqIw2YbO1Hhv49fXg+xvCqF8sz5nwjChs9FV8CYc9I7P3yes18Jz5MrARLzbeiXYXs2ktcbO9iGxuGUYVFr+2hgA+NLDrmiRuRmbvm1c5aHBbE5vEEdHeR1hyvltheY7/KDisJw7xHG80cYhHrIzM3pUXvAaes+YLFyrDawb3z9bGurN+ZnPL8Cr/PLmvhCCG7Dq5wDxfsNbIh/mMTNiuvOA1yOb7QAgOB3EVL9qbxPP3bC/kbrqhRDa3DKMKCyos/t0Saqps+P7+8/dZ4bLFnJmw0JU31hD3wcgOi2y+P7cR14UVHIpsLcS9QDa3DIOErYFVG7fubKywfEF+tdbGxgnLFchVGK/D2tjYL7Z2JmGrpJRH6gKMhuYWJ8wAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NSelectItem.Target>
+            </uix:NSelectItem>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAUaSURBVFhHtVdrbFRFFB6w2ooaRRGwasRHbLH03rm72BTFtFRQE/WHNkZCotHEdyJKUiOJJtLID7TGLbv3sdtSKdRoUrUh9YlRUVAkgApBaSEilaJGC1seIm2lO35n7txlH3e7BcuXfLm7d2fON+fMOWdm2ZgjfF0hW62dJ7muukC9PYMIBS9jjlHLbB7C8zNm6V3M4j2SNt+OZwfeL2QhPk3NGCNY+hwItIF/sqaAYM1gkyFYFHQU6bP3m2McYA5fyhoQmf+FsHYLDH8MYwllWMDL/KRxKzDeQpReC05S1k4BZukl8NaEoSHplZ/IaEiLMPX3WSx4trI8Clj6bHi8Q062fYymUR+BagxFztYfVtbzwDIeZFF+hMVyhRqGwzcItrwUnpWLs+ygLwucoBhnKxtky9S/yx+FiL4I4sM59zlcJsbjWbPmURHa9qZYt3+L+KGv25df/bZVTGqphrDmRfFfZgc0peQDiz8lszhXyJdPF9rbtWLtvo1iNNh+YLcosCl31FZQHpnGfKWWAVO/B+LDMlR+CwhPh9ePiL/+iSvz+dG8s8PdJs8G5YGp1yvFFESMYgzYhLBTM/kFgw6mLSIyQ1zTdqf441ifMp2NweEhsau/R3TF90p29+8V89c+L6OWtCMjgOaVhfayc5AcFzKr7Hw8J2Bwe1rZIeFauzuVlD/sH9tFEUJdGK2QLIpVnExAj24lPKFUc2AZLQSdzktCZPnUlbeK+MBhJeWPuz9cCG9LKMQkgrkpJUikiFJ+mXyeUgKsG6dicD0GLJU0jZfxfCutArD3t3U+qWT8ER84Iopb58nFupHT22BrVhZtrVJGOAmLN7LVMwVrCZ5kZsdrLBEvbY4qKX98iXIbR6VG42NGgkUCNUphBMTQm02+Dd1uPya6NHkvnscyEzBf2dVvicqFynkm/xsRuJ9FtBrmKNJn25jLwsalSh2gjmSXT8SReVGSDdpkGPhJ7hWJw6uJK6pGzP4EOAdNSXZGb9G0hal0O+pR1qxdrdRzwA4EMeFE0hCMzu54SCQSJOMPWtzFLVVysb7iRHkickupAK+UXIAXdUjAF5G1Li3+AhLlk6T3RIS17puQkvLHBz3rsU1lSlzOewbhrkqjw6tltJMI6xUy2WhlVJseHXgRQSZ7bLxedOz5XEn547mNIXf/yVPL2MeWoKfkhc3vy8z28ejZV6y6XVy56g6XKKuaNY+JvuP9SiobAycGRRnOBhkBedrxr2HrJnh8M4uATfA+4rfvjv649NhbAE64yncfkM3m0ODRJIcTw0rKH69+35qefBZuTFQJXtNxjEPQMpRqCqyMBSCEi78NK7OjQ2tXpyikk85LvlTSdtDBZvMFSjEDVuDetC1ArX/au0mZHhm/I+sXbWjAnQCt1k+cvHe74WKl5gNHm4GBQ3IwjFAZ7YzvkfudSTp+fz7cKz7q2SCeXr9MFK+cq25CGb2eSFXg3nx8jtxU0Oln4f7uNghcnWaKKThwprxRk8XJ4IRYpYySdwVLE/VIex4zBpGIzyqVPKCBboNwSeEk4/Lp0fvu420qKZ+ixq8Yd5eyPgrQ2W/xzWnJeKqkCMps5++Ap/EvKFJeiozdnRaJfJRJBlFKNMfYCtYqa6cJ07gKXrwnS8cNpSuSSnpHgvS7zQfBL8AFbMm0ImVlDED/+xzeBMM7wIP4flzS5nFwF9psJ67rdThSdTXjDIGO6Rj+/caC10o6+uXs9Vnnql/HAIz9ByOLClnOoTmZAAAAAElFTkSuQmCC" InformativeScreenshot="a0f21fa6beda3282af863f052e370399.jpg" Selector="&lt;html app='chrome.exe' title='Data Center Capital Cost Calculator' /&gt;" Title="Data Center Capital Cost Calculator" Url="https://www.se.com/ww/en/work/solutions/system/s1/data-center-and-network-systems/trade-off-tools/data-center-capital-cost-calculator/" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Screenshot for name" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -162,13 +309,13 @@
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - IT distribution" sap:VirtualizedContainerService.HintSize="337.6,172" sap2010:WorkflowViewState.IdRef="GetOCRText_1">
+            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - IT distribution" sap:VirtualizedContainerService.HintSize="338,172" sap2010:WorkflowViewState.IdRef="GetOCRText_1">
               <ui:GetOCRText.OCREngine>
                 <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
                   <ActivityFunc.Argument>
                     <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
                   </ActivityFunc.Argument>
-                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,24.8" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_1" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
+                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_1" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
                 </ActivityFunc>
               </ui:GetOCRText.OCREngine>
               <ui:GetOCRText.Target>
@@ -185,13 +332,13 @@
                 <OutArgument x:TypeArguments="x:String">[ITdistribution]</OutArgument>
               </ui:GetOCRText.Text>
             </ui:GetOCRText>
-            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - UPS" sap:VirtualizedContainerService.HintSize="337.6,172" sap2010:WorkflowViewState.IdRef="GetOCRText_2">
+            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - UPS" sap:VirtualizedContainerService.HintSize="338,172" sap2010:WorkflowViewState.IdRef="GetOCRText_2">
               <ui:GetOCRText.OCREngine>
                 <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
                   <ActivityFunc.Argument>
                     <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
                   </ActivityFunc.Argument>
-                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,24.8" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_3" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
+                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_3" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
                 </ActivityFunc>
               </ui:GetOCRText.OCREngine>
               <ui:GetOCRText.Target>
@@ -208,13 +355,13 @@
                 <OutArgument x:TypeArguments="x:String">[UPS]</OutArgument>
               </ui:GetOCRText.Text>
             </ui:GetOCRText>
-            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - Generator" sap:VirtualizedContainerService.HintSize="337.6,172" sap2010:WorkflowViewState.IdRef="GetOCRText_3">
+            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - Generator" sap:VirtualizedContainerService.HintSize="338,172" sap2010:WorkflowViewState.IdRef="GetOCRText_3">
               <ui:GetOCRText.OCREngine>
                 <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
                   <ActivityFunc.Argument>
                     <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
                   </ActivityFunc.Argument>
-                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,24.8" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_4" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
+                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_4" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
                 </ActivityFunc>
               </ui:GetOCRText.OCREngine>
               <ui:GetOCRText.Target>
@@ -231,7 +378,7 @@
                 <OutArgument x:TypeArguments="x:String">[Generator]</OutArgument>
               </ui:GetOCRText.Text>
             </ui:GetOCRText>
-            <Assign DisplayName="Assign - PowerRedundancy " sap:VirtualizedContainerService.HintSize="337.6,61.6" sap2010:WorkflowViewState.IdRef="Assign_2">
+            <Assign DisplayName="Assign - PowerRedundancy " sap:VirtualizedContainerService.HintSize="338,62" sap2010:WorkflowViewState.IdRef="Assign_2">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[PowerRedundancy]</OutArgument>
               </Assign.To>
@@ -239,13 +386,13 @@
                 <InArgument x:TypeArguments="x:String">[ITdistribution + "_"+UPS+"_"+Generator]</InArgument>
               </Assign.Value>
             </Assign>
-            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - CRAH" sap:VirtualizedContainerService.HintSize="337.6,172" sap2010:WorkflowViewState.IdRef="GetOCRText_4">
+            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - CRAH" sap:VirtualizedContainerService.HintSize="338,172" sap2010:WorkflowViewState.IdRef="GetOCRText_4">
               <ui:GetOCRText.OCREngine>
                 <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
                   <ActivityFunc.Argument>
                     <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
                   </ActivityFunc.Argument>
-                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,24.8" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_5" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
+                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_5" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
                 </ActivityFunc>
               </ui:GetOCRText.OCREngine>
               <ui:GetOCRText.Target>
@@ -262,13 +409,13 @@
                 <OutArgument x:TypeArguments="x:String">[CRAH]</OutArgument>
               </ui:GetOCRText.Text>
             </ui:GetOCRText>
-            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - Pumps" sap:VirtualizedContainerService.HintSize="337.6,172" sap2010:WorkflowViewState.IdRef="GetOCRText_5">
+            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - Pumps" sap:VirtualizedContainerService.HintSize="338,172" sap2010:WorkflowViewState.IdRef="GetOCRText_5">
               <ui:GetOCRText.OCREngine>
                 <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
                   <ActivityFunc.Argument>
                     <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
                   </ActivityFunc.Argument>
-                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,24.8" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_6" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
+                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_6" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
                 </ActivityFunc>
               </ui:GetOCRText.OCREngine>
               <ui:GetOCRText.Target>
@@ -285,13 +432,13 @@
                 <OutArgument x:TypeArguments="x:String">[Pumps]</OutArgument>
               </ui:GetOCRText.Text>
             </ui:GetOCRText>
-            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - Chiller" sap:VirtualizedContainerService.HintSize="337.6,172" sap2010:WorkflowViewState.IdRef="GetOCRText_6">
+            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - Chiller" sap:VirtualizedContainerService.HintSize="338,172" sap2010:WorkflowViewState.IdRef="GetOCRText_6">
               <ui:GetOCRText.OCREngine>
                 <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
                   <ActivityFunc.Argument>
                     <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
                   </ActivityFunc.Argument>
-                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,24.8" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_7" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
+                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_7" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
                 </ActivityFunc>
               </ui:GetOCRText.OCREngine>
               <ui:GetOCRText.Target>
@@ -308,13 +455,13 @@
                 <OutArgument x:TypeArguments="x:String">[Chiller]</OutArgument>
               </ui:GetOCRText.Text>
             </ui:GetOCRText>
-            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - HeatRejection" sap:VirtualizedContainerService.HintSize="337.6,172" sap2010:WorkflowViewState.IdRef="GetOCRText_7">
+            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - HeatRejection" sap:VirtualizedContainerService.HintSize="338,172" sap2010:WorkflowViewState.IdRef="GetOCRText_7">
               <ui:GetOCRText.OCREngine>
                 <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
                   <ActivityFunc.Argument>
                     <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
                   </ActivityFunc.Argument>
-                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,24.8" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_8" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
+                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_8" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
                 </ActivityFunc>
               </ui:GetOCRText.OCREngine>
               <ui:GetOCRText.Target>
@@ -361,20 +508,20 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="1-1-1-2" sap:VirtualizedContainerService.HintSize="337.6,52.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="1-1-1-2" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,272.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,272" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NSelectItem DisplayName="Select Item 'N'" sap:VirtualizedContainerService.HintSize="337.6,157.6" sap2010:WorkflowViewState.IdRef="NSelectItem_7" Item="N+1" ScopeIdentifier="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V3">
+            <uix:NSelectItem DisplayName="Select Item 'N'" sap:VirtualizedContainerService.HintSize="338,157" sap2010:WorkflowViewState.IdRef="NSelectItem_7" Item="N+1" ScopeIdentifier="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V3">
               <uix:NSelectItem.Items>
                 <scg:List x:TypeArguments="x:String" Capacity="2">
                   <x:String>N</x:String>
@@ -384,7 +531,7 @@
               <uix:NSelectItem.Target>
                 <uix:TargetAnchorable BrowserURL="https://www.se.com/ww/en/work/solutions/system/s1/data-center-and-network-systems/trade-off-tools/data-center-capital-cost-calculator/" DesignTimeRectangle="567, 771, 100, 23" DesignTimeScaleFactor="1.25" ElementType="DropDown" FriendlyName="'N'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;select' idx='4' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='xc-htmlComboBox-selectEl' tag='SELECT' aaname='' /&gt;" Guid="5da1cfa2-a66e-4d7b-b4fd-fd01eb28c21a" InformativeScreenshot="52d196525515b081d0098ceced0d3886.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Data Center Capital Cost Calculator' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
                       <uix:Target DesignTimeRectangle="440, 771, 105, 23" ElementType="Text" FriendlyName="'N'" FullSelectorArgument="&lt;webctrl aaname='  N' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='3' parentid='xc_root_canvas_container_xgen_5282' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='  N' type='' class='xc-htmlComboBox-labelEl xc-htmlCombox-labelUnFocus' parentid='xc_root_canvas_container_xgen_5282' tag='DIV' check:innerText='N' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAG0AAAAbCAYAAAB2gwGKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAP2SURBVGhD7ZrZSyNJHMf3f/Ndn0XFAy8URV13l4kwIksmO0lc4yA4mrAqq4l4Esc1GhWPuGqMromDBx54K/ogij4oIt+dby0Jaa2et7VL6B98oLuOplOfOrqr8wPMeHNhSnuDIZW2urqK9vZ2WK1W1NbWmrwybHe2Pz3IQiPt8fERXq8X9fX1mJ+fx9nZGZ6enkxeGbb73Nwc7Ha78EEvyaGRxgIDAwO4vb3F/f29iYE8PDzg7u4Ovb29wktyJKRxKDY0NOD6+lpIMzEeSru5uYHL5dJMlQlpnEOXlpZwdXVlohAcRIuLi8JPPBLSuPhtb2/j4uJCSXhvWVlZsNlsL/I6OjpQXV2No6OjF3lvncvLS/Hb6SceCWl8ajk5OVGW9fV1ZGZmIiUlBaOjo5q8trY2VFVVYW9vT5NuFMfHxwJ2ooODAymHh4cin7Cs7Drk9PQU5+fnwk88NNL29/eVJRaLoaioCBaLBRkZGeI8nufxeFBZWYmtrS1NHaNg5+G9cB3iksPp7TnhcBjRaFSUY3nZdQgFU6yutJ2dHWVZWVlBYWGhGGUVFRWoq6tL5LW2too0jsbkOkbAqYwiKKtrwIvGjiY4PQ1wuH/XwPTOYR+C4Ul83fwq6smut7u7K+TpStvY2FAW9syCggKMj48L0tLS0N/fL/Kam5tRXl4ueu7zekbAzsNR1hccxPuwEzUxhy6uqAex9Zj0OmRzc1MI1ZXGKUdV+LKZn5+PkZERcd7U1IT09HSRzuOysjJEIpEX9YyC0rhB8TnwB94t/4Z3qx9fYP3nE/6OLkjrx1lbWxPydKUtLy8ry/T0NPLy8jA0NCTO2SClpaWoqalBY2OjOGba83pGwQ7EKXJychL2vz7h58gH/LJiS2CJfMSXcECUk9WPw2WB8nSlLSwsKAunxNzcXLFjE0/jcWpqKnJyclBSUoKZmRlNHaNhJwqFQvB/62i1Y3b8FLH+x5IV7vk/Rb6sXjJ8aKE4XWmzs7PKEggEhJyenh5NusPhEK8BxcXFolcn56kAOxLvy+vvhiVkw4+Lv6I+9BnT39Jl5Z9D6RSnK40XVxVOi9nZ2WIfLjmdT5N8FSA8Ts5ThYmJCQSDQfjGe2ENuTAyEZCWkzE1NSXWbV1pY2NjJv8T7FBElvc9uCxwPdeVNjw8bKIYfFrmSJVK496Wz+fD4OCgiUL4/X7xwCXde+QucldXl1joTdShr69PrOPSXX6+DDqdTnR2dgp5JmrQ3d0tvmBLv6cxaJS7C7Rqogb0ofvlmhH/jwjffWiZG7Fut9vklWlpaRHtTw/08d3/iMSDQ5GWufjxqcXkdWG7s/2Tp8TkkEozQ+0wpb25AP4FKTgO8R7ICPEAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
                       <uix:Target DesignTimeRectangle="555, 750, 114, 17" ElementType="Text" FriendlyName="'Heat rejection'" FullSelectorArgument="&lt;webctrl parentid='xc-label-div-xgen_7697' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='xc-label-div-xgen_7697' tag='DIV' type='' class='' aaname='Heat rejection' check:innerText='Heat rejection' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHYAAAAVCAYAAACTxxrlAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAJPSURBVGhD7ZbPShxBEMbzrJJLEC9BPETEgxBy8AEM+AIGclDIEyTkpL6BmzfQmx5bf8t+5KOs+bOzjq6984NmZ7qqq7rq62n9UCaqZBK2UiZhK2UStlImYStlkLDnF7/K12/H5f7+YTHzn8ur67K7t19u7+4WM6tDrNns3+LtZWirYQjsTzXfPD3v7n2Z/74Vay8scYhH3HVljMO8KpOwL8DGCnvy/bRsffw0H9s7n59dUW53H4mqefwi+BwcHpWzHz/nPp67LW+sgV/e5R9riHbFo17NMXhnPl7FffaiGhirHpRRhVUzXBDsXlhTgzVHHOKxLkP2LEbfvIrBnOA51uE53O41gwvbtDbuBTGVX2uyg9yXwcLqZGVDRbJxviYVLNhw26aJr0awlnhdwqop0Cev5yC2Nx7UXPxcqIw2YbO1Hhv49fXg+xvCqF8sz5nwjChs9FV8CYc9I7P3yes18Jz5MrARLzbeiXYXs2ktcbO9iGxuGUYVFr+2hgA+NLDrmiRuRmbvm1c5aHBbE5vEEdHeR1hyvltheY7/KDisJw7xHG80cYhHrIzM3pUXvAaes+YLFyrDawb3z9bGurN+ZnPL8Cr/PLmvhCCG7Dq5wDxfsNbIh/mMTNiuvOA1yOb7QAgOB3EVL9qbxPP3bC/kbrqhRDa3DKMKCyos/t0Saqps+P7+8/dZ4bLFnJmw0JU31hD3wcgOi2y+P7cR14UVHIpsLcS9QDa3DIOErYFVG7fubKywfEF+tdbGxgnLFchVGK/D2tjYL7Z2JmGrpJRH6gKMhuYWJ8wAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
                     </scg:List>
@@ -405,7 +552,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Screenshot for name" sap:VirtualizedContainerService.HintSize="337.6,52.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_18" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Screenshot for name" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_18" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -421,13 +568,13 @@
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - IT distribution" sap:VirtualizedContainerService.HintSize="337.6,172" sap2010:WorkflowViewState.IdRef="GetOCRText_101">
+            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - IT distribution" sap:VirtualizedContainerService.HintSize="338,172" sap2010:WorkflowViewState.IdRef="GetOCRText_101">
               <ui:GetOCRText.OCREngine>
                 <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
                   <ActivityFunc.Argument>
                     <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
                   </ActivityFunc.Argument>
-                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,24.8" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_102" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
+                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_102" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
                 </ActivityFunc>
               </ui:GetOCRText.OCREngine>
               <ui:GetOCRText.Target>
@@ -444,13 +591,13 @@
                 <OutArgument x:TypeArguments="x:String">[ITdistribution]</OutArgument>
               </ui:GetOCRText.Text>
             </ui:GetOCRText>
-            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - UPS" sap:VirtualizedContainerService.HintSize="337.6,172" sap2010:WorkflowViewState.IdRef="GetOCRText_102">
+            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - UPS" sap:VirtualizedContainerService.HintSize="338,172" sap2010:WorkflowViewState.IdRef="GetOCRText_102">
               <ui:GetOCRText.OCREngine>
                 <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
                   <ActivityFunc.Argument>
                     <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
                   </ActivityFunc.Argument>
-                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,24.8" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_103" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
+                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_103" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
                 </ActivityFunc>
               </ui:GetOCRText.OCREngine>
               <ui:GetOCRText.Target>
@@ -467,13 +614,13 @@
                 <OutArgument x:TypeArguments="x:String">[UPS]</OutArgument>
               </ui:GetOCRText.Text>
             </ui:GetOCRText>
-            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - Generator" sap:VirtualizedContainerService.HintSize="337.6,172" sap2010:WorkflowViewState.IdRef="GetOCRText_103">
+            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - Generator" sap:VirtualizedContainerService.HintSize="338,172" sap2010:WorkflowViewState.IdRef="GetOCRText_103">
               <ui:GetOCRText.OCREngine>
                 <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
                   <ActivityFunc.Argument>
                     <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
                   </ActivityFunc.Argument>
-                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,24.8" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_104" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
+                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_104" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
                 </ActivityFunc>
               </ui:GetOCRText.OCREngine>
               <ui:GetOCRText.Target>
@@ -490,7 +637,7 @@
                 <OutArgument x:TypeArguments="x:String">[Generator]</OutArgument>
               </ui:GetOCRText.Text>
             </ui:GetOCRText>
-            <Assign DisplayName="Assign - PowerRedundancy " sap:VirtualizedContainerService.HintSize="337.6,61.6" sap2010:WorkflowViewState.IdRef="Assign_31">
+            <Assign DisplayName="Assign - PowerRedundancy " sap:VirtualizedContainerService.HintSize="338,62" sap2010:WorkflowViewState.IdRef="Assign_31">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[PowerRedundancy]</OutArgument>
               </Assign.To>
@@ -498,13 +645,13 @@
                 <InArgument x:TypeArguments="x:String">[ITdistribution + "_"+UPS+"_"+Generator]</InArgument>
               </Assign.Value>
             </Assign>
-            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - CRAH" sap:VirtualizedContainerService.HintSize="337.6,172" sap2010:WorkflowViewState.IdRef="GetOCRText_104">
+            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - CRAH" sap:VirtualizedContainerService.HintSize="338,172" sap2010:WorkflowViewState.IdRef="GetOCRText_104">
               <ui:GetOCRText.OCREngine>
                 <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
                   <ActivityFunc.Argument>
                     <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
                   </ActivityFunc.Argument>
-                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,24.8" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_105" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
+                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_105" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
                 </ActivityFunc>
               </ui:GetOCRText.OCREngine>
               <ui:GetOCRText.Target>
@@ -521,13 +668,13 @@
                 <OutArgument x:TypeArguments="x:String">[CRAH]</OutArgument>
               </ui:GetOCRText.Text>
             </ui:GetOCRText>
-            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - Pumps" sap:VirtualizedContainerService.HintSize="337.6,172" sap2010:WorkflowViewState.IdRef="GetOCRText_105">
+            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - Pumps" sap:VirtualizedContainerService.HintSize="338,172" sap2010:WorkflowViewState.IdRef="GetOCRText_105">
               <ui:GetOCRText.OCREngine>
                 <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
                   <ActivityFunc.Argument>
                     <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
                   </ActivityFunc.Argument>
-                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,24.8" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_106" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
+                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_106" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
                 </ActivityFunc>
               </ui:GetOCRText.OCREngine>
               <ui:GetOCRText.Target>
@@ -544,13 +691,13 @@
                 <OutArgument x:TypeArguments="x:String">[Pumps]</OutArgument>
               </ui:GetOCRText.Text>
             </ui:GetOCRText>
-            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - Chiller" sap:VirtualizedContainerService.HintSize="337.6,172" sap2010:WorkflowViewState.IdRef="GetOCRText_106">
+            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - Chiller" sap:VirtualizedContainerService.HintSize="338,172" sap2010:WorkflowViewState.IdRef="GetOCRText_106">
               <ui:GetOCRText.OCREngine>
                 <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
                   <ActivityFunc.Argument>
                     <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
                   </ActivityFunc.Argument>
-                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,24.8" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_107" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
+                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_107" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
                 </ActivityFunc>
               </ui:GetOCRText.OCREngine>
               <ui:GetOCRText.Target>
@@ -567,7 +714,7 @@
                 <OutArgument x:TypeArguments="x:String">[Chiller]</OutArgument>
               </ui:GetOCRText.Text>
             </ui:GetOCRText>
-            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - HeatRejection" sap:VirtualizedContainerService.HintSize="337.6,172" sap2010:WorkflowViewState.IdRef="GetOCRText_107">
+            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - HeatRejection" sap:VirtualizedContainerService.HintSize="338,172" sap2010:WorkflowViewState.IdRef="GetOCRText_107">
               <ui:GetOCRText.OCREngine>
                 <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
                   <ActivityFunc.Argument>
@@ -620,20 +767,20 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="1-1-2-2" sap:VirtualizedContainerService.HintSize="337.6,52.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="1-1-2-2" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,272.8" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,272" sap2010:WorkflowViewState.IdRef="Sequence_5">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NSelectItem DisplayName="Select Item 'N'" sap:VirtualizedContainerService.HintSize="337.6,157.6" sap2010:WorkflowViewState.IdRef="NSelectItem_8" Item="N+1" ScopeIdentifier="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V3">
+            <uix:NSelectItem DisplayName="Select Item 'N'" sap:VirtualizedContainerService.HintSize="338,157" sap2010:WorkflowViewState.IdRef="NSelectItem_8" Item="N+1" ScopeIdentifier="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V3">
               <uix:NSelectItem.Items>
                 <scg:List x:TypeArguments="x:String" Capacity="2">
                   <x:String>N</x:String>
@@ -643,7 +790,7 @@
               <uix:NSelectItem.Target>
                 <uix:TargetAnchorable BrowserURL="https://www.se.com/ww/en/work/solutions/system/s1/data-center-and-network-systems/trade-off-tools/data-center-capital-cost-calculator/" DesignTimeRectangle="440, 771, 100, 23" DesignTimeScaleFactor="1.25" ElementType="DropDown" FriendlyName="'N'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;select' idx='3' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='xc-htmlComboBox-selectEl' tag='SELECT' aaname='' /&gt;" Guid="0a711906-94f2-4524-9cf4-1eb47802ece5" InformativeScreenshot="a04ff84fd56fba2996109d9cce5f93fe.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Data Center Capital Cost Calculator' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
                       <uix:Target DesignTimeRectangle="314, 771, 105, 23" ElementType="Text" FriendlyName="'N'" FullSelectorArgument="&lt;webctrl aaname='  N' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='2' parentid='xc_root_canvas_container_xgen_5282' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='  N' type='' class='xc-htmlComboBox-labelEl xc-htmlCombox-labelUnFocus' parentid='xc_root_canvas_container_xgen_5282' tag='DIV' check:innerText='N' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAG0AAAAbCAYAAAB2gwGKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAPZSURBVGhD7ZpbSyNJGIb3v3mtXgrivaIoKi7DzCJeSBjHeCasRAMxRKPrkThu8EhMdD0nMYKH8XwWvRBFLxSRd32/ISHtVHu3plz6gwe7v1RXsJ6q7qrq/AYrPlxY0j5gKKXFYjF0dHTAZrOhqqrK4p1hu7P96UEVBmlPT0/w+Xyor6/H3Nwczs/P8fz8bPHOsN1nZ2dRW1srPuglNQzSWGBwcBB3d3d4eHiwSCOPj4+4v79HX1+feEmNpDQOxcbGRtzc3Ig0i/RDabe3t2hqajLcKpPSeA9dWlrC9fW1hUZwEC0sLIifRCSl8eG3vb2Ny8tLLZmYmEBGRob8Tc0fHx+joqICHo/HkP+/cHV1JV7oJxFJaZy1nJ6easvo6KhIy8vLw/r6ejK/t7eH8vJyuN1uQ/l0cnJyIp3p6OgIh4eHSvgZy7Csqo4EZ2dnuLi4ED+JMEg7ODjQlpGREeTn5wvV1dXJ/NbWFsrKyuByuQzl08X+/r50pI2NDUSjUSwuLsrt7TV8FMXjcRlFvEZVF6FgyjWVtrOzoy1+vx+lpaUy4rKzs+WceY465tva2n65Jh1QAjvSzMuU3d3vQaO7Bfb2BgN1rkY4OlvRM9qH6UgYWz9+KOsiu7u7Is9UGnuHrgwMDKCkpASrq6tobW1Fbm6u9GKeM8+c6rp0wI4UiUTgnOzAl6gdf8RNWLXDFx+U8qp6yObmpnQEU2kcrrrS29uL4uJiLC8vCzyurKxMHjscDuV16YAdiVP0UDiMr1Mt+Bz9hs+xV7zk/lzxIPZSVlVHgrW1NZFnKm1lZUVbuMAsKiqSnRqeDw8PIysrS6bCzDc3N/9yTTphZ+KdIDAeQFXQjk+RrwZsSy2YW/r5v7wFRyzlmUqbn5/XFq/Xi8LCQoRCoWSuoaFBxOXk5MhxankdYAcLv4w2r9+HT2Ebfl/+yZfFb/D/87d8rrouFU5aKM5UGr9AVzilLygowNTUVDLHY+a4FLDb7YbyusBONj4+Dsf3NlTMVwve8F+SV5V/zczMjIgzlcZG0JX29naZ7nP2mJrnbTMzMxM1NTWGvE5MTk5ibGwMjqALTSGnnKvKqQgGg7J5bCqNFVv8N7CzEdVnb8EdoOnpaXNpXMBa6EUgEJCRqZTGva3u7m4MDQ1ZaAQ3Efi6TLn3yKlzV1eXrIcs9KG/v1+e28pdfi4G6+rq0NnZKfIs9KCnp0feYCvfpzFolDsLtGqhB/Rh+uaakfiNCNc8tMxNWE61Ld4Xp9Mp7U8P9PHmb0QSwaFIy3z4cdZi8b6w3dn+qbfE1FBKs0LvsKR9uAD+BTKTD2D0xR83AAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
                       <uix:Target DesignTimeRectangle="428, 750, 115, 17" ElementType="Text" FriendlyName="'Chiller'" FullSelectorArgument="&lt;webctrl parentid='xc-label-div-xgen_7696' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='xc-label-div-xgen_7696' tag='DIV' type='' class='' aaname='Chiller' check:innerText='Chiller' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHcAAAAVCAYAAAB8BXHbAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFhSURBVGhD7ZfNSsNAEIB9VvEi4kVKD4p4EMRDQQ8eFDwo+AIKvoX6Bto3sLd6HPmCU4ZtYtIQ6GSYD5bddLLbZb79ITuShCXlBiblBiblBiblBmYUcm/v7mV3b39VLi5nslz+/EVFnl9e136zfC8WMpmeyNv7R/XMeBRo6ztmXMv9/JrLweHRSoTCM7KQBpsKSrlbhmST9FIslLGUW49buezayfS4qttQQVfXN7VH96bHMjEdh5PDzoHYw+NTNR5xHdMjbuWSNHv0/geCSDQ1lDu7q9yyH9DHCiZWCveKa7nljmoCQeVCsNK6ykXY6dn52oKy71N3nde2CbNzy4T3kUtcj+OyWLna9s5o71y7s4eSS7ttQaXcgWhKJCIQUidI6SOXeNt92jQnj7iWS5L7fuf2kUuhbcfSvrwHtq93XMsFTbi9/2zyYSi5UPd/KhZSbuKClBuYlBuYlBuYlBsWkV+b8e1LJ56sZwAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
                     </scg:List>
@@ -664,7 +811,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Screenshot for name" sap:VirtualizedContainerService.HintSize="337.6,52.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_19" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Screenshot for name" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_19" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -680,13 +827,13 @@
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - IT distribution" sap:VirtualizedContainerService.HintSize="337.6,172" sap2010:WorkflowViewState.IdRef="GetOCRText_108">
+            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - IT distribution" sap:VirtualizedContainerService.HintSize="338,172" sap2010:WorkflowViewState.IdRef="GetOCRText_108">
               <ui:GetOCRText.OCREngine>
                 <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
                   <ActivityFunc.Argument>
                     <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
                   </ActivityFunc.Argument>
-                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,24.8" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_109" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
+                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_109" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
                 </ActivityFunc>
               </ui:GetOCRText.OCREngine>
               <ui:GetOCRText.Target>
@@ -703,13 +850,13 @@
                 <OutArgument x:TypeArguments="x:String">[ITdistribution]</OutArgument>
               </ui:GetOCRText.Text>
             </ui:GetOCRText>
-            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - UPS" sap:VirtualizedContainerService.HintSize="337.6,172" sap2010:WorkflowViewState.IdRef="GetOCRText_109">
+            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - UPS" sap:VirtualizedContainerService.HintSize="338,172" sap2010:WorkflowViewState.IdRef="GetOCRText_109">
               <ui:GetOCRText.OCREngine>
                 <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
                   <ActivityFunc.Argument>
                     <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
                   </ActivityFunc.Argument>
-                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,24.8" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_110" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
+                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_110" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
                 </ActivityFunc>
               </ui:GetOCRText.OCREngine>
               <ui:GetOCRText.Target>
@@ -726,13 +873,13 @@
                 <OutArgument x:TypeArguments="x:String">[UPS]</OutArgument>
               </ui:GetOCRText.Text>
             </ui:GetOCRText>
-            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - Generator" sap:VirtualizedContainerService.HintSize="337.6,172" sap2010:WorkflowViewState.IdRef="GetOCRText_110">
+            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - Generator" sap:VirtualizedContainerService.HintSize="338,172" sap2010:WorkflowViewState.IdRef="GetOCRText_110">
               <ui:GetOCRText.OCREngine>
                 <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
                   <ActivityFunc.Argument>
                     <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
                   </ActivityFunc.Argument>
-                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,24.8" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_111" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
+                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_111" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
                 </ActivityFunc>
               </ui:GetOCRText.OCREngine>
               <ui:GetOCRText.Target>
@@ -749,7 +896,7 @@
                 <OutArgument x:TypeArguments="x:String">[Generator]</OutArgument>
               </ui:GetOCRText.Text>
             </ui:GetOCRText>
-            <Assign DisplayName="Assign - PowerRedundancy " sap:VirtualizedContainerService.HintSize="337.6,61.6" sap2010:WorkflowViewState.IdRef="Assign_33">
+            <Assign DisplayName="Assign - PowerRedundancy " sap:VirtualizedContainerService.HintSize="338,62" sap2010:WorkflowViewState.IdRef="Assign_33">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[PowerRedundancy]</OutArgument>
               </Assign.To>
@@ -757,13 +904,13 @@
                 <InArgument x:TypeArguments="x:String">[ITdistribution + "_"+UPS+"_"+Generator]</InArgument>
               </Assign.Value>
             </Assign>
-            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - CRAH" sap:VirtualizedContainerService.HintSize="337.6,172" sap2010:WorkflowViewState.IdRef="GetOCRText_111">
+            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - CRAH" sap:VirtualizedContainerService.HintSize="338,172" sap2010:WorkflowViewState.IdRef="GetOCRText_111">
               <ui:GetOCRText.OCREngine>
                 <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
                   <ActivityFunc.Argument>
                     <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
                   </ActivityFunc.Argument>
-                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,24.8" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_112" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
+                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_112" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
                 </ActivityFunc>
               </ui:GetOCRText.OCREngine>
               <ui:GetOCRText.Target>
@@ -780,13 +927,13 @@
                 <OutArgument x:TypeArguments="x:String">[CRAH]</OutArgument>
               </ui:GetOCRText.Text>
             </ui:GetOCRText>
-            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - Pumps" sap:VirtualizedContainerService.HintSize="337.6,172" sap2010:WorkflowViewState.IdRef="GetOCRText_112">
+            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - Pumps" sap:VirtualizedContainerService.HintSize="338,172" sap2010:WorkflowViewState.IdRef="GetOCRText_112">
               <ui:GetOCRText.OCREngine>
                 <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
                   <ActivityFunc.Argument>
                     <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
                   </ActivityFunc.Argument>
-                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,24.8" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_113" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
+                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_113" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
                 </ActivityFunc>
               </ui:GetOCRText.OCREngine>
               <ui:GetOCRText.Target>
@@ -803,7 +950,7 @@
                 <OutArgument x:TypeArguments="x:String">[Pumps]</OutArgument>
               </ui:GetOCRText.Text>
             </ui:GetOCRText>
-            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - Chiller" sap:VirtualizedContainerService.HintSize="337.6,172" sap2010:WorkflowViewState.IdRef="GetOCRText_113">
+            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - Chiller" sap:VirtualizedContainerService.HintSize="338,172" sap2010:WorkflowViewState.IdRef="GetOCRText_113">
               <ui:GetOCRText.OCREngine>
                 <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
                   <ActivityFunc.Argument>
@@ -879,20 +1026,20 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="1-1-2-1" sap:VirtualizedContainerService.HintSize="337.6,52.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_6" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="1-1-2-1" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_6" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,272.8" sap2010:WorkflowViewState.IdRef="Sequence_7">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,272" sap2010:WorkflowViewState.IdRef="Sequence_7">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NSelectItem DisplayName="Select Item 'N'" sap:VirtualizedContainerService.HintSize="337.6,157.6" sap2010:WorkflowViewState.IdRef="NSelectItem_9" Item="N" ScopeIdentifier="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V3">
+            <uix:NSelectItem DisplayName="Select Item 'N'" sap:VirtualizedContainerService.HintSize="338,157" sap2010:WorkflowViewState.IdRef="NSelectItem_9" Item="N" ScopeIdentifier="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V3">
               <uix:NSelectItem.Items>
                 <scg:List x:TypeArguments="x:String" Capacity="2">
                   <x:String>N</x:String>
@@ -902,7 +1049,7 @@
               <uix:NSelectItem.Target>
                 <uix:TargetAnchorable BrowserURL="https://www.se.com/ww/en/work/solutions/system/s1/data-center-and-network-systems/trade-off-tools/data-center-capital-cost-calculator/" DesignTimeRectangle="567, 771, 100, 23" DesignTimeScaleFactor="1.25" ElementType="DropDown" FriendlyName="'N+1'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;select' idx='4' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='xc-htmlComboBox-selectEl' tag='SELECT' aaname='' /&gt;" Guid="9c7f517f-1ad5-4fb6-9899-d46022d0e6da" InformativeScreenshot="973b5604a2f39da394e825a9c4f16312.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Data Center Capital Cost Calculator' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
                       <uix:Target DesignTimeRectangle="440, 771, 105, 23" ElementType="Text" FriendlyName="'N'" FullSelectorArgument="&lt;webctrl aaname='  N' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='3' parentid='xc_root_canvas_container_xgen_5282' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='  N' type='' class='xc-htmlComboBox-labelEl xc-htmlCombox-labelUnFocus' parentid='xc_root_canvas_container_xgen_5282' tag='DIV' check:innerText='N' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAG0AAAAbCAYAAAB2gwGKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAP2SURBVGhD7ZrZSyNJHMf3f/Ndn0XFAy8URV13l4kwIksmO0lc4yA4mrAqq4l4Esc1GhWPuGqMromDBx54K/ogij4oIt+dby0Jaa2et7VL6B98oLuOplOfOrqr8wPMeHNhSnuDIZW2urqK9vZ2WK1W1NbWmrwybHe2Pz3IQiPt8fERXq8X9fX1mJ+fx9nZGZ6enkxeGbb73Nwc7Ha78EEvyaGRxgIDAwO4vb3F/f29iYE8PDzg7u4Ovb29wktyJKRxKDY0NOD6+lpIMzEeSru5uYHL5dJMlQlpnEOXlpZwdXVlohAcRIuLi8JPPBLSuPhtb2/j4uJCSXhvWVlZsNlsL/I6OjpQXV2No6OjF3lvncvLS/Hb6SceCWl8ajk5OVGW9fV1ZGZmIiUlBaOjo5q8trY2VFVVYW9vT5NuFMfHxwJ2ooODAymHh4cin7Cs7Drk9PQU5+fnwk88NNL29/eVJRaLoaioCBaLBRkZGeI8nufxeFBZWYmtrS1NHaNg5+G9cB3iksPp7TnhcBjRaFSUY3nZdQgFU6yutJ2dHWVZWVlBYWGhGGUVFRWoq6tL5LW2too0jsbkOkbAqYwiKKtrwIvGjiY4PQ1wuH/XwPTOYR+C4Ul83fwq6smut7u7K+TpStvY2FAW9syCggKMj48L0tLS0N/fL/Kam5tRXl4ueu7zekbAzsNR1hccxPuwEzUxhy6uqAex9Zj0OmRzc1MI1ZXGKUdV+LKZn5+PkZERcd7U1IT09HSRzuOysjJEIpEX9YyC0rhB8TnwB94t/4Z3qx9fYP3nE/6OLkjrx1lbWxPydKUtLy8ry/T0NPLy8jA0NCTO2SClpaWoqalBY2OjOGba83pGwQ7EKXJychL2vz7h58gH/LJiS2CJfMSXcECUk9WPw2WB8nSlLSwsKAunxNzcXLFjE0/jcWpqKnJyclBSUoKZmRlNHaNhJwqFQvB/62i1Y3b8FLH+x5IV7vk/Rb6sXjJ8aKE4XWmzs7PKEggEhJyenh5NusPhEK8BxcXFolcn56kAOxLvy+vvhiVkw4+Lv6I+9BnT39Jl5Z9D6RSnK40XVxVOi9nZ2WIfLjmdT5N8FSA8Ts5ThYmJCQSDQfjGe2ENuTAyEZCWkzE1NSXWbV1pY2NjJv8T7FBElvc9uCxwPdeVNjw8bKIYfFrmSJVK496Wz+fD4OCgiUL4/X7xwCXde+QucldXl1joTdShr69PrOPSXX6+DDqdTnR2dgp5JmrQ3d0tvmBLv6cxaJS7C7Rqogb0ofvlmhH/jwjffWiZG7Fut9vklWlpaRHtTw/08d3/iMSDQ5GWufjxqcXkdWG7s/2Tp8TkkEozQ+0wpb25AP4FKTgO8R7ICPEAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
                       <uix:Target DesignTimeRectangle="555, 750, 114, 17" ElementType="Text" FriendlyName="'Heat rejection'" FullSelectorArgument="&lt;webctrl parentid='xc-label-div-xgen_7697' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='xc-label-div-xgen_7697' tag='DIV' type='' class='' aaname='Heat rejection' check:innerText='Heat rejection' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHYAAAAVCAYAAACTxxrlAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAJPSURBVGhD7ZbPShxBEMbzrJJLEC9BPETEgxBy8AEM+AIGclDIEyTkpL6BmzfQmx5bf8t+5KOs+bOzjq6984NmZ7qqq7rq62n9UCaqZBK2UiZhK2UStlImYStlkLDnF7/K12/H5f7+YTHzn8ur67K7t19u7+4WM6tDrNns3+LtZWirYQjsTzXfPD3v7n2Z/74Vay8scYhH3HVljMO8KpOwL8DGCnvy/bRsffw0H9s7n59dUW53H4mqefwi+BwcHpWzHz/nPp67LW+sgV/e5R9riHbFo17NMXhnPl7FffaiGhirHpRRhVUzXBDsXlhTgzVHHOKxLkP2LEbfvIrBnOA51uE53O41gwvbtDbuBTGVX2uyg9yXwcLqZGVDRbJxviYVLNhw26aJr0awlnhdwqop0Cev5yC2Nx7UXPxcqIw2YbO1Hhv49fXg+xvCqF8sz5nwjChs9FV8CYc9I7P3yes18Jz5MrARLzbeiXYXs2ktcbO9iGxuGUYVFr+2hgA+NLDrmiRuRmbvm1c5aHBbE5vEEdHeR1hyvltheY7/KDisJw7xHG80cYhHrIzM3pUXvAaes+YLFyrDawb3z9bGurN+ZnPL8Cr/PLmvhCCG7Dq5wDxfsNbIh/mMTNiuvOA1yOb7QAgOB3EVL9qbxPP3bC/kbrqhRDa3DKMKCyos/t0Saqps+P7+8/dZ4bLFnJmw0JU31hD3wcgOi2y+P7cR14UVHIpsLcS9QDa3DIOErYFVG7fubKywfEF+tdbGxgnLFchVGK/D2tjYL7Z2JmGrpJRH6gKMhuYWJ8wAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
                     </scg:List>
@@ -923,7 +1070,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Screenshot for name" sap:VirtualizedContainerService.HintSize="337.6,52.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_20" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Screenshot for name" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_20" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -939,13 +1086,13 @@
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - IT distribution" sap:VirtualizedContainerService.HintSize="337.6,172" sap2010:WorkflowViewState.IdRef="GetOCRText_115">
+            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - IT distribution" sap:VirtualizedContainerService.HintSize="338,172" sap2010:WorkflowViewState.IdRef="GetOCRText_115">
               <ui:GetOCRText.OCREngine>
                 <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
                   <ActivityFunc.Argument>
                     <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
                   </ActivityFunc.Argument>
-                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,24.8" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_116" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
+                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_116" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
                 </ActivityFunc>
               </ui:GetOCRText.OCREngine>
               <ui:GetOCRText.Target>
@@ -962,13 +1109,13 @@
                 <OutArgument x:TypeArguments="x:String">[ITdistribution]</OutArgument>
               </ui:GetOCRText.Text>
             </ui:GetOCRText>
-            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - UPS" sap:VirtualizedContainerService.HintSize="337.6,172" sap2010:WorkflowViewState.IdRef="GetOCRText_116">
+            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - UPS" sap:VirtualizedContainerService.HintSize="338,172" sap2010:WorkflowViewState.IdRef="GetOCRText_116">
               <ui:GetOCRText.OCREngine>
                 <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
                   <ActivityFunc.Argument>
                     <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
                   </ActivityFunc.Argument>
-                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,24.8" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_117" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
+                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_117" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
                 </ActivityFunc>
               </ui:GetOCRText.OCREngine>
               <ui:GetOCRText.Target>
@@ -985,13 +1132,13 @@
                 <OutArgument x:TypeArguments="x:String">[UPS]</OutArgument>
               </ui:GetOCRText.Text>
             </ui:GetOCRText>
-            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - Generator" sap:VirtualizedContainerService.HintSize="337.6,172" sap2010:WorkflowViewState.IdRef="GetOCRText_117">
+            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - Generator" sap:VirtualizedContainerService.HintSize="338,172" sap2010:WorkflowViewState.IdRef="GetOCRText_117">
               <ui:GetOCRText.OCREngine>
                 <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
                   <ActivityFunc.Argument>
                     <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
                   </ActivityFunc.Argument>
-                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,24.8" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_118" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
+                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_118" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
                 </ActivityFunc>
               </ui:GetOCRText.OCREngine>
               <ui:GetOCRText.Target>
@@ -1008,7 +1155,7 @@
                 <OutArgument x:TypeArguments="x:String">[Generator]</OutArgument>
               </ui:GetOCRText.Text>
             </ui:GetOCRText>
-            <Assign DisplayName="Assign - PowerRedundancy " sap:VirtualizedContainerService.HintSize="337.6,61.6" sap2010:WorkflowViewState.IdRef="Assign_35">
+            <Assign DisplayName="Assign - PowerRedundancy " sap:VirtualizedContainerService.HintSize="338,62" sap2010:WorkflowViewState.IdRef="Assign_35">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[PowerRedundancy]</OutArgument>
               </Assign.To>
@@ -1016,13 +1163,13 @@
                 <InArgument x:TypeArguments="x:String">[ITdistribution + "_"+UPS+"_"+Generator]</InArgument>
               </Assign.Value>
             </Assign>
-            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - CRAH" sap:VirtualizedContainerService.HintSize="337.6,172" sap2010:WorkflowViewState.IdRef="GetOCRText_118">
+            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - CRAH" sap:VirtualizedContainerService.HintSize="338,172" sap2010:WorkflowViewState.IdRef="GetOCRText_118">
               <ui:GetOCRText.OCREngine>
                 <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
                   <ActivityFunc.Argument>
                     <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
                   </ActivityFunc.Argument>
-                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,24.8" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_119" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
+                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_119" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
                 </ActivityFunc>
               </ui:GetOCRText.OCREngine>
               <ui:GetOCRText.Target>
@@ -1039,7 +1186,7 @@
                 <OutArgument x:TypeArguments="x:String">[CRAH]</OutArgument>
               </ui:GetOCRText.Text>
             </ui:GetOCRText>
-            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - Pumps" sap:VirtualizedContainerService.HintSize="337.6,172" sap2010:WorkflowViewState.IdRef="GetOCRText_119">
+            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - Pumps" sap:VirtualizedContainerService.HintSize="338,172" sap2010:WorkflowViewState.IdRef="GetOCRText_119">
               <ui:GetOCRText.OCREngine>
                 <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
                   <ActivityFunc.Argument>
@@ -1138,20 +1285,20 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="1-2-1-1" sap:VirtualizedContainerService.HintSize="337.6,52.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_21" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="1-2-1-1" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_21" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,470.4" sap2010:WorkflowViewState.IdRef="Sequence_22">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,469" sap2010:WorkflowViewState.IdRef="Sequence_22">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NSelectItem DisplayName="Select Item 'N'" sap:VirtualizedContainerService.HintSize="337.6,157.6" sap2010:WorkflowViewState.IdRef="NSelectItem_10" Item="N" ScopeIdentifier="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V3">
+            <uix:NSelectItem DisplayName="Select Item 'N'" sap:VirtualizedContainerService.HintSize="338,157" sap2010:WorkflowViewState.IdRef="NSelectItem_10" Item="N" ScopeIdentifier="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V3">
               <uix:NSelectItem.Items>
                 <scg:List x:TypeArguments="x:String" Capacity="2">
                   <x:String>N</x:String>
@@ -1161,7 +1308,7 @@
               <uix:NSelectItem.Target>
                 <uix:TargetAnchorable BrowserURL="https://www.se.com/ww/en/work/solutions/system/s1/data-center-and-network-systems/trade-off-tools/data-center-capital-cost-calculator/" DesignTimeRectangle="440, 771, 100, 23" DesignTimeScaleFactor="1.25" ElementType="DropDown" FriendlyName="'N+1'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;select' idx='3' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='xc-htmlComboBox-selectEl' tag='SELECT' aaname='' /&gt;" Guid="02a7f6e0-2f8e-4012-b147-77fb5d5a71fe" InformativeScreenshot="99afc0a2b25e7a5498e08b8946d57d3f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Data Center Capital Cost Calculator' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
                       <uix:Target DesignTimeRectangle="314, 771, 105, 23" ElementType="Text" FriendlyName="'N'" FullSelectorArgument="&lt;webctrl aaname='  N' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='2' parentid='xc_root_canvas_container_xgen_5282' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='  N' type='' class='xc-htmlComboBox-labelEl xc-htmlCombox-labelUnFocus' parentid='xc_root_canvas_container_xgen_5282' tag='DIV' check:innerText='N' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAG0AAAAbCAYAAAB2gwGKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAPZSURBVGhD7ZpbSyNJGIb3v3mtXgrivaIoKi7DzCJeSBjHeCasRAMxRKPrkThu8EhMdD0nMYKH8XwWvRBFLxSRd32/ISHtVHu3plz6gwe7v1RXsJ6q7qrq/AYrPlxY0j5gKKXFYjF0dHTAZrOhqqrK4p1hu7P96UEVBmlPT0/w+Xyor6/H3Nwczs/P8fz8bPHOsN1nZ2dRW1srPuglNQzSWGBwcBB3d3d4eHiwSCOPj4+4v79HX1+feEmNpDQOxcbGRtzc3Ig0i/RDabe3t2hqajLcKpPSeA9dWlrC9fW1hUZwEC0sLIifRCSl8eG3vb2Ny8tLLZmYmEBGRob8Tc0fHx+joqICHo/HkP+/cHV1JV7oJxFJaZy1nJ6easvo6KhIy8vLw/r6ejK/t7eH8vJyuN1uQ/l0cnJyIp3p6OgIh4eHSvgZy7Csqo4EZ2dnuLi4ED+JMEg7ODjQlpGREeTn5wvV1dXJ/NbWFsrKyuByuQzl08X+/r50pI2NDUSjUSwuLsrt7TV8FMXjcRlFvEZVF6FgyjWVtrOzoy1+vx+lpaUy4rKzs+WceY465tva2n65Jh1QAjvSzMuU3d3vQaO7Bfb2BgN1rkY4OlvRM9qH6UgYWz9+KOsiu7u7Is9UGnuHrgwMDKCkpASrq6tobW1Fbm6u9GKeM8+c6rp0wI4UiUTgnOzAl6gdf8RNWLXDFx+U8qp6yObmpnQEU2kcrrrS29uL4uJiLC8vCzyurKxMHjscDuV16YAdiVP0UDiMr1Mt+Bz9hs+xV7zk/lzxIPZSVlVHgrW1NZFnKm1lZUVbuMAsKiqSnRqeDw8PIysrS6bCzDc3N/9yTTphZ+KdIDAeQFXQjk+RrwZsSy2YW/r5v7wFRyzlmUqbn5/XFq/Xi8LCQoRCoWSuoaFBxOXk5MhxankdYAcLv4w2r9+HT2Ebfl/+yZfFb/D/87d8rrouFU5aKM5UGr9AVzilLygowNTUVDLHY+a4FLDb7YbyusBONj4+Dsf3NlTMVwve8F+SV5V/zczMjIgzlcZG0JX29naZ7nP2mJrnbTMzMxM1NTWGvE5MTk5ibGwMjqALTSGnnKvKqQgGg7J5bCqNFVv8N7CzEdVnb8EdoOnpaXNpXMBa6EUgEJCRqZTGva3u7m4MDQ1ZaAQ3Efi6TLn3yKlzV1eXrIcs9KG/v1+e28pdfi4G6+rq0NnZKfIs9KCnp0feYCvfpzFolDsLtGqhB/Rh+uaakfiNCNc8tMxNWE61Ld4Xp9Mp7U8P9PHmb0QSwaFIy3z4cdZi8b6w3dn+qbfE1FBKs0LvsKR9uAD+BTKTD2D0xR83AAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
                       <uix:Target DesignTimeRectangle="428, 750, 115, 17" ElementType="Text" FriendlyName="'Chiller'" FullSelectorArgument="&lt;webctrl parentid='xc-label-div-xgen_7696' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='xc-label-div-xgen_7696' tag='DIV' type='' class='' aaname='Chiller' check:innerText='Chiller' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHcAAAAVCAYAAAB8BXHbAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFhSURBVGhD7ZfNSsNAEIB9VvEi4kVKD4p4EMRDQQ8eFDwo+AIKvoX6Bto3sLd6HPmCU4ZtYtIQ6GSYD5bddLLbZb79ITuShCXlBiblBiblBiblBmYUcm/v7mV3b39VLi5nslz+/EVFnl9e136zfC8WMpmeyNv7R/XMeBRo6ztmXMv9/JrLweHRSoTCM7KQBpsKSrlbhmST9FIslLGUW49buezayfS4qttQQVfXN7VH96bHMjEdh5PDzoHYw+NTNR5xHdMjbuWSNHv0/geCSDQ1lDu7q9yyH9DHCiZWCveKa7nljmoCQeVCsNK6ykXY6dn52oKy71N3nde2CbNzy4T3kUtcj+OyWLna9s5o71y7s4eSS7ttQaXcgWhKJCIQUidI6SOXeNt92jQnj7iWS5L7fuf2kUuhbcfSvrwHtq93XMsFTbi9/2zyYSi5UPd/KhZSbuKClBuYlBuYlBuYlBsWkV+b8e1LJ56sZwAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
                     </scg:List>
@@ -1169,7 +1316,7 @@
                 </uix:TargetAnchorable>
               </uix:NSelectItem.Target>
             </uix:NSelectItem>
-            <uix:NSelectItem DisplayName="Select Item 'N'" sap:VirtualizedContainerService.HintSize="337.6,157.6" sap2010:WorkflowViewState.IdRef="NSelectItem_11" Item="N+1" ScopeIdentifier="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V3">
+            <uix:NSelectItem DisplayName="Select Item 'N'" sap:VirtualizedContainerService.HintSize="338,157" sap2010:WorkflowViewState.IdRef="NSelectItem_11" Item="N+1" ScopeIdentifier="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V3">
               <uix:NSelectItem.Items>
                 <scg:List x:TypeArguments="x:String" Capacity="2">
                   <x:String>N</x:String>
@@ -1179,7 +1326,7 @@
               <uix:NSelectItem.Target>
                 <uix:TargetAnchorable BrowserURL="https://www.se.com/ww/en/work/solutions/system/s1/data-center-and-network-systems/trade-off-tools/data-center-capital-cost-calculator/" DesignTimeRectangle="314, 771, 100, 23" DesignTimeScaleFactor="1.25" ElementType="DropDown" FriendlyName="'N'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;select' idx='2' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='xc-htmlComboBox-selectEl' tag='SELECT' aaname='' /&gt;" Guid="af3f1e35-b4ae-4b83-bf07-d20fc0bdde70" InformativeScreenshot="460fd27777290aee8ea650e6fccd3dde.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Data Center Capital Cost Calculator' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
                       <uix:Target DesignTimeRectangle="189, 771, 105, 23" ElementType="Text" FriendlyName="'N'" FullSelectorArgument="&lt;webctrl aaname='  N' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='xc_root_canvas_container_xgen_5282' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='  N' type='' parentid='xc_root_canvas_container_xgen_5282' tag='DIV' class='xc-htmlComboBox-labelEl xc-htmlCombox-labelUnFocus' check:innerText='N' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAG0AAAAbCAYAAAB2gwGKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAPZSURBVGhD7ZpbSyNJGIb3v3mtXgrivaIoKi7DzCJeSBjHeCasRAMxRKPrkThu8EhMdD0nMYKH8XwWvRBFLxSRd32/ISHtVHu3plz6gwe7v1RXsJ6q7qrq/AYrPlxY0j5gKKXFYjF0dHTAZrOhqqrK4p1hu7P96UEVBmlPT0/w+Xyor6/H3Nwczs/P8fz8bPHOsN1nZ2dRW1srPuglNQzSWGBwcBB3d3d4eHiwSCOPj4+4v79HX1+feEmNpDQOxcbGRtzc3Ig0i/RDabe3t2hqajLcKpPSeA9dWlrC9fW1hUZwEC0sLIifRCSl8eG3vb2Ny8tLLZmYmEBGRob8Tc0fHx+joqICHo/HkP+/cHV1JV7oJxFJaZy1nJ6easvo6KhIy8vLw/r6ejK/t7eH8vJyuN1uQ/l0cnJyIp3p6OgIh4eHSvgZy7Csqo4EZ2dnuLi4ED+JMEg7ODjQlpGREeTn5wvV1dXJ/NbWFsrKyuByuQzl08X+/r50pI2NDUSjUSwuLsrt7TV8FMXjcRlFvEZVF6FgyjWVtrOzoy1+vx+lpaUy4rKzs+WceY465tva2n65Jh1QAjvSzMuU3d3vQaO7Bfb2BgN1rkY4OlvRM9qH6UgYWz9+KOsiu7u7Is9UGnuHrgwMDKCkpASrq6tobW1Fbm6u9GKeM8+c6rp0wI4UiUTgnOzAl6gdf8RNWLXDFx+U8qp6yObmpnQEU2kcrrrS29uL4uJiLC8vCzyurKxMHjscDuV16YAdiVP0UDiMr1Mt+Bz9hs+xV7zk/lzxIPZSVlVHgrW1NZFnKm1lZUVbuMAsKiqSnRqeDw8PIysrS6bCzDc3N/9yTTphZ+KdIDAeQFXQjk+RrwZsSy2YW/r5v7wFRyzlmUqbn5/XFq/Xi8LCQoRCoWSuoaFBxOXk5MhxankdYAcLv4w2r9+HT2Ebfl/+yZfFb/D/87d8rrouFU5aKM5UGr9AVzilLygowNTUVDLHY+a4FLDb7YbyusBONj4+Dsf3NlTMVwve8F+SV5V/zczMjIgzlcZG0JX29naZ7nP2mJrnbTMzMxM1NTWGvE5MTk5ibGwMjqALTSGnnKvKqQgGg7J5bCqNFVv8N7CzEdVnb8EdoOnpaXNpXMBa6EUgEJCRqZTGva3u7m4MDQ1ZaAQ3Efi6TLn3yKlzV1eXrIcs9KG/v1+e28pdfi4G6+rq0NnZKfIs9KCnp0feYCvfpzFolDsLtGqhB/Rh+uaakfiNCNc8tMxNWE61Ld4Xp9Mp7U8P9PHmb0QSwaFIy3z4cdZi8b6w3dn+qbfE1FBKs0LvsKR9uAD+BTKTD2D0xR83AAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
                       <uix:Target DesignTimeRectangle="302, 750, 115, 17" ElementType="Text" FriendlyName="'Pumps'" FullSelectorArgument="&lt;webctrl parentid='xc-label-div-xgen_7695' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='xc-label-div-xgen_7695' tag='DIV' type='' class='' aaname='Pumps' check:innerText='Pumps' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHcAAAAVCAYAAAB8BXHbAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFuSURBVGhD7Zc9SgRBEEY9q5iImMhioLkYCBpsoOAFFAwUjBRPoHsD9QZutobtvmE/LcphXH/A6qYeDMNUddcs86arZ1dK0iwpt2FSbsOk3IZJuQ0TTu7LdFpG27tldW3900GcfLIcYeXeP0wWkQ+OT07L3v5Bmc1eF5FkiKrkPj49z3M73Tn5mmrl9on2MVb64dG4W+1q7ZdX111+Y3Oru+as8Zp/dn7xPt7mgd+lHAf3iEo1cmnFSFJblgj74H2MB48A1ZIY29ptq2ceMu3ezsuga19/6EWMQFUfVFaKf9DgY36P7pOBPC/X5omTZxxxv5IjU1VbtniR4GPItW1zGbm+JqiOROtls7UjknK/IddCjeiSm5LLHNs2fyJ3qC33wVhqUjsa1crVOMmThL+Qa2WR1zXz/J7r7xGJauWCZNAaOd/c3s3n/r4t279CVjQwXjkOzY1IOLn/ieTalVkzKdeQchsm5SbVkHKbpZQ3Nfvc9Y1WIakAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
                     </scg:List>
@@ -1200,7 +1347,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Screenshot for name" sap:VirtualizedContainerService.HintSize="337.6,52.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_22" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Screenshot for name" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_22" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -1216,13 +1363,13 @@
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - IT distribution" sap:VirtualizedContainerService.HintSize="337.6,172" sap2010:WorkflowViewState.IdRef="GetOCRText_122">
+            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - IT distribution" sap:VirtualizedContainerService.HintSize="338,172" sap2010:WorkflowViewState.IdRef="GetOCRText_122">
               <ui:GetOCRText.OCREngine>
                 <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
                   <ActivityFunc.Argument>
                     <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
                   </ActivityFunc.Argument>
-                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,24.8" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_123" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
+                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_123" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
                 </ActivityFunc>
               </ui:GetOCRText.OCREngine>
               <ui:GetOCRText.Target>
@@ -1239,13 +1386,13 @@
                 <OutArgument x:TypeArguments="x:String">[ITdistribution]</OutArgument>
               </ui:GetOCRText.Text>
             </ui:GetOCRText>
-            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - UPS" sap:VirtualizedContainerService.HintSize="337.6,172" sap2010:WorkflowViewState.IdRef="GetOCRText_123">
+            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - UPS" sap:VirtualizedContainerService.HintSize="338,172" sap2010:WorkflowViewState.IdRef="GetOCRText_123">
               <ui:GetOCRText.OCREngine>
                 <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
                   <ActivityFunc.Argument>
                     <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
                   </ActivityFunc.Argument>
-                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,24.8" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_124" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
+                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_124" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
                 </ActivityFunc>
               </ui:GetOCRText.OCREngine>
               <ui:GetOCRText.Target>
@@ -1262,13 +1409,13 @@
                 <OutArgument x:TypeArguments="x:String">[UPS]</OutArgument>
               </ui:GetOCRText.Text>
             </ui:GetOCRText>
-            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - Generator" sap:VirtualizedContainerService.HintSize="337.6,172" sap2010:WorkflowViewState.IdRef="GetOCRText_124">
+            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - Generator" sap:VirtualizedContainerService.HintSize="338,172" sap2010:WorkflowViewState.IdRef="GetOCRText_124">
               <ui:GetOCRText.OCREngine>
                 <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
                   <ActivityFunc.Argument>
                     <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
                   </ActivityFunc.Argument>
-                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,24.8" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_125" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
+                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_125" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
                 </ActivityFunc>
               </ui:GetOCRText.OCREngine>
               <ui:GetOCRText.Target>
@@ -1285,7 +1432,7 @@
                 <OutArgument x:TypeArguments="x:String">[Generator]</OutArgument>
               </ui:GetOCRText.Text>
             </ui:GetOCRText>
-            <Assign DisplayName="Assign - PowerRedundancy " sap:VirtualizedContainerService.HintSize="337.6,61.6" sap2010:WorkflowViewState.IdRef="Assign_37">
+            <Assign DisplayName="Assign - PowerRedundancy " sap:VirtualizedContainerService.HintSize="338,62" sap2010:WorkflowViewState.IdRef="Assign_37">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[PowerRedundancy]</OutArgument>
               </Assign.To>
@@ -1293,7 +1440,7 @@
                 <InArgument x:TypeArguments="x:String">[ITdistribution + "_"+UPS+"_"+Generator]</InArgument>
               </Assign.Value>
             </Assign>
-            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - CRAH" sap:VirtualizedContainerService.HintSize="337.6,172" sap2010:WorkflowViewState.IdRef="GetOCRText_125">
+            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - CRAH" sap:VirtualizedContainerService.HintSize="338,172" sap2010:WorkflowViewState.IdRef="GetOCRText_125">
               <ui:GetOCRText.OCREngine>
                 <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
                   <ActivityFunc.Argument>
@@ -1415,20 +1562,20 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="1-2-1-2" sap:VirtualizedContainerService.HintSize="337.6,52.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_23" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="1-2-1-2" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_23" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,272.8" sap2010:WorkflowViewState.IdRef="Sequence_24">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,272" sap2010:WorkflowViewState.IdRef="Sequence_24">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NSelectItem DisplayName="Select Item 'N'" sap:VirtualizedContainerService.HintSize="337.6,157.6" sap2010:WorkflowViewState.IdRef="NSelectItem_12" Item="N+1" ScopeIdentifier="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V3">
+            <uix:NSelectItem DisplayName="Select Item 'N'" sap:VirtualizedContainerService.HintSize="338,157" sap2010:WorkflowViewState.IdRef="NSelectItem_12" Item="N+1" ScopeIdentifier="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V3">
               <uix:NSelectItem.Items>
                 <scg:List x:TypeArguments="x:String" Capacity="2">
                   <x:String>N</x:String>
@@ -1459,7 +1606,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Screenshot for name" sap:VirtualizedContainerService.HintSize="337.6,52.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_24" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Screenshot for name" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_24" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -1475,13 +1622,13 @@
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - IT distribution" sap:VirtualizedContainerService.HintSize="337.6,172" sap2010:WorkflowViewState.IdRef="GetOCRText_129">
+            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - IT distribution" sap:VirtualizedContainerService.HintSize="338,172" sap2010:WorkflowViewState.IdRef="GetOCRText_129">
               <ui:GetOCRText.OCREngine>
                 <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
                   <ActivityFunc.Argument>
                     <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
                   </ActivityFunc.Argument>
-                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,24.8" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_130" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
+                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_130" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
                 </ActivityFunc>
               </ui:GetOCRText.OCREngine>
               <ui:GetOCRText.Target>
@@ -1498,13 +1645,13 @@
                 <OutArgument x:TypeArguments="x:String">[ITdistribution]</OutArgument>
               </ui:GetOCRText.Text>
             </ui:GetOCRText>
-            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - UPS" sap:VirtualizedContainerService.HintSize="337.6,172" sap2010:WorkflowViewState.IdRef="GetOCRText_130">
+            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - UPS" sap:VirtualizedContainerService.HintSize="338,172" sap2010:WorkflowViewState.IdRef="GetOCRText_130">
               <ui:GetOCRText.OCREngine>
                 <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
                   <ActivityFunc.Argument>
                     <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
                   </ActivityFunc.Argument>
-                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,24.8" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_131" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
+                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_131" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
                 </ActivityFunc>
               </ui:GetOCRText.OCREngine>
               <ui:GetOCRText.Target>
@@ -1521,13 +1668,13 @@
                 <OutArgument x:TypeArguments="x:String">[UPS]</OutArgument>
               </ui:GetOCRText.Text>
             </ui:GetOCRText>
-            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - Generator" sap:VirtualizedContainerService.HintSize="337.6,172" sap2010:WorkflowViewState.IdRef="GetOCRText_131">
+            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - Generator" sap:VirtualizedContainerService.HintSize="338,172" sap2010:WorkflowViewState.IdRef="GetOCRText_131">
               <ui:GetOCRText.OCREngine>
                 <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
                   <ActivityFunc.Argument>
                     <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
                   </ActivityFunc.Argument>
-                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,24.8" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_132" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
+                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_132" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
                 </ActivityFunc>
               </ui:GetOCRText.OCREngine>
               <ui:GetOCRText.Target>
@@ -1544,7 +1691,7 @@
                 <OutArgument x:TypeArguments="x:String">[Generator]</OutArgument>
               </ui:GetOCRText.Text>
             </ui:GetOCRText>
-            <Assign DisplayName="Assign - PowerRedundancy " sap:VirtualizedContainerService.HintSize="337.6,61.6" sap2010:WorkflowViewState.IdRef="Assign_39">
+            <Assign DisplayName="Assign - PowerRedundancy " sap:VirtualizedContainerService.HintSize="338,62" sap2010:WorkflowViewState.IdRef="Assign_39">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[PowerRedundancy]</OutArgument>
               </Assign.To>
@@ -1674,20 +1821,20 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="1-2-2-2" sap:VirtualizedContainerService.HintSize="337.6,52.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_25" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="1-2-2-2" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_25" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,272.8" sap2010:WorkflowViewState.IdRef="Sequence_26">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,272" sap2010:WorkflowViewState.IdRef="Sequence_26">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NSelectItem DisplayName="Select Item 'N'" sap:VirtualizedContainerService.HintSize="337.6,157.6" sap2010:WorkflowViewState.IdRef="NSelectItem_13" Item="N+1" ScopeIdentifier="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V3">
+            <uix:NSelectItem DisplayName="Select Item 'N'" sap:VirtualizedContainerService.HintSize="338,157" sap2010:WorkflowViewState.IdRef="NSelectItem_13" Item="N+1" ScopeIdentifier="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V3">
               <uix:NSelectItem.Items>
                 <scg:List x:TypeArguments="x:String" Capacity="2">
                   <x:String>N</x:String>
@@ -1718,7 +1865,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Screenshot for name" sap:VirtualizedContainerService.HintSize="337.6,52.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_26" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Screenshot for name" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_26" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -1734,13 +1881,13 @@
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - IT distribution" sap:VirtualizedContainerService.HintSize="337.6,172" sap2010:WorkflowViewState.IdRef="GetOCRText_136">
+            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - IT distribution" sap:VirtualizedContainerService.HintSize="338,172" sap2010:WorkflowViewState.IdRef="GetOCRText_136">
               <ui:GetOCRText.OCREngine>
                 <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
                   <ActivityFunc.Argument>
                     <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
                   </ActivityFunc.Argument>
-                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,24.8" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_137" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
+                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_137" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
                 </ActivityFunc>
               </ui:GetOCRText.OCREngine>
               <ui:GetOCRText.Target>
@@ -1757,13 +1904,13 @@
                 <OutArgument x:TypeArguments="x:String">[ITdistribution]</OutArgument>
               </ui:GetOCRText.Text>
             </ui:GetOCRText>
-            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - UPS" sap:VirtualizedContainerService.HintSize="337.6,172" sap2010:WorkflowViewState.IdRef="GetOCRText_137">
+            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - UPS" sap:VirtualizedContainerService.HintSize="338,172" sap2010:WorkflowViewState.IdRef="GetOCRText_137">
               <ui:GetOCRText.OCREngine>
                 <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
                   <ActivityFunc.Argument>
                     <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
                   </ActivityFunc.Argument>
-                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,24.8" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_138" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
+                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_138" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
                 </ActivityFunc>
               </ui:GetOCRText.OCREngine>
               <ui:GetOCRText.Target>
@@ -1780,7 +1927,7 @@
                 <OutArgument x:TypeArguments="x:String">[UPS]</OutArgument>
               </ui:GetOCRText.Text>
             </ui:GetOCRText>
-            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - Generator" sap:VirtualizedContainerService.HintSize="337.6,172" sap2010:WorkflowViewState.IdRef="GetOCRText_138">
+            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - Generator" sap:VirtualizedContainerService.HintSize="338,172" sap2010:WorkflowViewState.IdRef="GetOCRText_138">
               <ui:GetOCRText.OCREngine>
                 <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
                   <ActivityFunc.Argument>
@@ -1933,20 +2080,20 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="1-2-2-1" sap:VirtualizedContainerService.HintSize="337.6,52.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_27" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="1-2-2-1" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_27" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,272.8" sap2010:WorkflowViewState.IdRef="Sequence_28">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,272" sap2010:WorkflowViewState.IdRef="Sequence_28">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NSelectItem DisplayName="Select Item 'N'" sap:VirtualizedContainerService.HintSize="337.6,157.6" sap2010:WorkflowViewState.IdRef="NSelectItem_14" Item="N" ScopeIdentifier="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V3">
+            <uix:NSelectItem DisplayName="Select Item 'N'" sap:VirtualizedContainerService.HintSize="338,157" sap2010:WorkflowViewState.IdRef="NSelectItem_14" Item="N" ScopeIdentifier="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V3">
               <uix:NSelectItem.Items>
                 <scg:List x:TypeArguments="x:String" Capacity="2">
                   <x:String>N</x:String>
@@ -1977,7 +2124,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Screenshot for name" sap:VirtualizedContainerService.HintSize="337.6,52.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_28" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Screenshot for name" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_28" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -1993,13 +2140,13 @@
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - IT distribution" sap:VirtualizedContainerService.HintSize="337.6,172" sap2010:WorkflowViewState.IdRef="GetOCRText_143">
+            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - IT distribution" sap:VirtualizedContainerService.HintSize="338,172" sap2010:WorkflowViewState.IdRef="GetOCRText_143">
               <ui:GetOCRText.OCREngine>
                 <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
                   <ActivityFunc.Argument>
                     <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
                   </ActivityFunc.Argument>
-                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,24.8" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_144" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
+                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_144" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
                 </ActivityFunc>
               </ui:GetOCRText.OCREngine>
               <ui:GetOCRText.Target>
@@ -2016,7 +2163,7 @@
                 <OutArgument x:TypeArguments="x:String">[ITdistribution]</OutArgument>
               </ui:GetOCRText.Text>
             </ui:GetOCRText>
-            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - UPS" sap:VirtualizedContainerService.HintSize="337.6,172" sap2010:WorkflowViewState.IdRef="GetOCRText_144">
+            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - UPS" sap:VirtualizedContainerService.HintSize="338,172" sap2010:WorkflowViewState.IdRef="GetOCRText_144">
               <ui:GetOCRText.OCREngine>
                 <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
                   <ActivityFunc.Argument>
@@ -2192,20 +2339,20 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="2-1-1-1" sap:VirtualizedContainerService.HintSize="337.6,52.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_29" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="2-1-1-1" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_29" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,865.6" sap2010:WorkflowViewState.IdRef="Sequence_30">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,866" sap2010:WorkflowViewState.IdRef="Sequence_30">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NSelectItem DisplayName="Select Item 'CRAH'" sap:VirtualizedContainerService.HintSize="337.6,157.6" sap2010:WorkflowViewState.IdRef="NSelectItem_15" Item="N+1" ScopeIdentifier="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V3">
+            <uix:NSelectItem DisplayName="Select Item 'CRAH'" sap:VirtualizedContainerService.HintSize="338,157" sap2010:WorkflowViewState.IdRef="NSelectItem_15" Item="N+1" ScopeIdentifier="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V3">
               <uix:NSelectItem.Items>
                 <scg:List x:TypeArguments="x:String" Capacity="3">
                   <x:String>N</x:String>
@@ -2216,7 +2363,7 @@
               <uix:NSelectItem.Target>
                 <uix:TargetAnchorable BrowserURL="https://www.se.com/ww/en/work/solutions/system/s1/data-center-and-network-systems/trade-off-tools/data-center-capital-cost-calculator/" DesignTimeRectangle="189, 771, 100, 23" DesignTimeScaleFactor="1.25" ElementType="DropDown" FriendlyName="'N+1'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;select' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='SELECT' class='xc-htmlComboBox-selectEl' aaname='' /&gt;" Guid="143a52a7-75c4-4899-b5b1-1fdb85620281" InformativeScreenshot="38b5230228486634260111d93fad902f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Data Center Capital Cost Calculator' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target DesignTimeRectangle="180, 750, 116, 17" ElementType="Text" FriendlyName="'CRAH'" FullSelectorArgument="&lt;webctrl parentid='xc-label-div-xgen_7694' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='xc-label-div-xgen_7694' tag='DIV' type='' class='' aaname='CRAH' check:innerText='CRAH' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHgAAAAVCAYAAACNDipWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFsSURBVGhD7ZfNSsNQEIV9VnEj4kakC92LCx9AwZew4BMortQ3UN/A7ury6ok57TjMvRbblDicDy5NOz8J+TJJulNEaiQ4ORKcHAlOjgQn518Ifp/NyvHktOzu7S/WzfS2j36D7zZu1+XVdZ/1k/n8o5ydX3Q5j0/P/a9L0BNx5HmQj2PCsY2Z0QumOCuAwq24mowol7y8vn3FTroV1UrwwEDAweFROF0+9hcZrLm7f+h6oadFggemdYI9rVzEvAxONmJ229LqKcEbALfV2vPTU5NRkwdBdmqjegkeGMj1Ymogz75Y2RX18BdP9Dho9cSS4DVZZ4I5uVE9Y1Ym6lBv831PiyZ4A7ROMIAMTmeUy6n0kpEbTSSWlSbBAxNNGln1LZoymYc48qLJZk/UAAneAl4QoPhVbqcUyhgk4n8vPj0+V4K3BCfL3ko5ZeQ3GajBBYFVywPIxb6wTwkWo0eCkyPByZHg5Ehwakr5BJk1PM08lNucAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
@@ -2233,7 +2380,7 @@
               <uix:NSelectItem.Target>
                 <uix:TargetAnchorable BrowserURL="https://www.se.com/ww/en/work/solutions/system/s1/data-center-and-network-systems/trade-off-tools/data-center-capital-cost-calculator/" DesignTimeRectangle="567, 769, 100, 23" DesignTimeScaleFactor="1.25" ElementType="DropDown" FriendlyName="'N'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;select' idx='4' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='xc-htmlComboBox-selectEl' tag='SELECT' aaname='' /&gt;" Guid="20e53a93-e442-4b9b-a487-8cbcd159aeb0" InformativeScreenshot="52d196525515b081d0098ceced0d3886.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Data Center Capital Cost Calculator' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
                       <uix:Target DesignTimeRectangle="440, 769, 105, 23" ElementType="Text" FriendlyName="'N'" FullSelectorArgument="&lt;webctrl aaname='  N' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='2' parentid='xc_root_canvas_container_xgen_5282' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='  N' type='' class='xc-htmlComboBox-labelEl xc-htmlCombox-labelUnFocus' parentid='xc_root_canvas_container_xgen_5282' tag='DIV' check:innerText='N' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAG0AAAAbCAYAAAB2gwGKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAP2SURBVGhD7ZrZSyNJHMf3f/Ndn0XFAy8URV13l4kwIksmO0lc4yA4mrAqq4l4Esc1GhWPuGqMromDBx54K/ogij4oIt+dby0Jaa2et7VL6B98oLuOplOfOrqr8wPMeHNhSnuDIZW2urqK9vZ2WK1W1NbWmrwybHe2Pz3IQiPt8fERXq8X9fX1mJ+fx9nZGZ6enkxeGbb73Nwc7Ha78EEvyaGRxgIDAwO4vb3F/f29iYE8PDzg7u4Ovb29wktyJKRxKDY0NOD6+lpIMzEeSru5uYHL5dJMlQlpnEOXlpZwdXVlohAcRIuLi8JPPBLSuPhtb2/j4uJCSXhvWVlZsNlsL/I6OjpQXV2No6OjF3lvncvLS/Hb6SceCWl8ajk5OVGW9fV1ZGZmIiUlBaOjo5q8trY2VFVVYW9vT5NuFMfHxwJ2ooODAymHh4cin7Cs7Drk9PQU5+fnwk88NNL29/eVJRaLoaioCBaLBRkZGeI8nufxeFBZWYmtrS1NHaNg5+G9cB3iksPp7TnhcBjRaFSUY3nZdQgFU6yutJ2dHWVZWVlBYWGhGGUVFRWoq6tL5LW2too0jsbkOkbAqYwiKKtrwIvGjiY4PQ1wuH/XwPTOYR+C4Ul83fwq6smut7u7K+TpStvY2FAW9syCggKMj48L0tLS0N/fL/Kam5tRXl4ueu7zekbAzsNR1hccxPuwEzUxhy6uqAex9Zj0OmRzc1MI1ZXGKUdV+LKZn5+PkZERcd7U1IT09HSRzuOysjJEIpEX9YyC0rhB8TnwB94t/4Z3qx9fYP3nE/6OLkjrx1lbWxPydKUtLy8ry/T0NPLy8jA0NCTO2SClpaWoqalBY2OjOGba83pGwQ7EKXJychL2vz7h58gH/LJiS2CJfMSXcECUk9WPw2WB8nSlLSwsKAunxNzcXLFjE0/jcWpqKnJyclBSUoKZmRlNHaNhJwqFQvB/62i1Y3b8FLH+x5IV7vk/Rb6sXjJ8aKE4XWmzs7PKEggEhJyenh5NusPhEK8BxcXFolcn56kAOxLvy+vvhiVkw4+Lv6I+9BnT39Jl5Z9D6RSnK40XVxVOi9nZ2WIfLjmdT5N8FSA8Ts5ThYmJCQSDQfjGe2ENuTAyEZCWkzE1NSXWbV1pY2NjJv8T7FBElvc9uCxwPdeVNjw8bKIYfFrmSJVK496Wz+fD4OCgiUL4/X7xwCXde+QucldXl1joTdShr69PrOPSXX6+DDqdTnR2dgp5JmrQ3d0tvmBLv6cxaJS7C7Rqogb0ofvlmhH/jwjffWiZG7Fut9vklWlpaRHtTw/08d3/iMSDQ5GWufjxqcXkdWG7s/2Tp8TkkEozQ+0wpb25AP4FKTgO8R7ICPEAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
                       <uix:Target DesignTimeRectangle="555, 748, 114, 17" ElementType="Text" FriendlyName="'Heat rejection'" FullSelectorArgument="&lt;webctrl parentid='xc-label-div-xgen_7697' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='xc-label-div-xgen_7697' tag='DIV' type='' class='' aaname='Heat rejection' check:innerText='Heat rejection' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHYAAAAVCAYAAACTxxrlAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAJPSURBVGhD7ZbPShxBEMbzrJJLEC9BPETEgxBy8AEM+AIGclDIEyTkpL6BmzfQmx5bf8t+5KOs+bOzjq6984NmZ7qqq7rq62n9UCaqZBK2UiZhK2UStlImYStlkLDnF7/K12/H5f7+YTHzn8ur67K7t19u7+4WM6tDrNns3+LtZWirYQjsTzXfPD3v7n2Z/74Vay8scYhH3HVljMO8KpOwL8DGCnvy/bRsffw0H9s7n59dUW53H4mqefwi+BwcHpWzHz/nPp67LW+sgV/e5R9riHbFo17NMXhnPl7FffaiGhirHpRRhVUzXBDsXlhTgzVHHOKxLkP2LEbfvIrBnOA51uE53O41gwvbtDbuBTGVX2uyg9yXwcLqZGVDRbJxviYVLNhw26aJr0awlnhdwqop0Cev5yC2Nx7UXPxcqIw2YbO1Hhv49fXg+xvCqF8sz5nwjChs9FV8CYc9I7P3yes18Jz5MrARLzbeiXYXs2ktcbO9iGxuGUYVFr+2hgA+NLDrmiRuRmbvm1c5aHBbE5vEEdHeR1hyvltheY7/KDisJw7xHG80cYhHrIzM3pUXvAaes+YLFyrDawb3z9bGurN+ZnPL8Cr/PLmvhCCG7Dq5wDxfsNbIh/mMTNiuvOA1yOb7QAgOB3EVL9qbxPP3bC/kbrqhRDa3DKMKCyos/t0Saqps+P7+8/dZ4bLFnJmw0JU31hD3wcgOi2y+P7cR14UVHIpsLcS9QDa3DIOErYFVG7fubKywfEF+tdbGxgnLFchVGK/D2tjYL7Z2JmGrpJRH6gKMhuYWJ8wAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
                     </scg:List>
@@ -2251,7 +2398,7 @@
               <uix:NSelectItem.Target>
                 <uix:TargetAnchorable BrowserURL="https://www.se.com/ww/en/work/solutions/system/s1/data-center-and-network-systems/trade-off-tools/data-center-capital-cost-calculator/" DesignTimeRectangle="440, 769, 100, 23" DesignTimeScaleFactor="1.25" ElementType="DropDown" FriendlyName="'N'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;select' idx='3' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='xc-htmlComboBox-selectEl' tag='SELECT' aaname='' /&gt;" Guid="cc7a944d-0be7-43c1-b02a-627ae497ac51" InformativeScreenshot="114bfad6ecf55319547c326fd2fe8007.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Data Center Capital Cost Calculator' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
                       <uix:Target DesignTimeRectangle="314, 769, 105, 23" ElementType="Text" FriendlyName="'N'" FullSelectorArgument="&lt;webctrl aaname='  N' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='xc_root_canvas_container_xgen_5282' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='  N' type='' parentid='xc_root_canvas_container_xgen_5282' tag='DIV' class='xc-htmlComboBox-labelEl xc-htmlCombox-labelUnFocus' check:innerText='N' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAG0AAAAbCAYAAAB2gwGKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAPZSURBVGhD7ZpbSyNJGIb3v3mtXgrivaIoKi7DzCJeSBjHeCasRAMxRKPrkThu8EhMdD0nMYKH8XwWvRBFLxSRd32/ISHtVHu3plz6gwe7v1RXsJ6q7qrq/AYrPlxY0j5gKKXFYjF0dHTAZrOhqqrK4p1hu7P96UEVBmlPT0/w+Xyor6/H3Nwczs/P8fz8bPHOsN1nZ2dRW1srPuglNQzSWGBwcBB3d3d4eHiwSCOPj4+4v79HX1+feEmNpDQOxcbGRtzc3Ig0i/RDabe3t2hqajLcKpPSeA9dWlrC9fW1hUZwEC0sLIifRCSl8eG3vb2Ny8tLLZmYmEBGRob8Tc0fHx+joqICHo/HkP+/cHV1JV7oJxFJaZy1nJ6easvo6KhIy8vLw/r6ejK/t7eH8vJyuN1uQ/l0cnJyIp3p6OgIh4eHSvgZy7Csqo4EZ2dnuLi4ED+JMEg7ODjQlpGREeTn5wvV1dXJ/NbWFsrKyuByuQzl08X+/r50pI2NDUSjUSwuLsrt7TV8FMXjcRlFvEZVF6FgyjWVtrOzoy1+vx+lpaUy4rKzs+WceY465tva2n65Jh1QAjvSzMuU3d3vQaO7Bfb2BgN1rkY4OlvRM9qH6UgYWz9+KOsiu7u7Is9UGnuHrgwMDKCkpASrq6tobW1Fbm6u9GKeM8+c6rp0wI4UiUTgnOzAl6gdf8RNWLXDFx+U8qp6yObmpnQEU2kcrrrS29uL4uJiLC8vCzyurKxMHjscDuV16YAdiVP0UDiMr1Mt+Bz9hs+xV7zk/lzxIPZSVlVHgrW1NZFnKm1lZUVbuMAsKiqSnRqeDw8PIysrS6bCzDc3N/9yTTphZ+KdIDAeQFXQjk+RrwZsSy2YW/r5v7wFRyzlmUqbn5/XFq/Xi8LCQoRCoWSuoaFBxOXk5MhxankdYAcLv4w2r9+HT2Ebfl/+yZfFb/D/87d8rrouFU5aKM5UGr9AVzilLygowNTUVDLHY+a4FLDb7YbyusBONj4+Dsf3NlTMVwve8F+SV5V/zczMjIgzlcZG0JX29naZ7nP2mJrnbTMzMxM1NTWGvE5MTk5ibGwMjqALTSGnnKvKqQgGg7J5bCqNFVv8N7CzEdVnb8EdoOnpaXNpXMBa6EUgEJCRqZTGva3u7m4MDQ1ZaAQ3Efi6TLn3yKlzV1eXrIcs9KG/v1+e28pdfi4G6+rq0NnZKfIs9KCnp0feYCvfpzFolDsLtGqhB/Rh+uaakfiNCNc8tMxNWE61Ld4Xp9Mp7U8P9PHmb0QSwaFIy3z4cdZi8b6w3dn+qbfE1FBKs0LvsKR9uAD+BTKTD2D0xR83AAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
                       <uix:Target DesignTimeRectangle="428, 748, 115, 17" ElementType="Text" FriendlyName="'Chiller'" FullSelectorArgument="&lt;webctrl parentid='xc-label-div-xgen_7696' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='xc-label-div-xgen_7696' tag='DIV' type='' class='' aaname='Chiller' check:innerText='Chiller' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHcAAAAVCAYAAAB8BXHbAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFhSURBVGhD7ZfNSsNAEIB9VvEi4kVKD4p4EMRDQQ8eFDwo+AIKvoX6Bto3sLd6HPmCU4ZtYtIQ6GSYD5bddLLbZb79ITuShCXlBiblBiblBiblBmYUcm/v7mV3b39VLi5nslz+/EVFnl9e136zfC8WMpmeyNv7R/XMeBRo6ztmXMv9/JrLweHRSoTCM7KQBpsKSrlbhmST9FIslLGUW49buezayfS4qttQQVfXN7VH96bHMjEdh5PDzoHYw+NTNR5xHdMjbuWSNHv0/geCSDQ1lDu7q9yyH9DHCiZWCveKa7nljmoCQeVCsNK6ykXY6dn52oKy71N3nde2CbNzy4T3kUtcj+OyWLna9s5o71y7s4eSS7ttQaXcgWhKJCIQUidI6SOXeNt92jQnj7iWS5L7fuf2kUuhbcfSvrwHtq93XMsFTbi9/2zyYSi5UPd/KhZSbuKClBuYlBuYlBuYlBsWkV+b8e1LJ56sZwAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
                     </scg:List>
@@ -2269,7 +2416,7 @@
               <uix:NSelectItem.Target>
                 <uix:TargetAnchorable BrowserURL="https://www.se.com/ww/en/work/solutions/system/s1/data-center-and-network-systems/trade-off-tools/data-center-capital-cost-calculator/" DesignTimeRectangle="314, 769, 100, 23" DesignTimeScaleFactor="1.25" ElementType="DropDown" FriendlyName="'N'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;select' idx='2' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='xc-htmlComboBox-selectEl' tag='SELECT' aaname='' /&gt;" Guid="d8a44a3d-afd7-4513-b54a-218330bb5cde" InformativeScreenshot="b7b146da7c2a12dfa19bcad7ab2b5a96.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Data Center Capital Cost Calculator' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target DesignTimeRectangle="302, 748, 115, 17" ElementType="Text" FriendlyName="'Pumps'" FullSelectorArgument="&lt;webctrl parentid='xc-label-div-xgen_7695' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='xc-label-div-xgen_7695' tag='DIV' type='' class='' aaname='Pumps' check:innerText='Pumps' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHcAAAAVCAYAAAB8BXHbAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFuSURBVGhD7Zc9SgRBEEY9q5iImMhioLkYCBpsoOAFFAwUjBRPoHsD9QZutobtvmE/LcphXH/A6qYeDMNUddcs86arZ1dK0iwpt2FSbsOk3IZJuQ0TTu7LdFpG27tldW3900GcfLIcYeXeP0wWkQ+OT07L3v5Bmc1eF5FkiKrkPj49z3M73Tn5mmrl9on2MVb64dG4W+1q7ZdX111+Y3Oru+as8Zp/dn7xPt7mgd+lHAf3iEo1cmnFSFJblgj74H2MB48A1ZIY29ptq2ceMu3ezsuga19/6EWMQFUfVFaKf9DgY36P7pOBPC/X5omTZxxxv5IjU1VbtniR4GPItW1zGbm+JqiOROtls7UjknK/IddCjeiSm5LLHNs2fyJ3qC33wVhqUjsa1crVOMmThL+Qa2WR1zXz/J7r7xGJauWCZNAaOd/c3s3n/r4t279CVjQwXjkOzY1IOLn/ieTalVkzKdeQchsm5SbVkHKbpZQ3Nfvc9Y1WIakAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
@@ -2289,7 +2436,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Screenshot for name" sap:VirtualizedContainerService.HintSize="337.6,52.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_30" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Screenshot for name" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_30" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -2305,7 +2452,7 @@
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - IT distribution" sap:VirtualizedContainerService.HintSize="337.6,172" sap2010:WorkflowViewState.IdRef="GetOCRText_150">
+            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - IT distribution" sap:VirtualizedContainerService.HintSize="338,172" sap2010:WorkflowViewState.IdRef="GetOCRText_150">
               <ui:GetOCRText.OCREngine>
                 <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
                   <ActivityFunc.Argument>
@@ -2504,13 +2651,13 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="2-1-1-2" sap:VirtualizedContainerService.HintSize="337.6,52.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_31" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="2-1-1-2" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_31" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,272.8" sap2010:WorkflowViewState.IdRef="Sequence_32">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,273" sap2010:WorkflowViewState.IdRef="Sequence_32">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -2548,7 +2695,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Screenshot for name" sap:VirtualizedContainerService.HintSize="337.6,52.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_32" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Screenshot for name" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_32" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -2763,7 +2910,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="2-1-2-2" sap:VirtualizedContainerService.HintSize="337.6,52.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_33" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="2-1-2-2" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_33" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>

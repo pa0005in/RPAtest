@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1234,3191" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/ocr" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:sd2="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1155,11809" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/ocr" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:sd2="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="53">
       <x:String>System.Activities</x:String>
@@ -125,7 +125,7 @@
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="400,3126" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="496,11744" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Default="N" Name="ITdistribution" />
       <Variable x:TypeArguments="x:String" Default="N" Name="UPS" />
@@ -145,21 +145,21 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:BuildDataTable DataTable="[dt_table]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="338,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Redundancy&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Reset" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_45" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
+    <ui:BuildDataTable DataTable="[dt_table]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="434,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Redundancy&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Reset" sap:VirtualizedContainerService.HintSize="434,1679" sap2010:WorkflowViewState.IdRef="NApplicationCard_45" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,1454" sap2010:WorkflowViewState.IdRef="Sequence_46">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,1461" sap2010:WorkflowViewState.IdRef="Sequence_46">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NSelectItem DisplayName="Reset ITDistribution" sap:VirtualizedContainerService.HintSize="338,157" sap2010:WorkflowViewState.IdRef="NSelectItem_27" Item="N" ScopeIdentifier="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V3">
+            <uix:NSelectItem DisplayName="Reset ITDistribution" sap:VirtualizedContainerService.HintSize="338,158" sap2010:WorkflowViewState.IdRef="NSelectItem_27" Item="N" ScopeIdentifier="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V3">
               <uix:NSelectItem.Items>
                 <scg:List x:TypeArguments="x:String" Capacity="2">
                   <x:String>N</x:String>
@@ -169,14 +169,14 @@
               <uix:NSelectItem.Target>
                 <uix:TargetAnchorable BrowserURL="https://www.se.com/ww/en/work/solutions/system/s1/data-center-and-network-systems/trade-off-tools/data-center-capital-cost-calculator/" DesignTimeRectangle="152, 574, 81, 18" DesignTimeScaleFactor="1" ElementType="DropDown" FriendlyName="'N'" FullSelectorArgument="&lt;webctrl idx='8' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='SELECT' class='xc-htmlComboBox-selectEl' aaname='' /&gt;" Guid="a9728cee-3ed8-492b-b6ea-8621095b44cb" InformativeScreenshot="f74b9a766380d8b41b4af338adb16896.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Data Center Capital Cost Calculator' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target DesignTimeRectangle="142, 556, 100, 14" ElementType="Text" FriendlyName="'IT distribution'" FullSelectorArgument="&lt;webctrl parentid='xc-label-div-xgen_7691' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='xc-label-div-xgen_7691' tag='DIV' type='' class='' aaname='IT distribution' check:innerText='IT distribution' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGgAAAASCAYAAAC3pZsGAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHfSURBVFhH7ZbNSgNBEIR9VvEi4kVCDv6CgnjwARQ8KHhR8KDgKwSE4BuoJ/VmbvE48i1W6LT7F7IywzIFy+5091TPVGV2sxIykkY2KHFkgxJHNihxLG3Q12QS9g6OwsvrW3FtbG6F1bX1P9f9w+PvjHKMx89hMNwp+M7OLxrr62qUm06/w/HJacG9CJgLB2BP7I91xUCnBlmwScRBpDawBrVBGxO7MCg2ohpkTxyClJ0gxNUpVJ6cPZnU7+4fzo25y6Cb27tZH/H6k0Efakejpxk3PL6OmPLiUh+b47kLRDOIeQiuTbIhb5DnJmbr7bPtpZyEEy88g+F2cffCyyDmMBcOYOuIWy5MZ576aD4xctQsi2gGeYHsuMogC2+QBAXKSTjVAeV8/zYGaa7AmMv3qVv3oohmEILo1wiqhCCu15PlszVlwjGWcPQSlLP9QJNB7x+fcyYA1fk+vTDIC2THXnDBCmdrfL3GEk45O/b9iWm9PKtP3boYc/XSIC8eG/XfoDIRbX3ZM9BYPbQO+Ow3qOobwlw4gF0D8bpvUK8MAtokr6/Lq+uiHj4rOHf9M7J8inNvMsj+i5OIQBzkqBE/NcThsQYBYuTUGyRtUMb/IhuUOLJBiSMblDiyQUkjhB8bwqaUSqgvHgAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
                 </uix:TargetAnchorable>
               </uix:NSelectItem.Target>
             </uix:NSelectItem>
-            <uix:NSelectItem DisplayName="Reset UPS" sap:VirtualizedContainerService.HintSize="338,157" sap2010:WorkflowViewState.IdRef="NSelectItem_28" Item="N" ScopeIdentifier="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V3">
+            <uix:NSelectItem DisplayName="Reset UPS" sap:VirtualizedContainerService.HintSize="338,158" sap2010:WorkflowViewState.IdRef="NSelectItem_28" Item="N" ScopeIdentifier="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V3">
               <uix:NSelectItem.Items>
                 <scg:List x:TypeArguments="x:String" Capacity="2">
                   <x:String>N</x:String>
@@ -186,14 +186,14 @@
               <uix:NSelectItem.Target>
                 <uix:TargetAnchorable BrowserURL="https://www.se.com/ww/en/work/solutions/system/s1/data-center-and-network-systems/trade-off-tools/data-center-capital-cost-calculator/" DesignTimeRectangle="252, 574, 81, 18" DesignTimeScaleFactor="1" ElementType="DropDown" FriendlyName="'N'" FullSelectorArgument="&lt;webctrl idx='9' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='SELECT' class='xc-htmlComboBox-selectEl' aaname='' /&gt;" Guid="74109866-c8c4-430a-8916-00c9ce5d7eaf" InformativeScreenshot="e14283ac4e9b2c22315927bfac12746f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Data Center Capital Cost Calculator' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target DesignTimeRectangle="244, 556, 89, 14" ElementType="Text" FriendlyName="'UPS'" FullSelectorArgument="&lt;webctrl parentid='xc-label-div-xgen_7692' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='xc-label-div-xgen_7692' tag='DIV' type='' class='' aaname='UPS' check:innerText='UPS' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAF0AAAASCAYAAAA5f9J6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEBSURBVFhH7ZaxCsIwEIZ9VnERcZHSQREHQRwEHRwUfAkF36L4Buob2K2OkT9wco3BOvUueB+ENMldh6/HNR1ntI5JF8CkC2DSBVAj/Xq7uywf+5mz2x/c8XT2z5i7vX5tDIajWk4YQ7maSE76YrlyVfX0a1AUl/cezrN84h5l6c8wY61NfPLSET+dzb1gxGJwYjnSJC+d76Hq0VK0SQ5JvqfzdgIgG9LpXOMHSL7Sm4i1HGnUSEe1ojdz6VS1v0jH3nqz/fho/EerBTXSSTCvSgjjV8KmSg/PY+/UgBrpgCRRP47dwb9JB4ihfAxtwoEq6f+CSRfApAtg0gUw6a3j3Avg/Im5fiE9BwAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
                 </uix:TargetAnchorable>
               </uix:NSelectItem.Target>
             </uix:NSelectItem>
-            <uix:NSelectItem DisplayName="Reset Generator" sap:VirtualizedContainerService.HintSize="338,157" sap2010:WorkflowViewState.IdRef="NSelectItem_29" Item="N" ScopeIdentifier="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V3">
+            <uix:NSelectItem DisplayName="Reset Generator" sap:VirtualizedContainerService.HintSize="338,158" sap2010:WorkflowViewState.IdRef="NSelectItem_29" Item="N" ScopeIdentifier="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V3">
               <uix:NSelectItem.Items>
                 <scg:List x:TypeArguments="x:String" Capacity="1">
                   <x:String>N</x:String>
@@ -202,7 +202,7 @@
               <uix:NSelectItem.Target>
                 <uix:TargetAnchorable BrowserURL="https://www.se.com/ww/en/work/solutions/system/s1/data-center-and-network-systems/trade-off-tools/data-center-capital-cost-calculator/" DesignTimeRectangle="353, 574, 81, 18" DesignTimeScaleFactor="1" ElementType="DropDown" FriendlyName="'N'" FullSelectorArgument="&lt;webctrl idx='10' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='SELECT' class='xc-htmlComboBox-selectEl' aaname='' /&gt;" Guid="25cff0a6-0d94-432c-b650-e7f6ed434d59" InformativeScreenshot="d62969bac1f3d90b317a2ade24685bc9.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Data Center Capital Cost Calculator' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
                       <uix:Target DesignTimeRectangle="252, 574, 85, 18" ElementType="Text" FriendlyName="'N'" FullSelectorArgument="&lt;webctrl aaname='  N' idx='2' parentid='xc_root_canvas_container_xgen_5282' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='  N' type='' parentid='xc_root_canvas_container_xgen_5282' tag='DIV' class='xc-htmlComboBox-labelEl xc-htmlCombox-labelUnFocus' check:innerText='N' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFkAAAAWCAYAAACrBTAWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALESURBVFhH7ZjvS1pRGMf3H+abfr+JIv0HlMaKRUvZqDSGq8UQs2VJEagsa6EhqTPdUkeIREVEEFEE9aZeBd/xPXAv/jgXWk7vXpwHPhzP8RzRz3187j3nFVS0PJTkNkSD5MPDQ/j9fkxOTmJ8fFzxTOiL3uivPmok7+zswOPxoFAo4OnpSfEX3N7eCm/0R4/VoUvmFXC73Xh8fMTDw4PiBdDd1dWV8Fid0bpkpno2m8Xd3Z2iCe7v71GpVIRPLXTJrCknJye4vr5WNMHNzQ3Ozs6ETy10ySzeFxcXppHJZGCxWEQGVI/ZbDaUy+Waue3g/PxcJN3R0VEDHOf7snXk8vJS+NSiRvLp6alpJJNJdHR0oL+/H8ViUR+zWq16v10cHx+L0hkMBjE3Nwev16szPz+PtbU15PN5MU+2nhfAUDJriVnE43H09fVhdnZW/y4cGx4eFj+ofn6rKZVK+JT0YexgGqMHUzpjhWm8Lbnx5XcQ5UpZupbyDSXzg80iFouht7cX4XAYdrtd9MnQ0BBSqZR0TSvhv2fvxx7epTx4XfxQg7PwEZlSVrqOsLwZSmbGmEUkEkFPT49oycTEhGgHBwexu7srXdNq9vf3EU18w5v0ezh+uQSjP6ewmfsuna9B0YaSmTFmsb6+ju7ubtGyPzIyAqfTiYGBAWxvbzfMbxe8L/g3v8KRdcKecyGQDknnVZPL5YwlJxIJ01hZWUFXV5do2Y9Go+js7BTwdf38dsJ7A+uzO/UZccn79aTTaWPJW1tbphEIBIRQttoYM5ljGxsbNXP/d1jepJL58BwKhcSNR9EcPLuQbka4CWA95DOgojmWlpbk22oeaLhcLqyurmJ5eVnxQhYXF4VH6QERQ0vzmZkZURt9Pp/imXAnuLCwAIfDYXzUqQWvAFOdslm8Fc+DvuitOoO1aJCs4t+HktzyAP4AT2kKllVFRtIAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
                       <uix:Target DesignTimeRectangle="334, 554, 108, 23" FriendlyName="'Generator'" FullSelectorArgument="&lt;webctrl id='xc-label-div-xgen_7693' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='xc-label-div-xgen_7693' tag='DIV' type='' class='xc-scrollable-content' aaname='' check:innerText='Generator' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHAAAAAbCAYAAACk0wvSAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJUSURBVGhD7Za9SwNBEMXvbxUbERsJFn4FPBALk1pB8j8oWATFMpWxSJEmGCsNCSGXJmcTGHlLngzrxXxJLovzYLjczO7s+n67iZGYgpYBDFwGMHAZwMBlAAOXAQxcuQNM0085v7iUre2d77i9u59U89XV9c3G7GWacgU4SBIpHBw5oyjmnp9fJpn8ZABnCObg9uEWaiGvoeKzfzt5c3VNz3ltv8nu3r7L40DgYEA4GIWDQ1fj2ujJHshjrs5xTcxljnO5j+PTM5df98HLDSD/cJozTajTLEKBSZzPGnI037/FAJs1DsK7BoyxPAh4cn9Za6OuP+eh3AHSZAgm6BM+GAzdU0OmqZzPGgCcFGNntA8FOdTw7td8oR9hcC0I87Ae1uU7+rx/dH7scZ3ayBtIswiQUBkw1j8APkB/Dm+dD4J99NgsgHjqeTwUBMh9rFsb+RvoA8wyZxbArL6QX/P3gPdlbiD3sW7lChCmwwQaBjFHs7TBrCGHd22cBshxrGE83pH3QWT1zwKIvr/9Bv5LgBSM0F9hNI3SdZr7G0CIhmOO/0+LBkhoGIfnw+PTdx370PvBXO6DYwygaSUZwMBlAAOXAQxcBjBwGcDAZQADVxTHsVQqFWk0GpPU3wk90RtrFItFizljESZRv9+Xer0u5XJZqtXqJL260As90Xs8HlssEIswiUajkaRpKp1OR0ql0p/cRPRAL/RFf4vFY14mUZIkghgOh9JsNt3VXVXoUavVXF+L5WMeJlG32xVEr9eTdrvtvn9XFXq0Wi3X12L5mM1E5AtC5yWzEKBReAAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
                     </scg:List>
@@ -210,7 +210,7 @@
                 </uix:TargetAnchorable>
               </uix:NSelectItem.Target>
             </uix:NSelectItem>
-            <uix:NSelectItem DisplayName="Reset CRAH" sap:VirtualizedContainerService.HintSize="338,157" sap2010:WorkflowViewState.IdRef="NSelectItem_30" Item="N" ScopeIdentifier="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V3">
+            <uix:NSelectItem DisplayName="Reset CRAH" sap:VirtualizedContainerService.HintSize="338,158" sap2010:WorkflowViewState.IdRef="NSelectItem_30" Item="N" ScopeIdentifier="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V3">
               <uix:NSelectItem.Items>
                 <scg:List x:TypeArguments="x:String" Capacity="3">
                   <x:String>N</x:String>
@@ -221,14 +221,14 @@
               <uix:NSelectItem.Target>
                 <uix:TargetAnchorable BrowserURL="https://www.se.com/ww/en/work/solutions/system/s1/data-center-and-network-systems/trade-off-tools/data-center-capital-cost-calculator/" DesignTimeRectangle="152, 618, 80, 18" DesignTimeScaleFactor="1" ElementType="DropDown" FriendlyName="'N'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;select' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='SELECT' class='xc-htmlComboBox-selectEl' aaname='' /&gt;" Guid="29c335a0-ae11-46ef-a8c3-6552263dee46" InformativeScreenshot="f0ddbfd5c596a07cbf4ac621fbde7cec.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Data Center Capital Cost Calculator' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target DesignTimeRectangle="145, 601, 93, 14" ElementType="Text" FriendlyName="'CRAH'" FullSelectorArgument="&lt;webctrl parentid='xc-label-div-xgen_7694' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='xc-label-div-xgen_7694' tag='DIV' type='' class='' aaname='CRAH' check:innerText='CRAH' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGEAAAASCAYAAABLsLDMAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFGSURBVFhH7ZaxSgNBEIZ9VrERsZGQIiIWgqQQtLAw4Eso+ADBNlipXfQNTBfL0e+4iZNxc8bqtvg/WO5uZ/aK/8veZsdE70hCBUhCBUhCBVQhYTZ7st29/dW4u39oK2bzt3c7ODxaqzNuJrdtxw+8h17WROjN/fScnJ7Zx2LRzvRH7xJycMvlp52PL1YimB8MR2vBEtxgeNysdVh3eXXdjCgRJKGDHLgTAypJAELNOwYBzy+vv8KVhA42BRwp9ZR2AkJcCoHHmiR0sE0Q9JTOhLgL/FPkohAQQ+c+r2cgUhK+Q/vvTiDgHB61LCr2aCd0sOlMIBjmuWYJQKDUWe/POWSe4+cp1yUhwC+79O/IQytJIDg/E+J9BAEuShK2gADjpyQGVpIAhEz40+ljc81h0o9c3i0J4k8koQIkoQIkoQIkoXfMvgBO1XfVkNdIOAAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
                 </uix:TargetAnchorable>
               </uix:NSelectItem.Target>
             </uix:NSelectItem>
-            <uix:NSelectItem DisplayName="Reset Pumps" sap:VirtualizedContainerService.HintSize="338,157" sap2010:WorkflowViewState.IdRef="NSelectItem_31" Item="N" ScopeIdentifier="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V3">
+            <uix:NSelectItem DisplayName="Reset Pumps" sap:VirtualizedContainerService.HintSize="338,158" sap2010:WorkflowViewState.IdRef="NSelectItem_31" Item="N" ScopeIdentifier="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V3">
               <uix:NSelectItem.Items>
                 <scg:List x:TypeArguments="x:String" Capacity="2">
                   <x:String>N</x:String>
@@ -238,14 +238,14 @@
               <uix:NSelectItem.Target>
                 <uix:TargetAnchorable BrowserURL="https://www.se.com/ww/en/work/solutions/system/s1/data-center-and-network-systems/trade-off-tools/data-center-capital-cost-calculator/" DesignTimeRectangle="252, 618, 80, 18" DesignTimeScaleFactor="1" ElementType="DropDown" FriendlyName="'N'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;select' idx='2' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='xc-htmlComboBox-selectEl' tag='SELECT' aaname='' /&gt;" Guid="06997f08-7cdc-470a-90be-a9fac9e3adca" InformativeScreenshot="178cf94d474ff45a1cb70596ea1de7a2.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Data Center Capital Cost Calculator' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target DesignTimeRectangle="242, 601, 92, 14" ElementType="Text" FriendlyName="'Pumps'" FullSelectorArgument="&lt;webctrl parentid='xc-label-div-xgen_7695' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='xc-label-div-xgen_7695' tag='DIV' type='' class='' aaname='Pumps' check:innerText='Pumps' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGAAAAASCAYAAACkctvyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE6SURBVFhH7ZWxagJBFEX9VrEJYiNiYQgWAUkhmCJFAvmBCBYK+QvJH5j8QexM+cJZvPIyQRYD+kYzB5adnbnzind2dhtWCKUICKYICKYICCZMwHzxas3W1Y+r3ena6v1jm/gfhAoY3Y1ts/nazpgtl2+/5i6drATw9t8Mb+1zvbbHp+cqA2TIIkjjl+msOjGcHHLkGff619X+fTlfTydP8xFkJcDP1QlQjjk1UWt+LCHI7fUH1Z116gNr5LhHkNU/QM2COgFa86cGtC/Ngda4JCCarE6Ap04AY6gToBz4mowl3mdOzVkIoLmcjr8IUI30WbCP/dSJIGsBWqfZelMPFaAa5PQPSOWS0f5Tk60AGsJbT+Mn9w+7ph8qgOf0U+Nr+/kIwgQcm1RUrhQBwVysgHOhCAimCAjF7BumZx5XdO6/PAAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
                 </uix:TargetAnchorable>
               </uix:NSelectItem.Target>
             </uix:NSelectItem>
-            <uix:NSelectItem DisplayName="Reset Chiller" sap:VirtualizedContainerService.HintSize="338,157" sap2010:WorkflowViewState.IdRef="NSelectItem_32" Item="N" ScopeIdentifier="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V3">
+            <uix:NSelectItem DisplayName="Reset Chiller" sap:VirtualizedContainerService.HintSize="338,158" sap2010:WorkflowViewState.IdRef="NSelectItem_32" Item="N" ScopeIdentifier="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V3">
               <uix:NSelectItem.Items>
                 <scg:List x:TypeArguments="x:String" Capacity="2">
                   <x:String>N</x:String>
@@ -255,14 +255,14 @@
               <uix:NSelectItem.Target>
                 <uix:TargetAnchorable BrowserURL="https://www.se.com/ww/en/work/solutions/system/s1/data-center-and-network-systems/trade-off-tools/data-center-capital-cost-calculator/" DesignTimeRectangle="353, 618, 80, 18" DesignTimeScaleFactor="1" ElementType="DropDown" FriendlyName="'N'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;select' idx='3' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='xc-htmlComboBox-selectEl' tag='SELECT' aaname='' /&gt;" Guid="7fa629a1-ccf9-4374-92e6-982b9b6495ab" InformativeScreenshot="42ff4eba1addf75eaf9e2917ec6a16b2.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Data Center Capital Cost Calculator' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target DesignTimeRectangle="343, 601, 92, 14" ElementType="Text" FriendlyName="'Chiller'" FullSelectorArgument="&lt;webctrl parentid='xc-label-div-xgen_7696' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='xc-label-div-xgen_7696' tag='DIV' type='' class='' aaname='Chiller' check:innerText='Chiller' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGAAAAASCAYAAACkctvyAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEpSURBVFhH7ZY9CsJAEIU9q9iI2EhIoYiFIBaCFhYKFgpeQMFbiDdQb2C6WI681YnjYshP4USYD4Jk9yXC+7LZ1MhQxQQoYwKUMQHKVELAbn+geqOZHMfj6TVDtFiu3LzP+XKl/mBItyhy+dF4QnF8T81XFXUBKCsIe65IgF+cs4Q8hZqAkvhlM36h683W5bA6cA7yrABkWu2Ou05KRj4Iu26Or9NCVcCziHcx30ChnOFCcV2WAIxLuRjnDMZwH9xDG3UBWU8gisMBkEM+jwCMSbl+Pkv8r/iLFcCvlKIC5MaOg596mdemknsASprO5h+FgqIC0ko2AQKUJVcBS+HSywrw5cr/MQEeKEe+KrhwUFYAQIa/guSmawKMBBOgjAlQxgQoYwJUIXoAq8sp47AHtckAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
                 </uix:TargetAnchorable>
               </uix:NSelectItem.Target>
             </uix:NSelectItem>
-            <uix:NSelectItem DisplayName="Reset HeatRejection" sap:VirtualizedContainerService.HintSize="338,157" sap2010:WorkflowViewState.IdRef="NSelectItem_33" Item="N" ScopeIdentifier="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V3">
+            <uix:NSelectItem DisplayName="Reset HeatRejection" sap:VirtualizedContainerService.HintSize="338,158" sap2010:WorkflowViewState.IdRef="NSelectItem_33" Item="N" ScopeIdentifier="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V3">
               <uix:NSelectItem.Items>
                 <scg:List x:TypeArguments="x:String" Capacity="2">
                   <x:String>N</x:String>
@@ -288,18 +288,18 @@
       </uix:NApplicationCard.TargetApp>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Screenshot for name" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Screenshot for name" sap:VirtualizedContainerService.HintSize="434,2380" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,2160" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,2162" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <Sequence.Variables>
               <Variable x:TypeArguments="ui:Image" Name="fullscreen" />
             </Sequence.Variables>
@@ -478,7 +478,7 @@
                 <OutArgument x:TypeArguments="x:String">[HeatRejection]</OutArgument>
               </ui:GetOCRText.Text>
             </ui:GetOCRText>
-            <Assign DisplayName="Assign - CoolingRedundancy " sap:VirtualizedContainerService.HintSize="337.6,61.6" sap2010:WorkflowViewState.IdRef="Assign_4">
+            <Assign DisplayName="Assign - CoolingRedundancy " sap:VirtualizedContainerService.HintSize="338,62" sap2010:WorkflowViewState.IdRef="Assign_4">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[CoolingRedundancy]</OutArgument>
               </Assign.To>
@@ -486,7 +486,7 @@
                 <InArgument x:TypeArguments="x:String">[CRAH + "_"+Pumps+"_"+Chiller+"_"+HeatRejection]</InArgument>
               </Assign.Value>
             </Assign>
-            <uix:NTakeScreenshot DisplayName="Take Screenshot 'DATA CENTER'" FileName="[PowerRedundancy+&quot;-&quot;+CoolingRedundancy+&quot;.png&quot;]" FileNameMode="Index" sap:VirtualizedContainerService.HintSize="337.6,183.2" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_2" OutImage="[fullscreen]" SaveScreenshotTo="Image" ScopeIdentifier="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V3">
+            <uix:NTakeScreenshot DisplayName="Take Screenshot 'DATA CENTER'" FileName="[PowerRedundancy+&quot;-&quot;+CoolingRedundancy+&quot;.png&quot;]" FileNameMode="Index" sap:VirtualizedContainerService.HintSize="338,184" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_2" OutImage="[fullscreen]" SaveScreenshotTo="Image" ScopeIdentifier="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V3">
               <uix:NTakeScreenshot.SavedTo>
                 <OutArgument x:TypeArguments="x:String">[Environment.CurrentDirectory]</OutArgument>
               </uix:NTakeScreenshot.SavedTo>
@@ -494,7 +494,7 @@
                 <uix:TargetAnchorable BrowserURL="https://www.se.com/ww/en/work/solutions/system/s1/data-center-and-network-systems/trade-off-tools/data-center-capital-cost-calculator/" DesignTimeRectangle="9, 223, 1281, 805" DesignTimeScaleFactor="1.25" FriendlyName="'DATA CENTER'" FullSelectorArgument="&lt;webctrl id='xc_root_canvas_container_xgen_5282' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='xc_root_canvas_container_xgen_5282' tag='DIV' type='' class='xc-rootCanvas_children xc-scrollable-content' aaname='' check:innerText='DATA CENTER CAPITAL COST CALCULATOR&amp;#xD;&amp;#xA;Inputs&amp;#xD;&amp;#xA;Results&amp;#xD;&amp;#xA;Include in Cost&amp;#xD;&amp;#xA;Racks&amp;#xD;&amp;#xA;Standby generator&amp;#xD;&amp;#xA;Raised' /&gt;" Guid="29889d93-a976-4c28-9dc5-72e96896f0f2" ImageBase64="" InformativeScreenshot="5febf66997f8d55fe8fd69a192a3864b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Data Center Capital Cost Calculator' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive" />
               </uix:NTakeScreenshot.Target>
             </uix:NTakeScreenshot>
-            <ui:SaveImage DisplayName="Save Image" FileName="[environment.CurrentDirectory +&quot;\summary\&quot;+PowerRedundancy+&quot;_&quot;+CoolingRedundancy+&quot;.png&quot;]" sap:VirtualizedContainerService.HintSize="337.6,134.4" sap2010:WorkflowViewState.IdRef="SaveImage_1" Image="[fullscreen]" />
+            <ui:SaveImage DisplayName="Save Image" FileName="[environment.CurrentDirectory +&quot;\summary\&quot;+PowerRedundancy+&quot;_&quot;+CoolingRedundancy+&quot;.png&quot;]" sap:VirtualizedContainerService.HintSize="338,135" sap2010:WorkflowViewState.IdRef="SaveImage_1" Image="[fullscreen]" />
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
@@ -503,25 +503,25 @@
       </uix:NApplicationCard.TargetApp>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="1-1-1-2" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="1-1-1-2" sap:VirtualizedContainerService.HintSize="434,53" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,272" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,273" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NSelectItem DisplayName="Select Item 'N'" sap:VirtualizedContainerService.HintSize="338,157" sap2010:WorkflowViewState.IdRef="NSelectItem_7" Item="N+1" ScopeIdentifier="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V3">
+            <uix:NSelectItem DisplayName="Select Item 'N'" sap:VirtualizedContainerService.HintSize="338,158" sap2010:WorkflowViewState.IdRef="NSelectItem_7" Item="N+1" ScopeIdentifier="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V3">
               <uix:NSelectItem.Items>
                 <scg:List x:TypeArguments="x:String" Capacity="2">
                   <x:String>N</x:String>
@@ -552,7 +552,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Screenshot for name" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_18" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Screenshot for name" sap:VirtualizedContainerService.HintSize="434,53" sap2010:WorkflowViewState.IdRef="NApplicationCard_18" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -720,7 +720,7 @@
                   <ActivityFunc.Argument>
                     <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
                   </ActivityFunc.Argument>
-                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,24.8" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_108" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
+                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_108" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
                 </ActivityFunc>
               </ui:GetOCRText.OCREngine>
               <ui:GetOCRText.Target>
@@ -737,7 +737,7 @@
                 <OutArgument x:TypeArguments="x:String">[HeatRejection]</OutArgument>
               </ui:GetOCRText.Text>
             </ui:GetOCRText>
-            <Assign DisplayName="Assign - CoolingRedundancy " sap:VirtualizedContainerService.HintSize="337.6,61.6" sap2010:WorkflowViewState.IdRef="Assign_32">
+            <Assign DisplayName="Assign - CoolingRedundancy " sap:VirtualizedContainerService.HintSize="338,61.5" sap2010:WorkflowViewState.IdRef="Assign_32">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[CoolingRedundancy]</OutArgument>
               </Assign.To>
@@ -745,7 +745,7 @@
                 <InArgument x:TypeArguments="x:String">[CRAH + "_"+Pumps+"_"+Chiller+"_"+HeatRejection]</InArgument>
               </Assign.Value>
             </Assign>
-            <uix:NTakeScreenshot DisplayName="Take Screenshot 'DATA CENTER'" FileName="[PowerRedundancy+&quot;-&quot;+CoolingRedundancy+&quot;.png&quot;]" FileNameMode="Index" sap:VirtualizedContainerService.HintSize="337.6,183.2" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_16" OutImage="[fullscreen]" SaveScreenshotTo="Image" ScopeIdentifier="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V3">
+            <uix:NTakeScreenshot DisplayName="Take Screenshot 'DATA CENTER'" FileName="[PowerRedundancy+&quot;-&quot;+CoolingRedundancy+&quot;.png&quot;]" FileNameMode="Index" sap:VirtualizedContainerService.HintSize="338,183" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_16" OutImage="[fullscreen]" SaveScreenshotTo="Image" ScopeIdentifier="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V3">
               <uix:NTakeScreenshot.SavedTo>
                 <OutArgument x:TypeArguments="x:String">[Environment.CurrentDirectory]</OutArgument>
               </uix:NTakeScreenshot.SavedTo>
@@ -753,7 +753,7 @@
                 <uix:TargetAnchorable BrowserURL="https://www.se.com/ww/en/work/solutions/system/s1/data-center-and-network-systems/trade-off-tools/data-center-capital-cost-calculator/" DesignTimeRectangle="9, 223, 1281, 805" DesignTimeScaleFactor="1.25" FriendlyName="'DATA CENTER'" FullSelectorArgument="&lt;webctrl id='xc_root_canvas_container_xgen_5282' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='xc_root_canvas_container_xgen_5282' tag='DIV' type='' class='xc-rootCanvas_children xc-scrollable-content' aaname='' check:innerText='DATA CENTER CAPITAL COST CALCULATOR&amp;#xD;&amp;#xA;Inputs&amp;#xD;&amp;#xA;Results&amp;#xD;&amp;#xA;Include in Cost&amp;#xD;&amp;#xA;Racks&amp;#xD;&amp;#xA;Standby generator&amp;#xD;&amp;#xA;Raised' /&gt;" Guid="29889d93-a976-4c28-9dc5-72e96896f0f2" ImageBase64="" InformativeScreenshot="5febf66997f8d55fe8fd69a192a3864b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Data Center Capital Cost Calculator' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive" />
               </uix:NTakeScreenshot.Target>
             </uix:NTakeScreenshot>
-            <ui:SaveImage DisplayName="Save Image" FileName="[environment.CurrentDirectory +&quot;\summary\&quot;+PowerRedundancy+&quot;_&quot;+CoolingRedundancy+&quot;.png&quot;]" sap:VirtualizedContainerService.HintSize="337.6,134.4" sap2010:WorkflowViewState.IdRef="SaveImage_13" Image="[fullscreen]" />
+            <ui:SaveImage DisplayName="Save Image" FileName="[environment.CurrentDirectory +&quot;\summary\&quot;+PowerRedundancy+&quot;_&quot;+CoolingRedundancy+&quot;.png&quot;]" sap:VirtualizedContainerService.HintSize="338,134.5" sap2010:WorkflowViewState.IdRef="SaveImage_13" Image="[fullscreen]" />
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
@@ -767,20 +767,20 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="1-1-2-2" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="1-1-2-2" sap:VirtualizedContainerService.HintSize="434,53" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,272" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,273" sap2010:WorkflowViewState.IdRef="Sequence_5">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NSelectItem DisplayName="Select Item 'N'" sap:VirtualizedContainerService.HintSize="338,157" sap2010:WorkflowViewState.IdRef="NSelectItem_8" Item="N+1" ScopeIdentifier="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V3">
+            <uix:NSelectItem DisplayName="Select Item 'N'" sap:VirtualizedContainerService.HintSize="338,158" sap2010:WorkflowViewState.IdRef="NSelectItem_8" Item="N+1" ScopeIdentifier="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V3">
               <uix:NSelectItem.Items>
                 <scg:List x:TypeArguments="x:String" Capacity="2">
                   <x:String>N</x:String>
@@ -811,13 +811,13 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Screenshot for name" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_19" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Screenshot for name" sap:VirtualizedContainerService.HintSize="434,2380" sap2010:WorkflowViewState.IdRef="NApplicationCard_19" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,2160" sap2010:WorkflowViewState.IdRef="Sequence_20">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,2162" sap2010:WorkflowViewState.IdRef="Sequence_20">
             <Sequence.Variables>
               <Variable x:TypeArguments="ui:Image" Name="fullscreen" />
             </Sequence.Variables>
@@ -956,7 +956,7 @@
                   <ActivityFunc.Argument>
                     <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
                   </ActivityFunc.Argument>
-                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,24.8" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_114" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
+                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_114" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
                 </ActivityFunc>
               </ui:GetOCRText.OCREngine>
               <ui:GetOCRText.Target>
@@ -973,13 +973,13 @@
                 <OutArgument x:TypeArguments="x:String">[Chiller]</OutArgument>
               </ui:GetOCRText.Text>
             </ui:GetOCRText>
-            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - HeatRejection" sap:VirtualizedContainerService.HintSize="337.6,172" sap2010:WorkflowViewState.IdRef="GetOCRText_114">
+            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - HeatRejection" sap:VirtualizedContainerService.HintSize="338,172" sap2010:WorkflowViewState.IdRef="GetOCRText_114">
               <ui:GetOCRText.OCREngine>
                 <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
                   <ActivityFunc.Argument>
                     <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
                   </ActivityFunc.Argument>
-                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,24.8" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_115" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
+                  <p:UiPathScreenOCR Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="zuvH9zVnfYtWJs4ebQhBWl+K5CvPcHkzImM3RWjVPNdBKfD2t7virBR9lIP0VOGZNfR2bc4SkBoFj47P14Czsw==" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_115" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
                 </ActivityFunc>
               </ui:GetOCRText.OCREngine>
               <ui:GetOCRText.Target>
@@ -996,7 +996,7 @@
                 <OutArgument x:TypeArguments="x:String">[HeatRejection]</OutArgument>
               </ui:GetOCRText.Text>
             </ui:GetOCRText>
-            <Assign DisplayName="Assign - CoolingRedundancy " sap:VirtualizedContainerService.HintSize="337.6,61.6" sap2010:WorkflowViewState.IdRef="Assign_34">
+            <Assign DisplayName="Assign - CoolingRedundancy " sap:VirtualizedContainerService.HintSize="338,62" sap2010:WorkflowViewState.IdRef="Assign_34">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[CoolingRedundancy]</OutArgument>
               </Assign.To>
@@ -1004,7 +1004,7 @@
                 <InArgument x:TypeArguments="x:String">[CRAH + "_"+Pumps+"_"+Chiller+"_"+HeatRejection]</InArgument>
               </Assign.Value>
             </Assign>
-            <uix:NTakeScreenshot DisplayName="Take Screenshot 'DATA CENTER'" FileName="[PowerRedundancy+&quot;-&quot;+CoolingRedundancy+&quot;.png&quot;]" FileNameMode="Index" sap:VirtualizedContainerService.HintSize="337.6,183.2" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_17" OutImage="[fullscreen]" SaveScreenshotTo="Image" ScopeIdentifier="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V3">
+            <uix:NTakeScreenshot DisplayName="Take Screenshot 'DATA CENTER'" FileName="[PowerRedundancy+&quot;-&quot;+CoolingRedundancy+&quot;.png&quot;]" FileNameMode="Index" sap:VirtualizedContainerService.HintSize="338,184" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_17" OutImage="[fullscreen]" SaveScreenshotTo="Image" ScopeIdentifier="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V3">
               <uix:NTakeScreenshot.SavedTo>
                 <OutArgument x:TypeArguments="x:String">[Environment.CurrentDirectory]</OutArgument>
               </uix:NTakeScreenshot.SavedTo>
@@ -1012,7 +1012,7 @@
                 <uix:TargetAnchorable BrowserURL="https://www.se.com/ww/en/work/solutions/system/s1/data-center-and-network-systems/trade-off-tools/data-center-capital-cost-calculator/" DesignTimeRectangle="9, 223, 1281, 805" DesignTimeScaleFactor="1.25" FriendlyName="'DATA CENTER'" FullSelectorArgument="&lt;webctrl id='xc_root_canvas_container_xgen_5282' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='xc_root_canvas_container_xgen_5282' tag='DIV' type='' class='xc-rootCanvas_children xc-scrollable-content' aaname='' check:innerText='DATA CENTER CAPITAL COST CALCULATOR&amp;#xD;&amp;#xA;Inputs&amp;#xD;&amp;#xA;Results&amp;#xD;&amp;#xA;Include in Cost&amp;#xD;&amp;#xA;Racks&amp;#xD;&amp;#xA;Standby generator&amp;#xD;&amp;#xA;Raised' /&gt;" Guid="29889d93-a976-4c28-9dc5-72e96896f0f2" ImageBase64="" InformativeScreenshot="5febf66997f8d55fe8fd69a192a3864b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Data Center Capital Cost Calculator' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive" />
               </uix:NTakeScreenshot.Target>
             </uix:NTakeScreenshot>
-            <ui:SaveImage DisplayName="Save Image" FileName="[environment.CurrentDirectory +&quot;\summary\&quot;+PowerRedundancy+&quot;_&quot;+CoolingRedundancy+&quot;.png&quot;]" sap:VirtualizedContainerService.HintSize="337.6,134.4" sap2010:WorkflowViewState.IdRef="SaveImage_14" Image="[fullscreen]" />
+            <ui:SaveImage DisplayName="Save Image" FileName="[environment.CurrentDirectory +&quot;\summary\&quot;+PowerRedundancy+&quot;_&quot;+CoolingRedundancy+&quot;.png&quot;]" sap:VirtualizedContainerService.HintSize="338,135" sap2010:WorkflowViewState.IdRef="SaveImage_14" Image="[fullscreen]" />
           </Sequence>
         </ActivityAction>
       </uix:NApplicationCard.Body>
@@ -1021,25 +1021,25 @@
       </uix:NApplicationCard.TargetApp>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="1-1-2-1" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_6" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="1-1-2-1" sap:VirtualizedContainerService.HintSize="434,53" sap2010:WorkflowViewState.IdRef="NApplicationCard_6" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,272" sap2010:WorkflowViewState.IdRef="Sequence_7">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,273" sap2010:WorkflowViewState.IdRef="Sequence_7">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NSelectItem DisplayName="Select Item 'N'" sap:VirtualizedContainerService.HintSize="338,157" sap2010:WorkflowViewState.IdRef="NSelectItem_9" Item="N" ScopeIdentifier="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V3">
+            <uix:NSelectItem DisplayName="Select Item 'N'" sap:VirtualizedContainerService.HintSize="338,158" sap2010:WorkflowViewState.IdRef="NSelectItem_9" Item="N" ScopeIdentifier="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V3">
               <uix:NSelectItem.Items>
                 <scg:List x:TypeArguments="x:String" Capacity="2">
                   <x:String>N</x:String>
@@ -1070,7 +1070,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Screenshot for name" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_20" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Screenshot for name" sap:VirtualizedContainerService.HintSize="434,53" sap2010:WorkflowViewState.IdRef="NApplicationCard_20" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -1285,7 +1285,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="1-2-1-1" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_21" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="1-2-1-1" sap:VirtualizedContainerService.HintSize="434,53" sap2010:WorkflowViewState.IdRef="NApplicationCard_21" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -1347,7 +1347,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Screenshot for name" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_22" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Screenshot for name" sap:VirtualizedContainerService.HintSize="434,53" sap2010:WorkflowViewState.IdRef="NApplicationCard_22" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -1562,7 +1562,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="1-2-1-2" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_23" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="1-2-1-2" sap:VirtualizedContainerService.HintSize="434,53" sap2010:WorkflowViewState.IdRef="NApplicationCard_23" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -1606,7 +1606,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Screenshot for name" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_24" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Screenshot for name" sap:VirtualizedContainerService.HintSize="434,2378" sap2010:WorkflowViewState.IdRef="NApplicationCard_24" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
@@ -1816,12 +1816,12 @@
       </uix:NApplicationCard.TargetApp>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="1-2-2-2" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_25" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="1-2-2-2" sap:VirtualizedContainerService.HintSize="434,53" sap2010:WorkflowViewState.IdRef="NApplicationCard_25" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>

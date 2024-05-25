@@ -1,5 +1,6 @@
 {
   "name": "DataCentreCalculator",
+  "projectId": "ba7f6a83-9a1b-4852-bac9-5e60e966acec",
   "description": "Blank Process",
   "main": "Main.xaml",
   "dependencies": {
@@ -24,6 +25,7 @@
     "isAttended": false,
     "requiresUserInteraction": true,
     "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
     "excludedLoggedData": [
       "Private:*",
       "*password*"
@@ -45,7 +47,7 @@
       "ignoredFiles": []
     },
     "fileInfoCollection": [],
-    "modernBehavior": true
+    "saveToCloud": false
   },
   "expressionLanguage": "VisualBasic",
   "entryPoints": [

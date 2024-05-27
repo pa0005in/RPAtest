@@ -1,6 +1,6 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1234,10264" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/ocr" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:sd2="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1234,13933" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/ocr" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:sd2="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
-    <scg:List x:TypeArguments="x:String" Capacity="53">
+    <scg:List x:TypeArguments="x:String" Capacity="106">
       <x:String>System.Activities</x:String>
       <x:String>System.Activities.Statements</x:String>
       <x:String>System.Activities.Expressions</x:String>
@@ -54,10 +54,14 @@
       <x:String>Newtonsoft.Json</x:String>
       <x:String>System.Dynamic</x:String>
       <x:String>System.Collections.Specialized</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="66">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="132">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -123,9 +127,11 @@
       <AssemblyReference>System.Linq.Expressions</AssemblyReference>
       <AssemblyReference>System.Collections.Specialized</AssemblyReference>
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="400,10199" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="400,13868" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Default="N" Name="ITdistribution" />
       <Variable x:TypeArguments="x:String" Default="N" Name="UPS" />
@@ -146,7 +152,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:BuildDataTable DataTable="[dt_table]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="338,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Redundancy&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+    <ui:BuildDataTable DataTable="[dt_table]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="338,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Redundancy&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;Redundancy&gt;Power Redundancy&lt;/Redundancy&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;Redundancy&gt;Cooling Redundancy&lt;/Redundancy&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;Redundancy&gt;Data Center Cost&lt;/Redundancy&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;Redundancy&gt;Data Center Cost Per Watt&lt;/Redundancy&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;Redundancy&gt;Calculated Rack Quantity&lt;/Redundancy&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;Redundancy&gt;IT Room Area&lt;/Redundancy&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;Redundancy&gt;Facility Area&lt;/Redundancy&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
     <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Reset" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_45" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
@@ -303,7 +309,7 @@
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="540,3067" sap2010:WorkflowViewState.IdRef="Sequence_94">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="540,3147" sap2010:WorkflowViewState.IdRef="Sequence_94">
             <Sequence.Variables>
               <Variable x:TypeArguments="ui:Image" Name="fullscreen" />
               <Variable x:TypeArguments="x:Boolean" Name="folderbool" />
@@ -437,7 +443,7 @@
                 <OutArgument x:TypeArguments="x:String">[Pumps]</OutArgument>
               </ui:GetOCRText.Text>
             </ui:GetOCRText>
-            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - Chiller" sap:VirtualizedContainerService.HintSize="478,172" sap2010:WorkflowViewState.IdRef="GetOCRText_365">
+            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - Chiller" sap:VirtualizedContainerService.HintSize="478,212" sap2010:WorkflowViewState.IdRef="GetOCRText_365">
               <ui:GetOCRText.OCREngine>
                 <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
                   <ActivityFunc.Argument>
@@ -460,7 +466,7 @@
                 <OutArgument x:TypeArguments="x:String">[Chiller]</OutArgument>
               </ui:GetOCRText.Text>
             </ui:GetOCRText>
-            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - HeatRejection" sap:VirtualizedContainerService.HintSize="478,172" sap2010:WorkflowViewState.IdRef="GetOCRText_366">
+            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Screenshot - HeatRejection" sap:VirtualizedContainerService.HintSize="478,212" sap2010:WorkflowViewState.IdRef="GetOCRText_366">
               <ui:GetOCRText.OCREngine>
                 <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
                   <ActivityFunc.Argument>
@@ -546,8 +552,22 @@
     </uix:NApplicationCard>
     <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="CostbySystem.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="CostbySystem.xaml">
       <ui:InvokeWorkflowFile.Arguments>
-        <InArgument x:TypeArguments="x:String" x:Key="namingvariable">
-          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="namingvariable" />
+        <InArgument x:TypeArguments="x:String" x:Key="namingvariable">[namingvariable]</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="CapitalCostSummary.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_38" UnSafe="False" WorkflowFileName="CapitalCostSummary.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="PowerRedundancy">
+          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="PowerRedundancy" />
+        </InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="CoolingRedundancy">
+          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="CoolingRedundancy" />
         </InArgument>
       </ui:InvokeWorkflowFile.Arguments>
       <sap:WorkflowViewStateService.ViewState>
@@ -580,7 +600,7 @@
               <uix:NSelectItem.Target>
                 <uix:TargetAnchorable BrowserURL="https://www.se.com/ww/en/work/solutions/system/s1/data-center-and-network-systems/trade-off-tools/data-center-capital-cost-calculator/" DesignTimeRectangle="252, 573, 81, 18" DesignTimeScaleFactor="1" ElementType="DropDown" FriendlyName="'N'" FullSelectorArgument="&lt;webctrl idx='9' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='SELECT' class='xc-htmlComboBox-selectEl' aaname='' /&gt;" Guid="913259b1-09b5-41ac-902e-06ab8a142bed" InformativeScreenshot="bca5f67b95e6dd592557a0a43224370a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Data Center Capital Cost Calculator' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target DesignTimeRectangle="244, 555, 89, 14" ElementType="Text" FriendlyName="'UPS'" FullSelectorArgument="&lt;webctrl parentid='xc-label-div-xgen_7692' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='xc-label-div-xgen_7692' tag='DIV' type='' class='' aaname='UPS' check:innerText='UPS' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAF0AAAASCAYAAAA5f9J6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEBSURBVFhH7ZaxCsIwEIZ9VnERcZHSQREHQRwEHRwUfAkF36L4Buob2K2OkT9wco3BOvUueB+ENMldh6/HNR1ntI5JF8CkC2DSBVAj/Xq7uywf+5mz2x/c8XT2z5i7vX5tDIajWk4YQ7maSE76YrlyVfX0a1AUl/cezrN84h5l6c8wY61NfPLSET+dzb1gxGJwYjnSJC+d76Hq0VK0SQ5JvqfzdgIgG9LpXOMHSL7Sm4i1HGnUSEe1ojdz6VS1v0jH3nqz/fho/EerBTXSSTCvSgjjV8KmSg/PY+/UgBrpgCRRP47dwb9JB4ihfAxtwoEq6f+CSRfApAtg0gUw6a3j3Avg/Im5fiE9BwAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
@@ -858,6 +878,18 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="CapitalCostSummary.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_39" UnSafe="False" WorkflowFileName="CapitalCostSummary.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="PowerRedundancy">[PowerRedundancy]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="CoolingRedundancy">[CoolingRedundancy]</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InvokeWorkflowFile>
     <uix:NApplicationCard AttachMode="ByInstance" DisplayName="upper row 1-2-2" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_64" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
@@ -880,7 +912,7 @@
               <uix:NSelectItem.Target>
                 <uix:TargetAnchorable BrowserURL="https://www.se.com/ww/en/work/solutions/system/s1/data-center-and-network-systems/trade-off-tools/data-center-capital-cost-calculator/" DesignTimeRectangle="353, 573, 81, 18" DesignTimeScaleFactor="1" ElementType="DropDown" FriendlyName="'N'" FullSelectorArgument="&lt;webctrl idx='10' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='SELECT' class='xc-htmlComboBox-selectEl' aaname='' /&gt;" Guid="68b22aa3-9359-4550-9d3e-3986c39329b0" InformativeScreenshot="1ae9341635d022183a1b558fdd9745c3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Data Center Capital Cost Calculator' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target DesignTimeRectangle="336, 555, 106, 14" ElementType="Text" FriendlyName="'Generator'" FullSelectorArgument="&lt;webctrl parentid='xc-label-div-xgen_7693' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='xc-label-div-xgen_7693' tag='DIV' type='' class='' aaname='Generator' check:innerText='Generator' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAG4AAAASCAYAAAC6u+tBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGzSURBVGhD7ZbNSkMxEIV9VnEj4kZKF/6CgrjwARR8CQVXik9QfIPqSt3duqrLyBd6yjDmVugiuaE5UG4zk0nmni+xboWmKtXAVaoGrlI1cJWqGLj5/CdcXl2H7Z3d5ef+4XGRLaub27vB9NKnIuC62SyMxkfRIEmxyeR1ESmnBq5HmMJt49ZZEbcw+e5vo26qzdma6dt72Ns/iHEOAgcCcSBG48OY096sqTWIU2tj2pNaxVSrPo5Pz2M894HLDk4vLFP6RF4mCQbmqF45YjLd31qApuYhxhYsc3UAeKq/1N7k7fcSKgZO5iJe3p7orvuOTwtXZqpeOYw/ObuIBnsYxMgx9jkv1hME7YWoYz/21Zh1Pj6//vSYU4O6cTJJ4ARTHwz14D04X6Nb5gFoHTs3BY6nrdNhEDj1kVuD+o3z4FKm/AcutS7yOd8D43VunPrIrSLgMJuXl1FIMZlkjVWOGGNrmAWnecoxnzFxDyC1fgoc6676jdsocBIG2D9VMkuyeZm6ChyS0dT4f0YsOMFiHs+n55dlnj5sP9SqD83ZaHBN66uBq1QNXKVq4CpVA1elQvgFmVSp6sV1FdcAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
@@ -1150,6 +1182,18 @@
     <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="CostbySystem.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="CostbySystem.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <InArgument x:TypeArguments="x:String" x:Key="namingvariable">[namingvariable]</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="CapitalCostSummary.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_40" UnSafe="False" WorkflowFileName="CapitalCostSummary.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="PowerRedundancy">[PowerRedundancy]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="CoolingRedundancy">[CoolingRedundancy]</InArgument>
       </ui:InvokeWorkflowFile.Arguments>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -1459,6 +1503,18 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="CapitalCostSummary.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_41" UnSafe="False" WorkflowFileName="CapitalCostSummary.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="PowerRedundancy">[PowerRedundancy]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="CoolingRedundancy">[CoolingRedundancy]</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InvokeWorkflowFile>
     <uix:NApplicationCard AttachMode="ByInstance" DisplayName="upper row 2-2-1" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_70" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
@@ -1760,6 +1816,18 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="CapitalCostSummary.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_42" UnSafe="False" WorkflowFileName="CapitalCostSummary.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="PowerRedundancy">[PowerRedundancy]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="CoolingRedundancy">[CoolingRedundancy]</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InvokeWorkflowFile>
     <uix:NApplicationCard AttachMode="ByInstance" DisplayName="upper row 2-1-1" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_72" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
@@ -1783,7 +1851,7 @@
               <uix:NSelectItem.Target>
                 <uix:TargetAnchorable BrowserURL="https://www.se.com/ww/en/work/solutions/system/s1/data-center-and-network-systems/trade-off-tools/data-center-capital-cost-calculator/" DesignTimeRectangle="252, 573, 81, 18" DesignTimeScaleFactor="1" ElementType="DropDown" FriendlyName="'N'" FullSelectorArgument="&lt;webctrl idx='9' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='SELECT' class='xc-htmlComboBox-selectEl' aaname='' /&gt;" Guid="bdba2d36-fd43-4912-9049-210f3f5a8f0c" InformativeScreenshot="bca5f67b95e6dd592557a0a43224370a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Data Center Capital Cost Calculator' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target DesignTimeRectangle="244, 555, 89, 14" ElementType="Text" FriendlyName="'UPS'" FullSelectorArgument="&lt;webctrl parentid='xc-label-div-xgen_7692' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='xc-label-div-xgen_7692' tag='DIV' type='' class='' aaname='UPS' check:innerText='UPS' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAF0AAAASCAYAAAA5f9J6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEBSURBVFhH7ZaxCsIwEIZ9VnERcZHSQREHQRwEHRwUfAkF36L4Buob2K2OkT9wco3BOvUueB+ENMldh6/HNR1ntI5JF8CkC2DSBVAj/Xq7uywf+5mz2x/c8XT2z5i7vX5tDIajWk4YQ7maSE76YrlyVfX0a1AUl/cezrN84h5l6c8wY61NfPLSET+dzb1gxGJwYjnSJC+d76Hq0VK0SQ5JvqfzdgIgG9LpXOMHSL7Sm4i1HGnUSEe1ojdz6VS1v0jH3nqz/fho/EerBTXSSTCvSgjjV8KmSg/PY+/UgBrpgCRRP47dwb9JB4ihfAxtwoEq6f+CSRfApAtg0gUw6a3j3Avg/Im5fiE9BwAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
@@ -2061,6 +2129,18 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="CapitalCostSummary.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_43" UnSafe="False" WorkflowFileName="CapitalCostSummary.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="PowerRedundancy">[PowerRedundancy]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="CoolingRedundancy">[CoolingRedundancy]</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InvokeWorkflowFile>
     <uix:NApplicationCard AttachMode="ByInstance" DisplayName="upper row 2-3-1" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_74" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
@@ -2084,7 +2164,7 @@
               <uix:NSelectItem.Target>
                 <uix:TargetAnchorable BrowserURL="https://www.se.com/ww/en/work/solutions/system/s1/data-center-and-network-systems/trade-off-tools/data-center-capital-cost-calculator/" DesignTimeRectangle="252, 573, 81, 18" DesignTimeScaleFactor="1" ElementType="DropDown" FriendlyName="'N'" FullSelectorArgument="&lt;webctrl idx='9' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='SELECT' class='xc-htmlComboBox-selectEl' aaname='' /&gt;" Guid="f110611d-6a26-4eeb-a1d2-11fa1516b769" InformativeScreenshot="bca5f67b95e6dd592557a0a43224370a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Data Center Capital Cost Calculator' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target DesignTimeRectangle="244, 555, 89, 14" ElementType="Text" FriendlyName="'UPS'" FullSelectorArgument="&lt;webctrl parentid='xc-label-div-xgen_7692' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='xc-label-div-xgen_7692' tag='DIV' type='' class='' aaname='UPS' check:innerText='UPS' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAF0AAAASCAYAAAA5f9J6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEBSURBVFhH7ZaxCsIwEIZ9VnERcZHSQREHQRwEHRwUfAkF36L4Buob2K2OkT9wco3BOvUueB+ENMldh6/HNR1ntI5JF8CkC2DSBVAj/Xq7uywf+5mz2x/c8XT2z5i7vX5tDIajWk4YQ7maSE76YrlyVfX0a1AUl/cezrN84h5l6c8wY61NfPLSET+dzb1gxGJwYjnSJC+d76Hq0VK0SQ5JvqfzdgIgG9LpXOMHSL7Sm4i1HGnUSEe1ojdz6VS1v0jH3nqz/fho/EerBTXSSTCvSgjjV8KmSg/PY+/UgBrpgCRRP47dwb9JB4ihfAxtwoEq6f+CSRfApAtg0gUw6a3j3Avg/Im5fiE9BwAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
@@ -2362,6 +2442,18 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="CapitalCostSummary.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_44" UnSafe="False" WorkflowFileName="CapitalCostSummary.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="PowerRedundancy">[PowerRedundancy]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="CoolingRedundancy">[CoolingRedundancy]</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InvokeWorkflowFile>
     <uix:NApplicationCard AttachMode="ByInstance" DisplayName="upper row 2-3-2" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_76" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
@@ -2384,7 +2476,7 @@
               <uix:NSelectItem.Target>
                 <uix:TargetAnchorable BrowserURL="https://www.se.com/ww/en/work/solutions/system/s1/data-center-and-network-systems/trade-off-tools/data-center-capital-cost-calculator/" DesignTimeRectangle="353, 573, 81, 18" DesignTimeScaleFactor="1" ElementType="DropDown" FriendlyName="'N'" FullSelectorArgument="&lt;webctrl idx='10' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='SELECT' class='xc-htmlComboBox-selectEl' aaname='' /&gt;" Guid="f0c1f854-19ed-4105-a143-9a98de3f18b6" InformativeScreenshot="1ae9341635d022183a1b558fdd9745c3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Data Center Capital Cost Calculator' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target DesignTimeRectangle="336, 555, 106, 14" ElementType="Text" FriendlyName="'Generator'" FullSelectorArgument="&lt;webctrl parentid='xc-label-div-xgen_7693' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='xc-label-div-xgen_7693' tag='DIV' type='' class='' aaname='Generator' check:innerText='Generator' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAG4AAAASCAYAAAC6u+tBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGzSURBVGhD7ZbNSkMxEIV9VnEj4kZKF/6CgrjwARR8CQVXik9QfIPqSt3duqrLyBd6yjDmVugiuaE5UG4zk0nmni+xboWmKtXAVaoGrlI1cJWqGLj5/CdcXl2H7Z3d5ef+4XGRLaub27vB9NKnIuC62SyMxkfRIEmxyeR1ESmnBq5HmMJt49ZZEbcw+e5vo26qzdma6dt72Ns/iHEOAgcCcSBG48OY096sqTWIU2tj2pNaxVSrPo5Pz2M894HLDk4vLFP6RF4mCQbmqF45YjLd31qApuYhxhYsc3UAeKq/1N7k7fcSKgZO5iJe3p7orvuOTwtXZqpeOYw/ObuIBnsYxMgx9jkv1hME7YWoYz/21Zh1Pj6//vSYU4O6cTJJ4ARTHwz14D04X6Nb5gFoHTs3BY6nrdNhEDj1kVuD+o3z4FKm/AcutS7yOd8D43VunPrIrSLgMJuXl1FIMZlkjVWOGGNrmAWnecoxnzFxDyC1fgoc6676jdsocBIG2D9VMkuyeZm6ChyS0dT4f0YsOMFiHs+n55dlnj5sP9SqD83ZaHBN66uBq1QNXKVq4CpVA1elQvgFmVSp6sV1FdcAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
@@ -2662,6 +2754,18 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="CapitalCostSummary.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_45" UnSafe="False" WorkflowFileName="CapitalCostSummary.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="PowerRedundancy">[PowerRedundancy]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="CoolingRedundancy">[CoolingRedundancy]</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InvokeWorkflowFile>
     <uix:NApplicationCard AttachMode="ByInstance" DisplayName="upper row 2-3-3" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_78" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
@@ -2684,7 +2788,7 @@
               <uix:NSelectItem.Target>
                 <uix:TargetAnchorable BrowserURL="https://www.se.com/ww/en/work/solutions/system/s1/data-center-and-network-systems/trade-off-tools/data-center-capital-cost-calculator/" DesignTimeRectangle="353, 573, 81, 18" DesignTimeScaleFactor="1" ElementType="DropDown" FriendlyName="'N+1'" FullSelectorArgument="&lt;webctrl idx='10' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='SELECT' class='xc-htmlComboBox-selectEl' aaname='' /&gt;" Guid="aeb191ac-3940-4428-8e14-ee4a60ae3de4" InformativeScreenshot="1ae9341635d022183a1b558fdd9745c3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Data Center Capital Cost Calculator' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target DesignTimeRectangle="336, 555, 106, 14" ElementType="Text" FriendlyName="'Generator'" FullSelectorArgument="&lt;webctrl parentid='xc-label-div-xgen_7693' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='xc-label-div-xgen_7693' tag='DIV' type='' class='' aaname='Generator' check:innerText='Generator' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAMsAAAAeCAYAAACCCOqvAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAYBSURBVHhe7Zr5UxRnEIbztyZqQG5YbgE5JIBckftSIQZFQMVISZKqpBICiiBWDkACBhQtOYWSuIAcnX2baRgm7DoDyw879FM15fpdPTP0O93f8RkpimILFYui2ETFoig2UbEoik1ULIpiExWLotjE1WJZW1ujX3v7KCevgMLOx9DnZ8L5io5NpMqqOpqYmKSdnR2j9enD6/VS2+1Omp5+aZQogXClWCCA/v7HFBXjYXFAKAVFJdTYdJ1q6xopMTmdvjh7ni+I5sMHr9Hz9LC+vs7vJCIqnl78M2WUKoFwpVgeDwzSubAoFsn977ppY2PDqNlnZuY1ZWblspiuXmuhra0to+Z04PWuUX5BsYrFAa4Ty6tXMxQbl8RigWgC8fbtLMV7Uig8IobG/54wSk8HKhbnuEosSL+uN9/gaNHQeO2T0QLtm79ppYs5+TT87HejdBfUjY4+p7xLhSw8jBmXkEytN29zrm8GzganQ4q3uLhEDb50T+ZI0bEeunmrnedPVo5io6a2kVPM2PhkTiOzsi/R7Owct0EfRNLk1Aw6cy6Cx8O4GB92YA8MPR3mOuuFckHGSvCkch3GS8/Ipv5HA7S9vW202qXrfje3+a3vEbX43ids4kLE3vj40WgV+rhKLEtL73g+cvbLSPrjz7+MUufAqeAocEb80QsKS6i+4Ro7IZwCTjM/v2C03nfklLRM8iSl+X7HUUVVLV/4jT6Fl8v4ay4c1QausPBoyssv4vGList4zoW26IO+cHAI1zwebEiknZqaprr6Jo7AeFflX1fxfA7lwDwWRImxSssreAzcL0SwubnJbYGIJSYukT8SVypqOGp13ukyWrgDV4llbGycHSkhMdUnnCWj1DmDQ8PsGEkpF2jm9RujlNhB2jvussOUllXszYXEkeEwcPrV1X+5HMzNz/M4VgEfx0Zbe+delAD4jS866uD0ZkdGFLhzt4vr4MAiWH9pGMohbLRHdDbP9/AsGb55Hu7tQfdDo3RfLEhnR8eeG6Xuw1ViGXgy+D+ncAqc43JxOTs3xrOyurpK2b60zTzPEUf2N/dpbvmW7wtOBY5jw+rcAOLEePhIvPTN2axAjPjqe5LS6d3yMpf5EwsEjfuCfdyHFYgB95WankUrKytcJmI5znsPBVwllmD80cSxAkUncf7u7h7+vzgyooQ4kBm5LxHLSdgIBAQCodgRy622DraLfw8DcxmkgOZIKc+HSORmXCWW3t4+/qP5E4s4HNpYL+kjX1bk88jrkdZYr4u+STX6IJc3j+vPrlUsJ2FDQEr2/v0qjYyM0k8//0LVNfW8aICx7IgF9tD2sIgnSBu8b2B9PrfiKrGIE/r7+toRi7+VosOuo4rlJGwgtevovOdrs7ugIBdWsZAyIXVyIhbzypgVaSPPo2IJQebm5jm1wSQfk307iOOKE2IJGRNYf055GE7FEmwbmNAjGsEGxNJ0tdkXGYZoYWGR65ykYSIEO5FF2qhYQhCkILLPgn/NK0b+sIoF56QioxN4CRpL0XZwKpZg25A6bLBio9WK2DvpOYuKJcRwsoMPrGLBngUOXuLLj0OYVrDRWVldx4cxH/b8wGVOxRJsG9ZnsAIbsGVHLJLKfmo1zCx0FUsII2fDcN3renDo7jnSkyeDQ3ubdmZH23euNJqcfMFlAJEKu+cYF4KEMIFTsYBg2sDyMhwY9ThJbWZ8fIJPEcC+WSywg8m/OUIAjB1onwWnHVCH9yqRW8US4oyMjh3Yvc7O/YrzeuxqX8jM4TLUwWHhHDhYKUBIN1rbuA4TZDgo+uLgJcrQ1xy1jiKWYNrAWFXV9XvPit12PGdqWtbu8xWV8o48+pujCDY/0QciQns7O/goq65tOPABUrG4ADgRUhRs2EVG76+C4TfSIOxCLywuGq0Pgq+m9dwWjnKUlF05ICxwFLGAYNqA8+IMmkQRjIdxnw4/41182bfp+f5HowfR8vIKVVTW7J0jkz0dgLkJzqjJsjPa5PremYxnRsWiKMoBVCyKYhMVi6LYRMWiKDZRsSiKTVQsimITFYui2ILoPwLyDrDykwvrAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
@@ -2962,6 +3066,18 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="CapitalCostSummary.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_46" UnSafe="False" WorkflowFileName="CapitalCostSummary.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="PowerRedundancy">[PowerRedundancy]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="CoolingRedundancy">[CoolingRedundancy]</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InvokeWorkflowFile>
     <uix:NApplicationCard AttachMode="ByInstance" DisplayName="upper row 2-4-3" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_80" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
@@ -2985,7 +3101,7 @@
               <uix:NSelectItem.Target>
                 <uix:TargetAnchorable BrowserURL="https://www.se.com/ww/en/work/solutions/system/s1/data-center-and-network-systems/trade-off-tools/data-center-capital-cost-calculator/" DesignTimeRectangle="252, 573, 81, 18" DesignTimeScaleFactor="1" ElementType="DropDown" FriendlyName="'2N'" FullSelectorArgument="&lt;webctrl idx='9' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='SELECT' class='xc-htmlComboBox-selectEl' aaname='' /&gt;" Guid="9a1326f7-97a1-4e58-94c7-3ee4eebccfb0" InformativeScreenshot="bca5f67b95e6dd592557a0a43224370a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Data Center Capital Cost Calculator' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target DesignTimeRectangle="244, 555, 89, 14" ElementType="Text" FriendlyName="'UPS'" FullSelectorArgument="&lt;webctrl parentid='xc-label-div-xgen_7692' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='xc-label-div-xgen_7692' tag='DIV' type='' class='' aaname='UPS' check:innerText='UPS' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAKsAAAAeCAYAAABT7+7fAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAANySURBVHhe7Zr5TxNBFMf9WxUQKFehBUtBAlFQIRAFQRAEMaggGEAaMRgMIDFaKIeJVzkMBQET5AptyvXc7zDbtGZLuZN13ieZdPtmZmd/+OTtHHuJGMYksKyMaWBZGdPAsjKmgWVlTAPLypgGpWX1+wNUfKuMLscl0cioR0aNmZ6ZJUtqpii41nlQWy/6RyuJyel0o/gOjXrGaG9vT/aKZGHhF9XWNVBahj3UD9dV92vJ652i/f192VJtWNZzllUvV+KT6VFjM+3s7MieJCTscb2muASLYR8Uo36qwrKekaxd3S4ZiWRry0+tLzqEdPFXU2h8fFLWELlHPJSQmCpKe0cnra2tyRoS1+0vO0VmRt++t/2yRl1Y1nOWFSArVlbViHZ43SOj7u7u0t3KahHr7OqJ+qqHpJDVmVdI6xsbMqomLOsFyAogHdphPIx71LFXVlYoy+6gHEc++XzzMqomLOsFyepy9UbIGp5ZMU3gRVRsWNYLkDUYDFJ5RaVo97i5RUaJJiY/i/kqXvMl2nO43aPimRhjWNZzlBVbVUtLy1Tf0CSETLKk0/cfXll7sBswMPheLKJwD71Ys3K0+zaIxVhwe1u2ZljWM5I1VoGs3a9chq/7zc1NsYXlyC0Q7cL7QWT0Q3ZWHZb1mLKmW+3km1+Q0diyHndzH5nUOzVNT5+1UZbNEboPsrPqe60s6zFltWU76c/qqowefYF1EjCN+PhpRIyLjDs8/EHWqInSsiKLlZXfE7INDQ3LqDFTWrazpFrPTNb+dwOUkpZJ1TV1h2Zc1CHLYozwxZmKKC0rgABHEQEyox3O+f1+v4yeXFbP2ITIlg5nQcTJlRG4N8Z4WN8oI2qivKx4tUKaTNs1WlxcktFIcGR6s6RUCPO8tV1GDziprBAUomJsnGBF+8glfOxY2f9/R3lZsRIvLCoWMtiyc7U5oju0XYQFzYw2V9XrM6zZNDfnE3U6p5mzDmryQVaU26UV9OXrt9DY+MV/fWxnfqEm+LqoUxXlZQWzsz+FqJAiWsEiB5/5/ctpZEU2xbbUYV9doSADh+9AqArLKgkEAtT7po/yrheJUyVIgoxnz3FSa1tHxKIqnNPIqrO8/Jsam56IxZsuLp4Bz4JDA95jPYBlZUwDy8qYBpaVMQ0sK2MaWFbGNLCsjGlgWRmTQPQXguMI30dPEgYAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
@@ -3263,6 +3379,18 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="CapitalCostSummary.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_47" UnSafe="False" WorkflowFileName="CapitalCostSummary.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="PowerRedundancy">[PowerRedundancy]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="CoolingRedundancy">[CoolingRedundancy]</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InvokeWorkflowFile>
     <uix:NApplicationCard AttachMode="ByInstance" DisplayName="upper row 2-4-1" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_84" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
@@ -3285,7 +3413,7 @@
               <uix:NSelectItem.Target>
                 <uix:TargetAnchorable BrowserURL="https://www.se.com/ww/en/work/solutions/system/s1/data-center-and-network-systems/trade-off-tools/data-center-capital-cost-calculator/" DesignTimeRectangle="353, 573, 81, 18" DesignTimeScaleFactor="1" ElementType="DropDown" FriendlyName="'N'" FullSelectorArgument="&lt;webctrl idx='10' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='SELECT' class='xc-htmlComboBox-selectEl' aaname='' /&gt;" Guid="ba917b6e-9c4b-4a8e-b160-bdedc15d3294" InformativeScreenshot="5e969c1ff0d68f75ed7da26813b60ce8.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Data Center Capital Cost Calculator' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target DesignTimeRectangle="334, 552, 108, 23" FriendlyName="'Generator'" FullSelectorArgument="&lt;webctrl class='xc-label' css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='23' parentid='xc_root_canvas_container_xgen_5282' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='xc-label' type='' aaname='' parentid='xc_root_canvas_container_xgen_5282' tag='DIV' check:innerText='Generator' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHAAAAAbCAYAAACk0wvSAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJASURBVGhD7ZY9axtBEIbvt4Y0JqQJxkW+BBYEF5HqBIL+QwIpREJKVZYLFeqSVIkaoVOjSyOY8Bx6zbA5W5ZldFoyLyynm9mZXb/PruTCQlkrAGauAJi5AmDmCoCZKwBmrgCYuVoHWFV/7M3FW3v0+OR6fPz0eZNtV+/efziavdykVgEuytJOz17URkmKXV5ebSLtKQBuEeZw+7iFXsQ9VD6nt1M31+d8zfcfP+3J02d1nAPBwUAcjNOz53VOa9NTPYhT62Nak1rFVKt9vHx9XscPffBaA6g/XObcJPIyS1AwSfXKEZP56S0GbNM8xLsHzFwdBJ7aX9Pa5P3nNtQ6QJmMMMGf8MViWT89ZJmqeuUA8KrTrY1OoRAjx3uaS0U/wdBaiDrWY1290+fX79k/ezykjvIGyiwBFFQNjE0PQAowrdGtS0Goj5/bBJCnr9OhEEDt49A6yt/AFGCTOdsANvVFaS7dA+/3uYHax6HVKkBMxwQZhhSTWd5g5Yjx7o3zADVPOebzTjwF0dS/CSB9b/sN/C8BShjhv8JkmuTzMvc2gEiGU5P+0+IBChrzeH75+u06zz78fqjVPjQnAIb2UgDMXAEwcwXAzBUAM1cAzFwBMHMV3W7XBoOBTSaTTejhRE96s0an04lxx7ELk2I+n9t4PLZ+v2/D4XAT3l/0oie91+t1jB3GLkyK1WplVVXZbDazXq/3IDeRHvSiL/1j7D7uyqQoy9IYy+XSptNpfXX3FT1Go1HdN8b9x3YmZn8B1ldA4/x6V/wAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
@@ -3563,6 +3691,18 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="CapitalCostSummary.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_48" UnSafe="False" WorkflowFileName="CapitalCostSummary.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="PowerRedundancy">[PowerRedundancy]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="CoolingRedundancy">[CoolingRedundancy]</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InvokeWorkflowFile>
     <uix:NApplicationCard AttachMode="ByInstance" DisplayName="upper row 2-4-2" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_89" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
@@ -3585,7 +3725,7 @@
               <uix:NSelectItem.Target>
                 <uix:TargetAnchorable BrowserURL="https://www.se.com/ww/en/work/solutions/system/s1/data-center-and-network-systems/trade-off-tools/data-center-capital-cost-calculator/" DesignTimeRectangle="353, 573, 81, 18" DesignTimeScaleFactor="1" ElementType="DropDown" FriendlyName="'N'" FullSelectorArgument="&lt;webctrl idx='10' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='SELECT' class='xc-htmlComboBox-selectEl' aaname='' /&gt;" Guid="26da1452-a31d-4814-8fcc-d094fc91ac24" InformativeScreenshot="71dc1f1718eda9d4a5f0387a520c7f55.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Data Center Capital Cost Calculator' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target DesignTimeRectangle="336, 555, 106, 14" ElementType="Text" FriendlyName="'Generator'" FullSelectorArgument="&lt;webctrl parentid='xc-label-div-xgen_7693' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='xc-label-div-xgen_7693' tag='DIV' type='' class='' aaname='Generator' check:innerText='Generator' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAG4AAAASCAYAAAC6u+tBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGzSURBVGhD7ZbNSkMxEIV9VnEj4kZKF/6CgrjwARR8CQVXik9QfIPqSt3duqrLyBd6yjDmVugiuaE5UG4zk0nmni+xboWmKtXAVaoGrlI1cJWqGLj5/CdcXl2H7Z3d5ef+4XGRLaub27vB9NKnIuC62SyMxkfRIEmxyeR1ESmnBq5HmMJt49ZZEbcw+e5vo26qzdma6dt72Ns/iHEOAgcCcSBG48OY096sqTWIU2tj2pNaxVSrPo5Pz2M894HLDk4vLFP6RF4mCQbmqF45YjLd31qApuYhxhYsc3UAeKq/1N7k7fcSKgZO5iJe3p7orvuOTwtXZqpeOYw/ObuIBnsYxMgx9jkv1hME7YWoYz/21Zh1Pj6//vSYU4O6cTJJ4ARTHwz14D04X6Nb5gFoHTs3BY6nrdNhEDj1kVuD+o3z4FKm/AcutS7yOd8D43VunPrIrSLgMJuXl1FIMZlkjVWOGGNrmAWnecoxnzFxDyC1fgoc6676jdsocBIG2D9VMkuyeZm6ChyS0dT4f0YsOMFiHs+n55dlnj5sP9SqD83ZaHBN66uBq1QNXKVq4CpVA1elQvgFmVSp6sV1FdcAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
@@ -3863,6 +4003,18 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="CapitalCostSummary.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_49" UnSafe="False" WorkflowFileName="CapitalCostSummary.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="PowerRedundancy">[PowerRedundancy]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="CoolingRedundancy">[CoolingRedundancy]</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InvokeWorkflowFile>
     <uix:NApplicationCard AttachMode="ByInstance" DisplayName="upper row 2-4-4" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_86" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
@@ -3885,7 +4037,7 @@
               <uix:NSelectItem.Target>
                 <uix:TargetAnchorable BrowserURL="https://www.se.com/ww/en/work/solutions/system/s1/data-center-and-network-systems/trade-off-tools/data-center-capital-cost-calculator/" DesignTimeRectangle="353, 573, 81, 18" DesignTimeScaleFactor="1" ElementType="DropDown" FriendlyName="'N'" FullSelectorArgument="&lt;webctrl idx='10' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='SELECT' class='xc-htmlComboBox-selectEl' aaname='' /&gt;" Guid="bd712383-56bd-496e-b70f-3aebdbd7340a" InformativeScreenshot="1ae9341635d022183a1b558fdd9745c3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Data Center Capital Cost Calculator' /&gt;" SearchSteps="FuzzySelector" Version="V1" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target DesignTimeRectangle="336, 555, 106, 14" ElementType="Text" FriendlyName="'Generator'" FullSelectorArgument="&lt;webctrl parentid='xc-label-div-xgen_7693' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='xc-label-div-xgen_7693' tag='DIV' type='' class='' aaname='Generator' check:innerText='Generator' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAG4AAAASCAYAAAC6u+tBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGzSURBVGhD7ZbNSkMxEIV9VnEj4kZKF/6CgrjwARR8CQVXik9QfIPqSt3duqrLyBd6yjDmVugiuaE5UG4zk0nmni+xboWmKtXAVaoGrlI1cJWqGLj5/CdcXl2H7Z3d5ef+4XGRLaub27vB9NKnIuC62SyMxkfRIEmxyeR1ESmnBq5HmMJt49ZZEbcw+e5vo26qzdma6dt72Ns/iHEOAgcCcSBG48OY096sqTWIU2tj2pNaxVSrPo5Pz2M894HLDk4vLFP6RF4mCQbmqF45YjLd31qApuYhxhYsc3UAeKq/1N7k7fcSKgZO5iJe3p7orvuOTwtXZqpeOYw/ObuIBnsYxMgx9jkv1hME7YWoYz/21Zh1Pj6//vSYU4O6cTJJ4ARTHwz14D04X6Nb5gFoHTs3BY6nrdNhEDj1kVuD+o3z4FKm/AcutS7yOd8D43VunPrIrSLgMJuXl1FIMZlkjVWOGGNrmAWnecoxnzFxDyC1fgoc6676jdsocBIG2D9VMkuyeZm6ChyS0dT4f0YsOMFiHs+n55dlnj5sP9SqD83ZaHBN66uBq1QNXKVq4CpVA1elQvgFmVSp6sV1FdcAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
@@ -4155,6 +4307,18 @@
     <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="CostbySystem.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_13" UnSafe="False" WorkflowFileName="CostbySystem.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <InArgument x:TypeArguments="x:String" x:Key="namingvariable">[namingvariable]</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="CapitalCostSummary.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_50" UnSafe="False" WorkflowFileName="CapitalCostSummary.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="PowerRedundancy">[PowerRedundancy]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="CoolingRedundancy">[CoolingRedundancy]</InArgument>
       </ui:InvokeWorkflowFile.Arguments>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -4545,6 +4709,18 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="CapitalCostSummary.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_51" UnSafe="False" WorkflowFileName="CapitalCostSummary.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="PowerRedundancy">[PowerRedundancy]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="CoolingRedundancy">[CoolingRedundancy]</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InvokeWorkflowFile>
     <uix:NApplicationCard AttachMode="ByInstance" DisplayName="1-1-2-2" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
@@ -4847,6 +5023,18 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="CapitalCostSummary.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_52" UnSafe="False" WorkflowFileName="CapitalCostSummary.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="PowerRedundancy">[PowerRedundancy]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="CoolingRedundancy">[CoolingRedundancy]</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InvokeWorkflowFile>
     <uix:NApplicationCard AttachMode="ByInstance" DisplayName="1-1-2-1" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_6" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
@@ -5141,6 +5329,18 @@
     <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="CostbySystem.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_16" UnSafe="False" WorkflowFileName="CostbySystem.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <InArgument x:TypeArguments="x:String" x:Key="namingvariable">[namingvariable]</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="CapitalCostSummary.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_53" UnSafe="False" WorkflowFileName="CapitalCostSummary.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="PowerRedundancy">[PowerRedundancy]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="CoolingRedundancy">[CoolingRedundancy]</InArgument>
       </ui:InvokeWorkflowFile.Arguments>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -5469,6 +5669,18 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="CapitalCostSummary.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_54" UnSafe="False" WorkflowFileName="CapitalCostSummary.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="PowerRedundancy">[PowerRedundancy]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="CoolingRedundancy">[CoolingRedundancy]</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InvokeWorkflowFile>
     <uix:NApplicationCard AttachMode="ByInstance" DisplayName="1-2-1-2" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_23" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
@@ -5763,6 +5975,18 @@
     <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="CostbySystem.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_18" UnSafe="False" WorkflowFileName="CostbySystem.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <InArgument x:TypeArguments="x:String" x:Key="namingvariable">[namingvariable]</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="CapitalCostSummary.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_55" UnSafe="False" WorkflowFileName="CapitalCostSummary.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="PowerRedundancy">[PowerRedundancy]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="CoolingRedundancy">[CoolingRedundancy]</InArgument>
       </ui:InvokeWorkflowFile.Arguments>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -6073,6 +6297,18 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="CapitalCostSummary.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_56" UnSafe="False" WorkflowFileName="CapitalCostSummary.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="PowerRedundancy">[PowerRedundancy]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="CoolingRedundancy">[CoolingRedundancy]</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InvokeWorkflowFile>
     <uix:NApplicationCard AttachMode="ByInstance" DisplayName="1-2-2-1" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_27" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
@@ -6375,13 +6611,25 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="CapitalCostSummary.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_57" UnSafe="False" WorkflowFileName="CapitalCostSummary.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="PowerRedundancy">[PowerRedundancy]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="CoolingRedundancy">[CoolingRedundancy]</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InvokeWorkflowFile>
     <uix:NApplicationCard AttachMode="ByInstance" DisplayName="2-1-1-1" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_29" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,668" sap2010:WorkflowViewState.IdRef="Sequence_30">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,666" sap2010:WorkflowViewState.IdRef="Sequence_30">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -6713,6 +6961,18 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="CapitalCostSummary.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_58" UnSafe="False" WorkflowFileName="CapitalCostSummary.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="PowerRedundancy">[PowerRedundancy]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="CoolingRedundancy">[CoolingRedundancy]</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InvokeWorkflowFile>
     <uix:NApplicationCard AttachMode="ByInstance" DisplayName="2-1-1-2" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_31" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
@@ -7007,6 +7267,18 @@
     <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="CostbySystem.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_27" UnSafe="False" WorkflowFileName="CostbySystem.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <InArgument x:TypeArguments="x:String" x:Key="namingvariable">[namingvariable]</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="CapitalCostSummary.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_59" UnSafe="False" WorkflowFileName="CapitalCostSummary.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="PowerRedundancy">[PowerRedundancy]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="CoolingRedundancy">[CoolingRedundancy]</InArgument>
       </ui:InvokeWorkflowFile.Arguments>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -7317,6 +7589,18 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="CapitalCostSummary.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_60" UnSafe="False" WorkflowFileName="CapitalCostSummary.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="PowerRedundancy">[PowerRedundancy]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="CoolingRedundancy">[CoolingRedundancy]</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InvokeWorkflowFile>
     <uix:NApplicationCard AttachMode="ByInstance" DisplayName="2-1-2-1" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_35" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
@@ -7611,6 +7895,18 @@
     <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="CostbySystem.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_29" UnSafe="False" WorkflowFileName="CostbySystem.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <InArgument x:TypeArguments="x:String" x:Key="namingvariable">[namingvariable]</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="CapitalCostSummary.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_61" UnSafe="False" WorkflowFileName="CapitalCostSummary.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="PowerRedundancy">[PowerRedundancy]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="CoolingRedundancy">[CoolingRedundancy]</InArgument>
       </ui:InvokeWorkflowFile.Arguments>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -7939,6 +8235,18 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="CapitalCostSummary.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_62" UnSafe="False" WorkflowFileName="CapitalCostSummary.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="PowerRedundancy">[PowerRedundancy]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="CoolingRedundancy">[CoolingRedundancy]</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InvokeWorkflowFile>
     <uix:NApplicationCard AttachMode="ByInstance" DisplayName="2-2-1-2" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_39" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
@@ -8233,6 +8541,18 @@
     <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="CostbySystem.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_31" UnSafe="False" WorkflowFileName="CostbySystem.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <InArgument x:TypeArguments="x:String" x:Key="namingvariable">[namingvariable]</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="CapitalCostSummary.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_63" UnSafe="False" WorkflowFileName="CapitalCostSummary.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="PowerRedundancy">[PowerRedundancy]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="CoolingRedundancy">[CoolingRedundancy]</InArgument>
       </ui:InvokeWorkflowFile.Arguments>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -8543,6 +8863,18 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="CapitalCostSummary.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_64" UnSafe="False" WorkflowFileName="CapitalCostSummary.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="PowerRedundancy">[PowerRedundancy]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="CoolingRedundancy">[CoolingRedundancy]</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InvokeWorkflowFile>
     <uix:NApplicationCard AttachMode="ByInstance" DisplayName="2-2-2-1" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_43" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
@@ -8837,6 +9169,18 @@
     <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="CostbySystem.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_33" UnSafe="False" WorkflowFileName="CostbySystem.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <InArgument x:TypeArguments="x:String" x:Key="namingvariable">[namingvariable]</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="CapitalCostSummary.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_65" UnSafe="False" WorkflowFileName="CapitalCostSummary.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="PowerRedundancy">[PowerRedundancy]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="CoolingRedundancy">[CoolingRedundancy]</InArgument>
       </ui:InvokeWorkflowFile.Arguments>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -9147,6 +9491,18 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="CapitalCostSummary.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_66" UnSafe="False" WorkflowFileName="CapitalCostSummary.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="PowerRedundancy">[PowerRedundancy]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="CoolingRedundancy">[CoolingRedundancy]</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InvokeWorkflowFile>
     <uix:NApplicationCard AttachMode="ByInstance" DisplayName="3-2-1-1" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_48" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
@@ -9440,6 +9796,18 @@
     <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="CostbySystem.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_35" UnSafe="False" WorkflowFileName="CostbySystem.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <InArgument x:TypeArguments="x:String" x:Key="namingvariable">[namingvariable]</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="CapitalCostSummary.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_67" UnSafe="False" WorkflowFileName="CapitalCostSummary.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="PowerRedundancy">[PowerRedundancy]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="CoolingRedundancy">[CoolingRedundancy]</InArgument>
       </ui:InvokeWorkflowFile.Arguments>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -9768,6 +10136,18 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="CapitalCostSummary.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_68" UnSafe="False" WorkflowFileName="CapitalCostSummary.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="PowerRedundancy">[PowerRedundancy]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="CoolingRedundancy">[CoolingRedundancy]</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InvokeWorkflowFile>
     <uix:NApplicationCard AttachMode="ByInstance" DisplayName="3-1-1-2" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_52" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
@@ -9836,7 +10216,7 @@
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="540,3067" sap2010:WorkflowViewState.IdRef="Sequence_202">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="540,3069" sap2010:WorkflowViewState.IdRef="Sequence_202">
             <Sequence.Variables>
               <Variable x:TypeArguments="ui:Image" Name="fullscreen" />
               <Variable x:TypeArguments="x:Boolean" Name="folderbool" />
@@ -10080,6 +10460,18 @@
     <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="CostbySystem.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_37" UnSafe="False" WorkflowFileName="CostbySystem.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <InArgument x:TypeArguments="x:String" x:Key="namingvariable">[namingvariable]</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="CapitalCostSummary.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_69" UnSafe="False" WorkflowFileName="CapitalCostSummary.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="PowerRedundancy">[PowerRedundancy]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="CoolingRedundancy">[CoolingRedundancy]</InArgument>
       </ui:InvokeWorkflowFile.Arguments>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -10425,6 +10817,18 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="CapitalCostSummary.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_70" UnSafe="False" WorkflowFileName="CapitalCostSummary.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="PowerRedundancy">[PowerRedundancy]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="CoolingRedundancy">[CoolingRedundancy]</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InvokeWorkflowFile>
     <uix:NApplicationCard AttachMode="ByInstance" DisplayName="3-2-1-2" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_56" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
@@ -10736,6 +11140,18 @@
     <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="CostbySystem.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_22" UnSafe="False" WorkflowFileName="CostbySystem.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <InArgument x:TypeArguments="x:String" x:Key="namingvariable">[namingvariable]</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="CapitalCostSummary.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_71" UnSafe="False" WorkflowFileName="CapitalCostSummary.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="PowerRedundancy">[PowerRedundancy]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="CoolingRedundancy">[CoolingRedundancy]</InArgument>
       </ui:InvokeWorkflowFile.Arguments>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -11064,6 +11480,18 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="CapitalCostSummary.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_72" UnSafe="False" WorkflowFileName="CapitalCostSummary.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="PowerRedundancy">[PowerRedundancy]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="CoolingRedundancy">[CoolingRedundancy]</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InvokeWorkflowFile>
     <uix:NApplicationCard AttachMode="ByInstance" DisplayName="3-2-2-2" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="NApplicationCard_60" InteractionMode="DebuggerApi" ScopeGuid="8a922a39-ab02-4255-b03f-d5cedfbc19be" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
@@ -11114,7 +11542,7 @@
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="540,3067" sap2010:WorkflowViewState.IdRef="Sequence_163">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="540,3069" sap2010:WorkflowViewState.IdRef="Sequence_163">
             <Sequence.Variables>
               <Variable x:TypeArguments="ui:Image" Name="fullscreen" />
               <Variable x:TypeArguments="x:Boolean" Name="folderbool" />
@@ -11366,5 +11794,74 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="CapitalCostSummary.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_73" UnSafe="False" WorkflowFileName="CapitalCostSummary.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="PowerRedundancy">[PowerRedundancy]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="CoolingRedundancy">[CoolingRedundancy]</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InvokeWorkflowFile>
+    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Cleanup" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1">
+      <ueab:ExcelProcessScopeX.Body>
+        <ActivityAction x:TypeArguments="ui:IExcelProcess">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="597,1767" sap2010:WorkflowViewState.IdRef="Sequence_204">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ueab:ExcelApplicationCard Password="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="535,1656" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ReadFormatting="Default" ResizeWindow="None" WorkbookPath="Writing to Excel.xlsx">
+              <ueab:ExcelApplicationCard.Body>
+                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="501,1387" sap2010:WorkflowViewState.IdRef="Sequence_203">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:Object" Name="Name" />
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ueab:DeleteRowsX DeleteRowsOption="Specific" DisplayName="Delete Rows" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439,138" sap2010:WorkflowViewState.IdRef="DeleteRowsX_1" Range="[Excel.Sheet(&quot;Sheet1&quot;)]" RowPositions="35-36" />
+                    <ueab:DeleteRowsX DeleteRowsOption="Specific" DisplayName="Delete Rows" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439,138" sap2010:WorkflowViewState.IdRef="DeleteRowsX_2" Range="[Excel.Sheet(&quot;Sheet1&quot;)]" RowPositions="33" />
+                    <ueab:DeleteRowsX DeleteRowsOption="Specific" DisplayName="Delete Rows" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439,138" sap2010:WorkflowViewState.IdRef="DeleteRowsX_3" Range="[Excel.Sheet(&quot;Sheet1&quot;)]" RowPositions="31" />
+                    <ueab:DeleteRowsX DeleteRowsOption="Specific" DisplayName="Delete Rows" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439,138" sap2010:WorkflowViewState.IdRef="DeleteRowsX_4" Range="[Excel.Sheet(&quot;Sheet1&quot;)]" RowPositions="29" />
+                    <ueab:DeleteRowsX DeleteRowsOption="Specific" DisplayName="Delete Rows" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439,138" sap2010:WorkflowViewState.IdRef="DeleteRowsX_5" Range="[Excel.Sheet(&quot;Sheet1&quot;)]" RowPositions="26-27" />
+                    <ueab:DeleteRowsX DeleteRowsOption="Specific" DisplayName="Delete Rows" HasHeaders="True" sap:VirtualizedContainerService.HintSize="439,138" sap2010:WorkflowViewState.IdRef="DeleteRowsX_6" Range="[Excel.Sheet(&quot;Sheet1&quot;)]" RowPositions="3-24" />
+                    <ueab:InsertColumnX ColumnFormat="{x:Null}" NewColumnName="{x:Null}" DisplayName="Insert Column" HasHeaders="False" sap:VirtualizedContainerService.HintSize="439,208" sap2010:WorkflowViewState.IdRef="InsertColumnX_2" Range="[Excel.Sheet(&quot;Sheet1&quot;)]" RelativeColumnName="A" RelativePosition="Before" />
+                  </Sequence>
+                </ActivityAction>
+              </ueab:ExcelApplicationCard.Body>
+            </ueab:ExcelApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ueab:ExcelProcessScopeX.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ueab:ExcelProcessScopeX>
+    <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="338,133" sap2010:WorkflowViewState.IdRef="KillProcess_1" ProcessName="EXCEL" />
+    <ui:WriteRange StartingCell="{x:Null}" AddHeaders="False" DataTable="[dt_table]" DisplayName="Add Column of titles" sap:VirtualizedContainerService.HintSize="338,52" sap2010:WorkflowViewState.IdRef="WriteRange_2" SheetName="Sheet1" WorkbookPath="Writing to Excel.xlsx">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:WriteRange>
   </Sequence>
 </Activity>
